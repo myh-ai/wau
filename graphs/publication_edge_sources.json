@@ -1,0 +1,898 @@
+{
+  "title": "Publication figure: source mapping for the 18 selected edges",
+  "knowledge_sha256": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481",
+  "network_sha256": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+  "edge_count": 18,
+  "edges": [
+    {
+      "id": "P01",
+      "publication_edge_id": "P01",
+      "subject": "Wau Kikik",
+      "label": "is a",
+      "relation": "is a",
+      "object": "Traditional Malay wau",
+      "record_id": "RQ1-N01",
+      "record_ids": [
+        "RQ1-N01"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "is_a",
+        "object": "traditional_malay_wau",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "names"
+      },
+      "operational_edge_id": "E013",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "direct",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "No inventor, invention date or exclusive origin follows from this classification.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P02",
+      "publication_edge_id": "P02",
+      "subject": "Wau Laga",
+      "label": "is a",
+      "relation": "is a",
+      "object": "Traditional Malay wau",
+      "record_id": "RQ1-S01",
+      "record_ids": [
+        "RQ1-S01"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_laga_named_type",
+        "relation": "is_a",
+        "object": "traditional_malay_wau",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Playing the Wau Laga, p.144",
+        "intent": "names"
+      },
+      "operational_edge_id": "E002",
+      "author_decision": "pending",
+      "pages": [
+        144
+      ],
+      "source_pages": [
+        144
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "Another type of traditional Malay wau is the Wau Laga.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "direct",
+      "scope": "S01:2002:Playing the Wau Laga, p.144",
+      "scope_note": "Retain alongside the Kikik-or-Laga heading. “Another type” does not resolve whether Laga and Kikik are separate designs in every context; do not assert global identity or disjointness.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P03",
+      "publication_edge_id": "P03",
+      "subject": "Form 1",
+      "label": "type of",
+      "relation": "type of",
+      "object": "Wau Kikik",
+      "record_id": "RQ1-F01",
+      "record_ids": [
+        "RQ1-F01",
+        "RQ1-F02"
+      ],
+      "triple_index": 2,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_source_described_form",
+        "object": "kikik_form_1",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "forms"
+      },
+      "operational_edge_id": "E017",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "It consists of three different types.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "inverse of has_source_described_form",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Three is the count in this source classification, not proof that all local or modern variants are exhausted.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P04",
+      "publication_edge_id": "P04",
+      "subject": "Form 2",
+      "label": "type of",
+      "relation": "type of",
+      "object": "Wau Kikik",
+      "record_id": "RQ1-F01",
+      "record_ids": [
+        "RQ1-F01",
+        "RQ1-F03"
+      ],
+      "triple_index": 3,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_source_described_form",
+        "object": "kikik_form_2",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "forms"
+      },
+      "operational_edge_id": "E018",
+      "author_decision": "pending",
+      "pages": [
+        72,
+        73
+      ],
+      "source_pages": [
+        72,
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "It consists of three different types.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "form_wording_ms": "empat segi tidak sama",
+      "form_wording_en": "rectangular",
+      "display_transformation": "inverse of has_source_described_form",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Three is the count in this source classification, not proof that all local or modern variants are exhausted. Do not force a single standardized shape, infer four unequal side lengths, or label a proven translation error. Tail presence is directly supported in both versions.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P05",
+      "publication_edge_id": "P05",
+      "subject": "Form 3",
+      "label": "type of",
+      "relation": "type of",
+      "object": "Wau Kikik",
+      "record_id": "RQ1-F01",
+      "record_ids": [
+        "RQ1-F01",
+        "RQ1-F04"
+      ],
+      "triple_index": 4,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_source_described_form",
+        "object": "kikik_form_3",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "forms"
+      },
+      "operational_edge_id": "E019",
+      "author_decision": "pending",
+      "pages": [
+        72,
+        73
+      ],
+      "source_pages": [
+        72,
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "It consists of three different types.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Ketiga, Wau Kikik yang berbentuk segi empat tepat.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "and the third, Wau Kikik with a perfect square shape.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "form_wording_ms": "segi empat tepat",
+      "form_wording_en": "perfect square shape",
+      "display_transformation": "inverse of has_source_described_form",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Three is the count in this source classification, not proof that all local or modern variants are exhausted. Preserve the two source descriptions without inferring a uniquely verified geometric template. A culturally informed Malay-language review is still needed.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P06",
+      "publication_edge_id": "P06",
+      "subject": "Form 1",
+      "label": "has",
+      "relation": "has",
+      "object": "Head",
+      "record_id": "RQ1-F02",
+      "record_ids": [
+        "RQ1-F02"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "kikik_form_1",
+        "relation": "has_source_described_component",
+        "object": "head",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "forms"
+      },
+      "operational_edge_id": "E020",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "direct",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Retain the source wording; it does not supply a technical profile, exact dimensions or a validated geometric drawing.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P07",
+      "publication_edge_id": "P07",
+      "subject": "Form 2",
+      "label": "has",
+      "relation": "has",
+      "object": "Tail",
+      "record_id": "RQ1-F03",
+      "record_ids": [
+        "RQ1-F03"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "kikik_form_2",
+        "relation": "has_component",
+        "object": "tail",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "forms"
+      },
+      "operational_edge_id": "E023",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "direct; supported subclaim",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Do not force a single standardized shape, infer four unequal side lengths, or label a proven translation error. Tail presence is directly supported in both versions.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P08",
+      "publication_edge_id": "P08",
+      "subject": "Wau Kikik",
+      "label": "also called",
+      "relation": "also called",
+      "object": "Wau Kaca",
+      "record_id": "RQ1-N03",
+      "record_ids": [
+        "RQ1-N03"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_source_alias",
+        "object": "Wau Kaca",
+        "object_type": "literal",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "names"
+      },
+      "operational_edge_id": "E003",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "source-scoped name label",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "The explanation concerns the string, not a glass body. It does not establish that every present-day Wau Kikik uses glass-coated string.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P09",
+      "publication_edge_id": "P09",
+      "subject": "Wau Kaca",
+      "label": "named after",
+      "relation": "named after",
+      "object": "Glass-coated string",
+      "record_id": "RQ1-N03",
+      "record_ids": [
+        "RQ1-N03"
+      ],
+      "triple_index": 2,
+      "canonical_triple": {
+        "subject": "wau_kaca_name",
+        "relation": "has_source_name_explanation",
+        "object": "powdered_glass_on_string",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "name_reason"
+      },
+      "operational_edge_id": "E004",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "display wording for powdered glass on the string",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "The explanation concerns the string, not a glass body. It does not establish that every present-day Wau Kikik uses glass-coated string.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P10",
+      "publication_edge_id": "P10",
+      "subject": "Wau Kikik",
+      "label": "heading name",
+      "relation": "heading name",
+      "object": "Laga Kite",
+      "record_id": "RQ1-N02",
+      "record_ids": [
+        "RQ1-N02"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_source_heading_label",
+        "object": "Laga Kite",
+        "object_type": "literal",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "names"
+      },
+      "operational_edge_id": "E001",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Wau Kikik or the Laga Kite",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "source heading label; no global identity",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Do not use unconditional sameAs or disjointWith. A heading alias and a later “another type” formulation leave the broader relationship underdetermined.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P11",
+      "publication_edge_id": "P11",
+      "subject": "Wau Kikik",
+      "label": "official wau of (2002)",
+      "relation": "official wau of (2002)",
+      "object": "Melaka",
+      "record_id": "RQ1-N05",
+      "record_ids": [
+        "RQ1-N05"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "described_as_official_wau_of",
+        "object": "melaka",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:p.73; historical publication claim, not a 2026 verification",
+        "intent": "place_status"
+      },
+      "operational_edge_id": "E006",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Today, Wau Kikik is the official Wau for the state of Melaka.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "historical source attribution",
+      "scope": "S01:2002:p.73; historical publication claim, not a 2026 verification",
+      "scope_note": "“Today” belongs to the 2002 publication context. Do not infer date of invention, exclusive origin, or a newly verified current designation.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P12",
+      "publication_edge_id": "P12",
+      "subject": "Wau Kikik",
+      "label": "resembles",
+      "relation": "resembles",
+      "object": "Eddy Kite",
+      "record_id": "RQ1-C02",
+      "record_ids": [
+        "RQ1-C02"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "resembles",
+        "object": "eddy_kite",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "comparison"
+      },
+      "operational_edge_id": "E010",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The Wau Kikik shares a resemblance with the ‘Eddy Kite’ which is also known as the ‘Malay Kite’ by the westerners.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "direct; not identity",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Resemblance is not identity. Do not infer globally interchangeable names or a historical transmission route.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P13",
+      "publication_edge_id": "P13",
+      "subject": "Wau Kikik",
+      "label": "covered with",
+      "relation": "covered with",
+      "object": "Wau paper",
+      "record_id": "RQ1-C06",
+      "record_ids": [
+        "RQ1-C06"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_covering_material",
+        "object": "wau_paper",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "materials"
+      },
+      "operational_edge_id": "E030",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "With a few basic layers of wau papers",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "display wording for covering material",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "No exact layer count, paper weight, thickness, dimensions or universal modern material specification is supplied.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P14",
+      "publication_edge_id": "P14",
+      "subject": "Traditional Malay wau",
+      "label": "most have",
+      "relation": "most have",
+      "object": "Leaf-shaped wings",
+      "record_id": "RQ1-S12",
+      "record_ids": [
+        "RQ1-S12"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "traditional_malay_wau",
+        "relation": "most_have",
+        "object": "leaf_shaped_wings",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:p.73; class-level majority description only, not a universal property or inherited subtype assertion",
+        "quantifier": "most",
+        "inheritance": "context_only",
+        "intent": "features"
+      },
+      "operational_edge_id": "E077",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "the design of Wau Kikik is without wings like the shape of a leaf which is found in most traditional Malay wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "non-universal class description",
+      "scope": "S01:2002:p.73; class-level majority description only, not a universal property or inherited subtype assertion",
+      "scope_note": "Most does not mean all. This class statement does not establish leaf-shaped wings for an undocumented subtype. Direct subtype evidence takes priority; the same passage explicitly excludes Wau Kikik. It gives no numeric prevalence or sample.",
+      "polarity": "positive",
+      "status": "supported"
+    },
+    {
+      "id": "P15",
+      "publication_edge_id": "P15",
+      "subject": "Wau Kikik",
+      "label": "NOT has",
+      "relation": "NOT has",
+      "object": "Leaf-shaped wings",
+      "record_id": "RQ1-C05",
+      "record_ids": [
+        "RQ1-C05"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_feature",
+        "object": "leaf_shaped_wings",
+        "object_type": "entity",
+        "polarity": "negative",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "features"
+      },
+      "operational_edge_id": "E029",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "the design of Wau Kikik is without wings like the shape of a leaf which is found in most traditional Malay wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "explicit negative",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "This is a shape-specific negative, not an assertion that the kite has no lifting surface, lateral extent or transverse support.",
+      "polarity": "negative",
+      "status": "explicit_negative"
+    },
+    {
+      "id": "P16",
+      "publication_edge_id": "P16",
+      "subject": "Wau Kikik",
+      "label": "NOT has",
+      "relation": "NOT has",
+      "object": "Hummer (busur)",
+      "record_id": "RQ1-C03",
+      "record_ids": [
+        "RQ1-C03"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "has_component",
+        "object": "hummer",
+        "object_type": "entity",
+        "polarity": "negative",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "features"
+      },
+      "operational_edge_id": "E007",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "explicit negative",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "Absence of this named component does not imply that the kite or line can never produce any incidental sound.",
+      "polarity": "negative",
+      "status": "explicit_negative"
+    },
+    {
+      "id": "P17",
+      "publication_edge_id": "P17",
+      "subject": "Wau Kikik",
+      "label": "NOT has",
+      "relation": "NOT has",
+      "object": "Sobek carving",
+      "record_id": "RQ1-C04",
+      "record_ids": [
+        "RQ1-C04"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_kikik",
+        "relation": "uses_decoration_technique",
+        "object": "sobek",
+        "object_type": "entity",
+        "polarity": "negative",
+        "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+        "intent": "features"
+      },
+      "operational_edge_id": "E008",
+      "author_decision": "pending",
+      "pages": [
+        73
+      ],
+      "source_pages": [
+        73
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "display_transformation": "explicit negative",
+      "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+      "scope_note": "This does not mean no decoration. The two profile photographs show colored patterns, but the pictures alone do not establish their manufacturing technique.",
+      "polarity": "negative",
+      "status": "explicit_negative"
+    },
+    {
+      "id": "P18",
+      "publication_edge_id": "P18",
+      "subject": "Wau Laga",
+      "label": "string usually glazed with",
+      "relation": "string usually glazed with",
+      "object": "Powdered glass",
+      "record_id": "RQ1-P03",
+      "record_ids": [
+        "RQ1-P03"
+      ],
+      "triple_index": 1,
+      "canonical_triple": {
+        "subject": "wau_laga_practice",
+        "relation": "normally_uses_in_source",
+        "object": "glass_glazed_string",
+        "object_type": "entity",
+        "polarity": "positive",
+        "scope": "S01:2002:Playing the Wau Laga, p.144",
+        "intent": "materials"
+      },
+      "operational_edge_id": "E035",
+      "author_decision": "pending",
+      "pages": [
+        144
+      ],
+      "source_pages": [
+        144
+      ],
+      "source_id": "S01",
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "Normally, the strings of the wau are glazed with fine powdered glass that will be used to severe the opponent’s string.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check",
+          "transcription_note": "The printed source says “severe”; the paraphrase uses “sever” or “cut”."
+        }
+      ],
+      "display_transformation": "source-scoped practice description; strings, not kite body",
+      "scope": "S01:2002:Playing the Wau Laga, p.144",
+      "scope_note": "“Normally” is not “always”. This is a historical practice description, not manufacturing guidance, a safety claim or current legal advice.",
+      "polarity": "positive",
+      "status": "supported"
+    }
+  ],
+  "author_edge_review": "pending",
+  "caption_notes": [
+    "Wau Laga and the Laga Kite heading label are separate nodes; no universal identity is asserted.",
+    "Most have is a non-universal class-level description. Explicit negative edges concern only the named Kikik features.",
+    "The Melaka attribution belongs to the 2002 book.",
+    "Kemetek is not documented in the reviewed book passages, so no asserted edge is shown.",
+    "Language-specific form-2/form-3 wording belongs in the accompanying evidence table."
+  ]
+}

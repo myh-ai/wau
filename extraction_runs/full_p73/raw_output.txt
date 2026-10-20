@@ -1,0 +1,47 @@
+## Atomic subject–relation–object claims
+
+Source metadata
+
+- Printed page: 73
+- Source publication year: 2002
+- Evidence scope: Supplied passage only
+- Extraction rule: Each claim expresses one subject–relation–object assertion. Negation, attribution, comparison, aliases, and temporal scope are preserved.
+
+| ID | Subject | Relation | Object | Printed page | Supporting text |
+| --- | --- | --- | --- | --- | --- |
+| C01 | Wau Kikik | represents | The simplest design among all traditional Malay wau | 73 | “The Wau Kikik represents the simplest design of all traditional Malay wau.” |
+| C02 | Wau Kikik | consists of | Three different types | 73 | “It consists of three different types.” |
+| C03 | First type of Wau Kikik | has | A head | 73 | “The first being, Wau Kikik with a head and dented/concaved.” |
+| C04 | First type of Wau Kikik | has shape described as | Dented/concaved | 73 | “The first being, Wau Kikik with a head and dented/concaved.” |
+| C05 | Second type of Wau Kikik | has shape | Rectangular | 73 | “The second, Wau Kikik which is rectangular in shape with a tail” |
+| C06 | Second type of Wau Kikik | has | A tail | 73 | “The second, Wau Kikik which is rectangular in shape with a tail” |
+| C07 | Third type of Wau Kikik | has shape | Perfect square | 73 | “and the third, Wau Kikik with a perfect square shape.” |
+| C08 | Wau Kikik | shares a resemblance with | Eddy Kite | 73 | “The Wau Kikik shares a resemblance with the ‘Eddy Kite’” |
+| C09 | Eddy Kite | is also known as, according to the passage | Malay Kite | 73 | “which is also known as the ‘Malay Kite’ by the westerners.” |
+| C10 | Westerners | refer to Eddy Kite as | Malay Kite | 73 | “which is also known as the ‘Malay Kite’ by the westerners.” |
+| C11 | Wau Kikik (referent of “it”; exact antecedent potentially ambiguous) | has another name | Wau Kaca | 73 | “Another name for it is Wau Kaca” |
+| C12 | Wau Kaca | is named so because of | Powdered glass glazed on its string | 73 | “Another name for it is Wau Kaca, due to the powdered glass glazed on its string.” |
+| C13 | Powdered glass | is glazed on | The string of Wau Kaca | 73 | “due to the powdered glass glazed on its string.” |
+| C14 | Powdered glass on the string | is meant to | Defeat the opponent’s wau | 73 | “This is meant to defeat the opponent’s wau” |
+| C15 | Powdered glass on the string | is intended to defeat the opponent’s wau when | It comes in contact with Wau Kaca during a competition | 73 | “This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.” |
+| C16 | Opponent’s wau | comes in contact with | Wau Kaca during a competition | 73 | “once it comes in contact with Wau Kaca during a competition.” |
+| C17 | Wau Kikik | is the official wau of | The state of Melaka | 73 | “Today, Wau Kikik is the official Wau for the state of Melaka.” |
+| C18 | C17 claim | has temporal scope | Today, as stated in the source | 73 | “Today, Wau Kikik is the official Wau for the state of Melaka.” |
+| C19 | Wau Kikik | has a hummer | Negated: does not have a hummer | 73 | “In comparison with other traditional wau, Wau Kikik neither has a hummer” |
+| C20 | Wau Kikik | has ‘sobek’ carvings | Negated: does not have any ‘sobek’ carvings | 73 | “nor any ‘sobek’ carvings.” |
+| C21 | Wau Kikik | is compared with | Other traditional wau | 73 | “In comparison with other traditional wau” |
+| C22 | Wau Kikik’s design | uses | A few basic layers of wau papers | 73 | “With a few basic layers of wau papers, the design of Wau Kikik” |
+| C23 | Wau Kikik’s design | has wings | Negated: is without wings | 73 | “the design of Wau Kikik is without wings” |
+| C24 | Wau Kikik’s wingless design | is described as resembling | The shape of a leaf | 73 | “is without wings like the shape of a leaf” |
+| C25 | Leaf-shaped feature described in the passage | is found in | Most traditional Malay wau | 73 | “which is found in most traditional Malay wau.” |
+
+## Ambiguities and scope notes
+
+- C03–C04: The wording “with a head and dented/concaved” does not clearly specify what is dented or concaved. The affected component is unspecified.
+- C11–C13: “It” and “its” are contextually associated with Wau Kikik/Wau Kaca, but the exact grammatical antecedent is not fully explicit. The passage supports the alternate name and the powdered-glass explanation without establishing a separate entity distinct from Wau Kikik.
+- C14–C16: The passage describes an intended function during competition. It does not establish that the opponent’s wau is necessarily defeated in every contact.
+- C19–C20: These are explicit negative claims about Wau Kikik. They should not be converted into positive claims or generalized to all traditional wau.
+- C21: This is a comparison relation, not an identity relation. The passage does not state that Wau Kikik is identical to other traditional wau.
+- C24–C25: “Like the shape of a leaf” describes a resemblance. It does not establish that the kite is literally a leaf or that every traditional Malay wau has this feature.
+- Source year: 2002 is supplied as publication metadata; the passage does not independently state that year.
+- Current status: “Today” is preserved as the source’s temporal expression. The passage alone does not establish whether the official status remains true in 2026.

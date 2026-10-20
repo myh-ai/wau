@@ -1,0 +1,39 @@
+{
+  "selected_view": true,
+  "graph_checks": {
+    "nodes": 18,
+    "edges": 18,
+    "one_connected_component": true,
+    "no_duplicate_node_occurrences": true
+  },
+  "width_inches": 7,
+  "height_inches": 5.3375,
+  "png_dpi": 300,
+  "exports": [
+    {
+      "file": "publication_semantic_network.png",
+      "width_px": 2100,
+      "height_px": 1601,
+      "complete_png": true,
+      "sha256": "fae223641700c6dc55aa7755db7644212732e5d909a5de47e0d8548e1fa2deb9"
+    },
+    {
+      "file": "publication_semantic_network.pdf",
+      "pdf_header_valid": true,
+      "sha256": "2d48346f49c9f541f45479510cbd8d6a3c0684f21e6500c35eba3c2c23388bc6"
+    }
+  ],
+  "script_sha256": "3929dceb1d964b9dee0f4a48b45eaf5494dff9c4663446917c653c369ed61657",
+  "caption_notes": [
+    "Wau Laga and the Laga Kite heading label are separate nodes; no universal identity is asserted.",
+    "Most have is a non-universal class-level description. Explicit negative edges concern only the named Kikik features.",
+    "The Melaka attribution belongs to the 2002 book.",
+    "Kemetek is not documented in the reviewed book passages, so no asserted edge is shown.",
+    "Language-specific form-2/form-3 wording belongs in the accompanying evidence table."
+  ],
+  "knowledge_sha256": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481",
+  "network_sha256": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+  "source_mapping_rows": 18,
+  "author_edge_review": "pending",
+  "study_ready": false
+}

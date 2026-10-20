@@ -1,0 +1,14 @@
+{
+  "scope": "Delivered publication PNG",
+  "result": "pass",
+  "files": [
+    {
+      "file": "publication_semantic_network.png",
+      "width_px": 2100,
+      "height_px": 1601,
+      "complete_png": true,
+      "sha256": "fae223641700c6dc55aa7755db7644212732e5d909a5de47e0d8548e1fa2deb9"
+    }
+  ],
+  "visual_inspection": "Readable black-and-white nodes, short relation labels, visible arrowheads and no embedded record IDs or source-page labels."
+}

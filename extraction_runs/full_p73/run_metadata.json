@@ -1,0 +1,42 @@
+{
+  "run_id": "full_p73_20261018T083545Z",
+  "tool": "ChatGPT web interface",
+  "displayed_model_label": "Default",
+  "backend_model_version": null,
+  "model_version_note": "Only Default was exposed by the model selector; no backend version was exposed.",
+  "started_utc": "2026-10-18T08:35:45.184Z",
+  "completion_observed_utc": "2026-10-18T08:36:37.900Z",
+  "raw_and_screenshot_captured_utc": "2026-10-18T08:36:58.508Z",
+  "timezone": "UTC",
+  "session": {
+    "authenticated": false,
+    "temporary_chat": false,
+    "message_count_before": 0,
+    "message_count_after": 2,
+    "isolation": "Fresh logged-out ChatGPT conversation. Only exact prompt, page/year metadata and full requested passage submitted. No project context, attachments or review feedback provided."
+  },
+  "prompt_exact_user_text": true,
+  "passage_source": "Original supplied scan page-0073.jpg; printed page73, English body excluding heading",
+  "transcription": "Manually transcribed from image; line wrapping and typographic quote rendering normalized; no lexical correction.",
+  "source_publication_year_supplied": 2002,
+  "generation_attempts": 1,
+  "followup_prompts": 0,
+  "response_capture": "Copy response button; clipboard re-read after copy completed; saved verbatim UTF-8.",
+  "raw_claim_count": 25,
+  "screenshot": "raw_response_20261018.jpg",
+  "sampling_parameters": {
+    "temperature": null,
+    "seed": null
+  },
+  "scope_limit": "Illustrative extraction and source review, not an LLM benchmark or evidence of general model accuracy.",
+  "human_author_review": "pending",
+  "sha256": {
+    "source_excerpt.txt": "a760892cfd017e268c0d1048db3078e7cbb2bc2986b4cc647e70705d0013cbdd",
+    "prompt.txt": "b8e56b11d833db08a43b5010954f1e63f437978fbde9d67b570049bab2b4290c",
+    "raw_output.txt": "06378457edfbe8e828e948bdf81b82b92ae744a1e73621382cc8ea0e15a89672",
+    "raw_response_20261018.jpg": "c30971d431774197657c8ab57ad1995e80ac00edbb5c494ad632cb39f9ec6b51",
+    "submitted_message.txt": "b3b12cc38253e1892f526ce4670243a844733e50c3547f4e04c3cabf7a63bed6",
+    "pre_run_state.json": "b25e97d3fc8c0181ace0fce25d385716bc552725454d4278cc3e1efefd4eb664",
+    "post_run_state.json": "779c86690edb1803e96022b7a6c671c2150ee26a29ab54075b742039a19581d2"
+  }
+}

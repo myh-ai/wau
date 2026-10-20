@@ -1,0 +1,2565 @@
+{
+  "generated_utc": "2026-10-20T20:55:24+00:00",
+  "metadata": {
+    "source_file": "WauTrace_Network_Template.json",
+    "source_sha256": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+    "knowledge_sha256": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481",
+    "counts": {
+      "nodes": 83,
+      "assertion_endpoint_nodes": 82,
+      "isolated_nodes": 1,
+      "edges": 74,
+      "edge_status_counts": {
+        "supported": 67,
+        "explicit_negative": 3,
+        "source_variance": 4
+      }
+    },
+    "scope": "All operational nodes and assertion edges, including isolated candidates.",
+    "identity_policy": "Operational node IDs and E### edge IDs are preserved verbatim.",
+    "metadata_policy": "All node, edge and network fields are retained without a whitelist.",
+    "not_a_bot_evaluation": true,
+    "author_edge_review": {
+      "approved": 0,
+      "pending": 74
+    },
+    "study_ready": false,
+    "network_metadata": {
+      "schema_version": "wautrace-network-1.0",
+      "artifact_type": "completed_source_scoped_semantic_network",
+      "canonical_rq1": "What documented names, forms, characteristics, and cultural practices describe Wau Kikik in the project sources?",
+      "language": "en",
+      "explanation_language": "en",
+      "purpose": "Operational semantic network of the reviewed project knowledge. Each edge represents one canonical typed triple with source evidence, polarity and scope. Candidate names are not factual edges.",
+      "created_at_utc": "2026-10-18T08:40:04+00:00",
+      "provenance": {
+        "knowledge_file": "knowledge.json",
+        "knowledge_sha256": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481",
+        "source_review_file": "source_review.json",
+        "author_review_file": "author_review.json",
+        "representation_review_file": "reviews/operational_claim_review.json"
+      },
+      "status_values": {
+        "supported": "Source-supported under the stated scope.",
+        "explicit_negative": "The source denies only the specific predicate/object in scope.",
+        "not_documented": "Candidate metadata only; no assertion edge, not a denial.",
+        "source_variance": "Language-specific descriptions differ in wording or specificity; contradiction is not established."
+      },
+      "kb_status_mapping": {
+        "supported": "supported",
+        "explicit_negative": "explicit_negative",
+        "unverified": "not_documented",
+        "discrepancy": "source_variance"
+      },
+      "status_rule": "Map record status explicitly. F03 tail presence is supported at edge level; the other F03 edges and both F04 edges are source_variance. Preserve the original record status separately.",
+      "representation_contract": {
+        "endpoint_rule": "Every subject and object is a node ID. Literal/number/boolean nodes carry an exact typed value; object_value and kb_triple preserve the original KB value.",
+        "origin_rule": "One edge for each canonical record_id and one-based triple_index, exactly once.",
+        "negative_rule": "Base relation plus negative polarity is the only machine negation; do not interpret as NOT LACKS.",
+        "identity_rule": "No sameAs, equivalentTo or disjointWith assertion. Source headings, aliases, resemblance and named-type wording retain distinct meanings.",
+        "citation_rule": "evidence is the authoritative citation array. Each quote is an exact continuous source excerpt, with whitespace/line breaks normalized; headings are identified. Never insert a paraphrase or ellipsis placeholder into quote.",
+        "scope_rule": "An edge’s original scope and record limits remain mandatory during retrieval and answer composition.",
+        "source_date_rule": "2002 source descriptions are not present-day verification.",
+        "author_review_rule": "Source checking, documented record-level author review and current edge approval are distinct. Current edge approval requires an explicit decision on the corresponding claim, triple, evidence, scope and response; no blanket approval is inferred.",
+        "intent_rule": "Every edge has one factual intent; each relation lists its allowed intents. The fallback not_documented belongs to retrieval/candidate metadata only.",
+        "class_majority_rule": "most_have carries quantifier=most and inheritance=context_only. Direct subtype evidence overrides a class candidate; an unknown subtype remains undocumented."
+      },
+      "sources": {
+        "S01": {
+          "source_id": "S01",
+          "type": "user_supplied_bilingual_book_scans",
+          "title": "Wau Tradisional Malaysia: Traditional Kites of Malaysia",
+          "editor_in_chief": "Wan Basiron Wan Ahmad",
+          "publication_year": 2002,
+          "publisher": "Muzium Layang-layang Pasir Gudang",
+          "isbn": "983-40933-0-6",
+          "scan_directory": "sources",
+          "verified_pages_this_review": [
+            72,
+            73,
+            144,
+            146,
+            148
+          ],
+          "page_number_note": "Printed folios72/73 are visible; later page mapping follows archive filenames and the book contents, with some folios cropped in images.",
+          "quote_transcription_note": "Short source excerpts transcribed from original images. Page line breaks and surrounding whitespace are normalized; no grammar correction or translation is inserted into quoted evidence. Typographic apostrophes follow the visible source as closely as possible.",
+          "redistribution_note": "Private project working evidence only; no full book or page images republished by this JSON.",
+          "scan_sha256": {
+            "72": "4e554b702e918afd8d3a1c6c82feb91423d10a7534f2d4cf5e0dd86ba4b21876",
+            "73": "05502ef70111231686137c3a7454b6a23cc44fe097ff018d79d5320cfc254635",
+            "144": "f6d79520ebe8f2b125bc71408c7d75feefdfe6e736e325ec903ba8d4117367fc",
+            "146": "662eb2f3a0637238acbdddb4e13521a4a1efa0741f4855e3db09f665f22938bc",
+            "148": "b9062effb4194e99c23d417652b00da4dd9dfdb43ec8a963ca4ed86a61cdab2d"
+          },
+          "available_page_images": {
+            "72": "sources/page-0072.jpg",
+            "73": "sources/page-0073.jpg",
+            "144": "sources/page-0144.jpg",
+            "146": "sources/page-0146.jpg",
+            "148": "sources/page-0148.jpg"
+          },
+          "metadata_verification_note": "Bibliographic metadata is retained from the project source register; title/metadata pages were not reopened in this five-page review."
+        },
+        "S02": {
+          "source_id": "S02",
+          "type": "user_supplied_assignment_topic",
+          "title": "Moustafa Hassan — assigned kite topic",
+          "content_summary": "Wau Kikik / Wau Laga / Wau Kemetek (also known as Wau Kaca), Melaka",
+          "role": "Course scope for candidate names; not book evidence for alias equivalence"
+        },
+        "S03": {
+          "source_id": "S03",
+          "type": "primary_dictionary_lexical_aid",
+          "title": "Dewan Bahasa dan Pustaka terminology lookup: tepat",
+          "url": "https://prpmv1.dbp.gov.my/Search.aspx?k=tepat",
+          "accessed_on": "2026-10-18",
+          "verified_mapping": {
+            "segi empat tepat": "rectangle",
+            "segi empat sama": "square"
+          },
+          "role": "Clarifies ordinary terminology only; does not establish a kite’s precise geometry",
+          "verification_note": "Retrieved in earlier review from primary DBP result; not re-browsed during this source-page review."
+        }
+      },
+      "relation_vocabulary": [
+        "described_as_official_wau_of",
+        "has_competitive_objective",
+        "has_component",
+        "has_covering_material",
+        "has_defensive_objective",
+        "has_described_participant_count",
+        "has_described_role_separation",
+        "has_feature",
+        "has_practice_section",
+        "has_role",
+        "has_source_action",
+        "has_source_advantage_condition_wording",
+        "has_source_alias",
+        "has_source_competitive_purpose",
+        "has_source_condition",
+        "has_source_control_factor",
+        "has_source_control_goal",
+        "has_source_described_component",
+        "has_source_described_form",
+        "has_source_described_height",
+        "has_source_design_characterization",
+        "has_source_difficulty_comparison",
+        "has_source_difficulty_condition",
+        "has_source_difficulty_reason",
+        "has_source_emphasis",
+        "has_source_following_action",
+        "has_source_heading_label",
+        "has_source_initial_action",
+        "has_source_lock_condition",
+        "has_source_method",
+        "has_source_name_explanation",
+        "has_source_objective",
+        "has_source_phase",
+        "has_source_preparation",
+        "has_source_reported_popularity_region",
+        "has_source_reported_western_label",
+        "has_source_role_label",
+        "has_source_shape_wording",
+        "has_source_skill_requirement",
+        "has_source_stated_effect",
+        "has_source_stated_result",
+        "includes_ascent_action",
+        "includes_coordination",
+        "includes_preparation",
+        "is_a",
+        "most_have",
+        "normally_uses_in_source",
+        "resembles",
+        "source_enumerates_form_count",
+        "uses_decoration_technique"
+      ],
+      "candidate_names": [
+        {
+          "candidate_id": "E005",
+          "record_id": "RQ1-N04",
+          "name_node": "wau_kemetek_name",
+          "candidate_target": "wau_kikik",
+          "candidate_relation": "has_source_alias",
+          "asserted": false,
+          "traversable": false,
+          "status": "not_documented",
+          "record_status": "unverified",
+          "provenance_source_id": "S02",
+          "evidence": [],
+          "book_page": null,
+          "answer_en": "Wau Kemetek is a name in the user-supplied assignment topic, but a supporting occurrence or equivalence statement has not been verified in the project book passages reviewed.",
+          "scope_note": "Accept as a course-scope candidate label; do not cite p.73 as evidence for it and do not declare the name false.",
+          "author_decision": "pending",
+          "decision_reason": null,
+          "intent": "not_documented",
+          "author_reviewer": null,
+          "author_review_date": null,
+          "source_claim_review_reference": "author_review.json:RQ1-N04",
+          "review_status": "source_claim_documented_representation_pending"
+        }
+      ],
+      "record_catalog": [
+        {
+          "record_id": "RQ1-N01",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The book presents Wau Kikik as a traditional Malay wau.",
+          "limits_en": "No inventor, invention date or exclusive origin follows from this classification.",
+          "edge_ids": [
+            "E013"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "names"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-N01"
+        },
+        {
+          "record_id": "RQ1-N02",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The profile heading links Wau Kikik with the Laga Kite; the later section discusses playing Wau Laga and also calls it another type of traditional Malay wau. These are source-scoped naming/classification statements, not proof of universal identity or distinct species.",
+          "limits_en": "Do not use unconditional sameAs or disjointWith. A heading alias and a later “another type” formulation leave the broader relationship underdetermined.",
+          "edge_ids": [
+            "E001",
+            "E014",
+            "E015"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "names",
+            "practice_context"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-N02"
+        },
+        {
+          "record_id": "RQ1-N03",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The book gives Wau Kaca as another name for Wau Kikik and explains the name by powdered glass glazed on its string.",
+          "limits_en": "The explanation concerns the string, not a glass body. It does not establish that every present-day Wau Kikik uses glass-coated string.",
+          "edge_ids": [
+            "E003",
+            "E004"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "name_reason",
+            "names"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-N03"
+        },
+        {
+          "record_id": "RQ1-N04",
+          "status": "unverified",
+          "network_status": "not_documented",
+          "claim_en": "Wau Kemetek is a name in the user-supplied assignment topic, but a supporting occurrence or equivalence statement has not been verified in the project book passages reviewed.",
+          "limits_en": "Accept as a course-scope candidate label; do not cite p.73 as evidence for it and do not declare the name false.",
+          "edge_ids": [],
+          "candidate_ids": [
+            "E005"
+          ],
+          "intents": [
+            "not_documented"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-N04"
+        },
+        {
+          "record_id": "RQ1-N05",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The 2002 book identifies Wau Kikik as the official wau for the state of Melaka.",
+          "limits_en": "“Today” belongs to the 2002 publication context. Do not infer date of invention, exclusive origin, or a newly verified current designation.",
+          "edge_ids": [
+            "E006"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "place_status"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-N05"
+        },
+        {
+          "record_id": "RQ1-F01",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The profile enumerates three forms/types of Wau Kikik.",
+          "limits_en": "Three is the count in this source classification, not proof that all local or modern variants are exhausted.",
+          "edge_ids": [
+            "E016",
+            "E017",
+            "E018",
+            "E019"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "forms"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-F01"
+        },
+        {
+          "record_id": "RQ1-F02",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The first form is described as having a head and an indentation/concavity.",
+          "limits_en": "Retain the source wording; it does not supply a technical profile, exact dimensions or a validated geometric drawing.",
+          "edge_ids": [
+            "E020",
+            "E021",
+            "E022"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "forms"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-F02"
+        },
+        {
+          "record_id": "RQ1-F03",
+          "status": "discrepancy",
+          "network_status": "source_variance",
+          "claim_en": "Both language versions give the second form a tail. Its Malay description says “empat segi tidak sama”, while the English description says “rectangular”. Retain both levels of description.",
+          "limits_en": "Do not force a single standardized shape, infer four unequal side lengths, or label a proven translation error. Tail presence is directly supported in both versions.",
+          "edge_ids": [
+            "E023",
+            "E024",
+            "E025"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "forms"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-F03"
+        },
+        {
+          "record_id": "RQ1-F04",
+          "status": "discrepancy",
+          "network_status": "source_variance",
+          "claim_en": "The third form is described as “segi empat tepat” on Malay p.72 and “perfect square shape” on English p.73. In DBP terminology, the Malay expression corresponds to rectangle; the English statement is more specific.",
+          "limits_en": "Preserve the two source descriptions without inferring a uniquely verified geometric template. A culturally informed Malay-language review is still needed.",
+          "edge_ids": [
+            "E009",
+            "E026"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "forms"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-F04"
+        },
+        {
+          "record_id": "RQ1-C01",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The book characterizes Wau Kikik as the simplest design of all traditional Malay wau.",
+          "limits_en": "A qualitative source characterization; it does not imply easiest competitive flight, lowest skill or low cultural value.",
+          "edge_ids": [
+            "E027"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "features"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-C01"
+        },
+        {
+          "record_id": "RQ1-C02",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The profile says Wau Kikik resembles the Eddy Kite and reports “Malay Kite” as a Western name for the Eddy Kite.",
+          "limits_en": "Resemblance is not identity. Do not infer globally interchangeable names or a historical transmission route.",
+          "edge_ids": [
+            "E010",
+            "E028"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "comparison"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-C02"
+        },
+        {
+          "record_id": "RQ1-C03",
+          "status": "explicit_negative",
+          "network_status": "explicit_negative",
+          "claim_en": "The profile explicitly states that Wau Kikik lacks a hummer/busur.",
+          "limits_en": "Absence of this named component does not imply that the kite or line can never produce any incidental sound.",
+          "edge_ids": [
+            "E007"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "features"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-C03"
+        },
+        {
+          "record_id": "RQ1-C04",
+          "status": "explicit_negative",
+          "network_status": "explicit_negative",
+          "claim_en": "The profile explicitly states that Wau Kikik lacks sobek carvings/cutwork.",
+          "limits_en": "This does not mean no decoration. The two profile photographs show colored patterns, but the pictures alone do not establish their manufacturing technique.",
+          "edge_ids": [
+            "E008"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "features"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-C04"
+        },
+        {
+          "record_id": "RQ1-C05",
+          "status": "explicit_negative",
+          "network_status": "explicit_negative",
+          "claim_en": "The profile explicitly states that Wau Kikik lacks the leaf-shaped wings described as occurring in most traditional Malay wau.",
+          "limits_en": "This is a shape-specific negative, not an assertion that the kite has no lifting surface, lateral extent or transverse support.",
+          "edge_ids": [
+            "E029"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "features"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-C05"
+        },
+        {
+          "record_id": "RQ1-C06",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The profile describes a basic paper covering/layers of wau paper.",
+          "limits_en": "No exact layer count, paper weight, thickness, dimensions or universal modern material specification is supplied.",
+          "edge_ids": [
+            "E030"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "materials"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-C06"
+        },
+        {
+          "record_id": "RQ1-P01",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The Laga section describes the practice as requiring high skill, speed and concentration, and as more challenging than the single-string wau discussed in the comparison.",
+          "limits_en": "This is the author’s description, not an empirical skill/usability result. The contrast does not prove that Wau Laga uses more than one control line.",
+          "edge_ids": [
+            "E031",
+            "E032"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "practice_context"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P01"
+        },
+        {
+          "record_id": "RQ1-P02",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "In the described Laga competition, players try to break the opponent’s string while avoiding their own string being broken. The attack section states the objective as breaking the opponent’s string before it breaks yours.",
+          "limits_en": "The competitive practice is not a necessary authenticity test for every Kikik or a requirement for an educational demonstration.",
+          "edge_ids": [
+            "E033",
+            "E034",
+            "E067"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "attack",
+            "defence"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P02"
+        },
+        {
+          "record_id": "RQ1-P03",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The Laga section says that its strings are normally glazed with fine powdered glass to cut the opponent’s string in competition.",
+          "limits_en": "“Normally” is not “always”. This is a historical practice description, not manufacturing guidance, a safety claim or current legal advice.",
+          "edge_ids": [
+            "E035",
+            "E068"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "attack",
+            "materials"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P03"
+        },
+        {
+          "record_id": "RQ1-P04",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The book describes Wau Laga as more popular on the west coast of Peninsular Malaysia.",
+          "limits_en": "Qualitative source statement, not a current statistical prevalence estimate or a claim that the practice is exclusive to that region.",
+          "edge_ids": [
+            "E036"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "place_status"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P04"
+        },
+        {
+          "record_id": "RQ1-P05",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The book describes a long-distance Laga launch with two people, a launcher and a puller; it uses the labels juru anjong/juru main tali and juru lancar/juru tarik in the description.",
+          "limits_en": "Applies to the described launch procedure, not a universal requirement for every kite instance or setting. The text names two players, not four. It lists juru anjong/juru main tali, then explicitly glosses juru lancar as launcher and juru tarik as puller; it does not explicitly state an individual synonym mapping between the two pairs.",
+          "edge_ids": [
+            "E037",
+            "E038",
+            "E039",
+            "E040",
+            "E041",
+            "E042",
+            "E069",
+            "E070"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "launch"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P05"
+        },
+        {
+          "record_id": "RQ1-P06",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The described distance between the launcher and puller is 30–50 feet, approximately 9–15 metres.",
+          "limits_en": "The quantity is role separation at launch, not kite dimensions, flight height or a legal safety distance.",
+          "edge_ids": [
+            "E043"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "launch"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P06"
+        },
+        {
+          "record_id": "RQ1-P07",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "Before the described launch, remaining string is rolled to prevent tangling and then laid on the ground. The puller signals the launcher, and line is released in stages as the kite rises.",
+          "limits_en": "A description of the source procedure, not a field-tested project result or a complete current flying guide.",
+          "edge_ids": [
+            "E044",
+            "E045",
+            "E046",
+            "E071"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "launch"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P07"
+        },
+        {
+          "record_id": "RQ1-P08",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The control section says that a kite too close to the player is difficult to control: its reaction to strong wind forces vigorous left/right movement and may cause rotation. It describes a flight height of about 200 feet (60 metres).",
+          "limits_en": "A 2002 book recommendation, not current legal authorization, a universal optimum or a guarantee of safe operation.",
+          "edge_ids": [
+            "E047",
+            "E048",
+            "E072"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "control"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P08"
+        },
+        {
+          "record_id": "RQ1-P09",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "Overview: the book links line handling to stability and direction, and describes slackening the line during defence. Atomic source details are retained in supplemental records rather than lost in this overview.",
+          "limits_en": "These are book-reported procedures, not measured physical laws or effectiveness claims established by this project.",
+          "edge_ids": [
+            "E049",
+            "E050",
+            "E051",
+            "E052"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "control",
+            "defence"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-P09"
+        },
+        {
+          "record_id": "RQ1-S01",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The practice section explicitly introduces Wau Laga as “another type of traditional Malay wau”.",
+          "limits_en": "Retain alongside the Kikik-or-Laga heading. “Another type” does not resolve whether Laga and Kikik are separate designs in every context; do not assert global identity or disjointness.",
+          "edge_ids": [
+            "E002"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "names"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S01"
+        },
+        {
+          "record_id": "RQ1-S02",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The control guide says that a kite flying too far in one direction may lose stability, and describes pulling the string until it becomes stable again.",
+          "limits_en": "A conditional response in this guide; do not turn it into “always pull harder” or claim measured effectiveness.",
+          "edge_ids": [
+            "E053",
+            "E054"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "control"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S02"
+        },
+        {
+          "record_id": "RQ1-S03",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The guide describes keeping enough string in stacks on the ground so it can be released readily if the kite dives at low flight level.",
+          "limits_en": "Do not substitute reel winding or line tightening for the specific action described. This is source procedure, not a modern safety clearance.",
+          "edge_ids": [
+            "E055",
+            "E056",
+            "E057"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "control"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S03"
+        },
+        {
+          "record_id": "RQ1-S04",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "In the direction-control description, the kiter releases the string slowly while the kite is taking flight.",
+          "limits_en": "The next action depends on the head facing the intended direction; keep this source sequence, not an unconditional command to release string.",
+          "edge_ids": [
+            "E058",
+            "E059"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "control"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S04"
+        },
+        {
+          "record_id": "RQ1-S05",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "When the kite’s head faces the intended direction, the guide describes locking the string with one or both hands; the kite then moves in that direction.",
+          "limits_en": "Do not erase the head-direction condition, change one/both hands to two mandatory hands, or treat the stated result as independently measured.",
+          "edge_ids": [
+            "E060",
+            "E061",
+            "E062"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "control"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S05"
+        },
+        {
+          "record_id": "RQ1-S06",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The attack section identifies speed as particularly important in the described string-cutting competition.",
+          "limits_en": "Context is this described competitive encounter, not a measured speed threshold or a general rule that maximum speed is always best.",
+          "edge_ids": [
+            "E063"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "attack"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S06"
+        },
+        {
+          "record_id": "RQ1-S07",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The attack description involves crossing the player’s kite string against the opponent’s string.",
+          "limits_en": "Description of the traditional competitive maneuver only; no unsupported coating recipe, injury optimization or modern legal claim follows.",
+          "edge_ids": [
+            "E064"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "attack"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S07"
+        },
+        {
+          "record_id": "RQ1-S08",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The attack passage describes an advantage when “the player’s position is below the opponents’”. The exact spatial referent of that wording is not resolved by this record.",
+          "limits_en": "Do not silently replace “player’s position” with a precise kite-altitude, ground-location or aerodynamic claim. The literal text is supported; technical interpretation needs review.",
+          "edge_ids": [
+            "E011"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "attack"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S08"
+        },
+        {
+          "record_id": "RQ1-S09",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The defence passage says that a player under attack releases the kite string quickly so that it slackens.",
+          "limits_en": "Retain the attack condition and quick-release action. Do not reverse the instruction to tightening or claim this is a universal recovery procedure.",
+          "edge_ids": [
+            "E012",
+            "E065"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "defence"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S09"
+        },
+        {
+          "record_id": "RQ1-S10",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The defence passage states that slackening makes the string harder to break in the described encounter.",
+          "limits_en": "A source-stated causal explanation, not an independently tested physical law, an absolute guarantee or a quantified effect.",
+          "edge_ids": [
+            "E066"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "defence"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S10"
+        },
+        {
+          "record_id": "RQ1-S12",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The profile states that leaf-shaped wings occur in most traditional Malay wau; this is a non-universal class-level description.",
+          "limits_en": "Most does not mean all. This class statement does not establish leaf-shaped wings for an undocumented subtype. Direct subtype evidence takes priority; the same passage explicitly excludes Wau Kikik. It gives no numeric prevalence or sample.",
+          "edge_ids": [
+            "E077"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "features"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S12"
+        },
+        {
+          "record_id": "RQ1-S11",
+          "status": "supported",
+          "network_status": "supported",
+          "claim_en": "The Wau Kikik profile describes the intended competitive purpose of powdered glass on the string: defeating the opponent’s wau on contact in the English text and cutting the opponent’s string in the Malay text.",
+          "limits_en": "These are language-specific statements of intended competitive purpose in the 2002 book, not a guaranteed outcome or a claim about every present-day kite. The glass is on the string, not the body. The English word “defeat” is not silently treated as the word “cut”.",
+          "edge_ids": [
+            "E073",
+            "E074"
+          ],
+          "candidate_ids": [],
+          "intents": [
+            "attack"
+          ],
+          "author_decision": "pending",
+          "documented_source_claim_review": "author_review.json:RQ1-S11"
+        }
+      ],
+      "template_slot_mapping": [
+        {
+          "template_id": "E001",
+          "destination": "edges",
+          "record_id": "RQ1-N02",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E002",
+          "destination": "edges",
+          "record_id": "RQ1-S01",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E003",
+          "destination": "edges",
+          "record_id": "RQ1-N03",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E004",
+          "destination": "edges",
+          "record_id": "RQ1-N03",
+          "triple_index": 2
+        },
+        {
+          "template_id": "E005",
+          "destination": "candidate_names",
+          "asserted": false,
+          "record_id": "RQ1-N04"
+        },
+        {
+          "template_id": "E006",
+          "destination": "edges",
+          "record_id": "RQ1-N05",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E007",
+          "destination": "edges",
+          "record_id": "RQ1-C03",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E008",
+          "destination": "edges",
+          "record_id": "RQ1-C04",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E009",
+          "destination": "edges",
+          "record_id": "RQ1-F04",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E010",
+          "destination": "edges",
+          "record_id": "RQ1-C02",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E011",
+          "destination": "edges",
+          "record_id": "RQ1-S08",
+          "triple_index": 1
+        },
+        {
+          "template_id": "E012",
+          "destination": "edges",
+          "record_id": "RQ1-S09",
+          "triple_index": 2
+        }
+      ],
+      "retrieval_policy": {
+        "candidate_names_are_not_alias_traversals": true,
+        "never_return_variance_edge_alone": true,
+        "retrieve_required_context_edges": true,
+        "honour_explicit_negative_scope": true,
+        "missing_edge_does_not_mean_false": true,
+        "bare_laga_action": "Ask whether the user means the Wau Kikik/Laga naming profile or the Wau Laga playing practice; then use the selected source context.",
+        "conditional_procedure_rule": "Keep condition, phase, action and stated result together where required_context_edge_ids are provided. Describe the historical source rather than issue unconditional modern instructions.",
+        "lexical_aid_rule": "S03 explains standard terms only. Do not turn its translation into a new shape edge or proof of kite geometry.",
+        "context_expansion_rule": "Collect required context edges using a visited-ID set. Mutual links are intentional bundles, not an instruction to recurse without cycle protection.",
+        "class_majority_rule": "If only a most_have class statement is available, return not_documented for that subtype and optionally explain the qualified class context. Never manufacture a subtype feature edge.",
+        "intent_rule": "Resolve the intended entity and a factual intent; retain scope. Missing evidence uses not_documented routing and does not create an assertion edge.",
+        "semantic_fact_deduplication": "After required-context expansion, group edges by semantic_fact_id and render one canonical answer using canonical_answer_edge_id, while retaining the union of supporting record IDs, edge IDs and evidence. E012 and E052 are one reported defence action with two provenance paths.",
+        "role_label_policy": "Resolve juru anjong and juru main tali to their source-scoped launch label edges. Do not manufacture a synonym edge to juru lancar or juru tarik. Preserve the stated participant count of two.",
+        "retrieval_role_rule": "Atomic edges provide factual answers. Overview edges are for broad summaries; when an atomic edge supplies the requested fact, suppress a redundant overview statement while retaining its provenance. Apply semantic_fact_id deduplication after context expansion.",
+        "prototype_review_policy": "This prototype may retrieve a source-checked assertion with pending operational author review. Candidate names remain non-traversable. Prototype retrieval is not evidence of formal author approval, independent validation or study readiness."
+      },
+      "counts": {
+        "records": 36,
+        "assertion_edges": 74,
+        "nodes": 83,
+        "candidate_names": 1,
+        "edge_statuses": {
+          "supported": 67,
+          "explicit_negative": 3,
+          "source_variance": 4
+        },
+        "assertion_endpoint_nodes": 82,
+        "candidate_only_nodes": 1,
+        "factual_intents": 12,
+        "fallback_intents": 1,
+        "edges_by_intent": {
+          "names": 5,
+          "name_reason": 1,
+          "place_status": 2,
+          "features": 5,
+          "forms": 12,
+          "comparison": 2,
+          "attack": 8,
+          "defence": 5,
+          "practice_context": 3,
+          "materials": 2,
+          "launch": 13,
+          "control": 16
+        },
+        "unique_semantic_facts": 73,
+        "interpretation": "Representation counts only; not accuracy, user-study results or a measure of cultural completeness.",
+        "node_count_note": "82 assertion endpoint nodes plus one isolated, non-traversable Kemetek candidate node."
+      },
+      "source_review": {
+        "status": "completed",
+        "method": "Documented source-image checks for the cited claims and quotations.",
+        "report_file": "source_review.json",
+        "human_author_approval": false,
+        "operational_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "author_review": {
+        "reviewer": null,
+        "status": "record_evidence_documented_edge_review_pending",
+        "approved_edges": 0,
+        "pending_edges": 74,
+        "record_review_file": "author_review.json",
+        "edge_review_file": "reviews/operational_claim_review.json",
+        "notes": "The documented source-claim reviews are available separately. All current operational edges require explicit author review."
+      },
+      "intent_taxonomy": {
+        "factual_intent_count": 12,
+        "fallback_intents": [
+          "not_documented"
+        ],
+        "categories": [
+          {
+            "id": "names",
+            "kind": "factual",
+            "description": "Documented names, source-scoped labels and class membership."
+          },
+          {
+            "id": "name_reason",
+            "kind": "factual",
+            "description": "The source explanation of a documented name."
+          },
+          {
+            "id": "forms",
+            "kind": "factual",
+            "description": "Source-enumerated forms and their language-specific shapes."
+          },
+          {
+            "id": "features",
+            "kind": "factual",
+            "description": "Specific characteristics, explicit exclusions and qualified class context."
+          },
+          {
+            "id": "place_status",
+            "kind": "factual",
+            "description": "Source-dated state association and regional practice descriptions."
+          },
+          {
+            "id": "comparison",
+            "kind": "factual",
+            "description": "Resemblance or comparisons without identity inference."
+          },
+          {
+            "id": "materials",
+            "kind": "factual",
+            "description": "Documented covering or string materials, without invented recipes."
+          },
+          {
+            "id": "launch",
+            "kind": "factual",
+            "description": "Source-described launching roles, separation and sequence."
+          },
+          {
+            "id": "control",
+            "kind": "factual",
+            "description": "Source-described control conditions, phases and actions."
+          },
+          {
+            "id": "attack",
+            "kind": "factual",
+            "description": "The described contest objective and attack context."
+          },
+          {
+            "id": "defence",
+            "kind": "factual",
+            "description": "The described defensive objective, condition, action and stated effect."
+          },
+          {
+            "id": "practice_context",
+            "kind": "factual",
+            "description": "General practice description and section context."
+          },
+          {
+            "id": "not_documented",
+            "kind": "fallback",
+            "description": "Fallback for missing or unverified evidence; not a factual edge or explicit denial."
+          }
+        ],
+        "rule": "Intent is retrieval metadata, not a new assertion. Missing evidence routes to not_documented and never creates a fact."
+      },
+      "relation_intents": {
+        "described_as_official_wau_of": [
+          "place_status"
+        ],
+        "has_competitive_objective": [
+          "attack"
+        ],
+        "has_component": [
+          "features",
+          "forms"
+        ],
+        "has_covering_material": [
+          "materials"
+        ],
+        "has_defensive_objective": [
+          "defence"
+        ],
+        "has_described_participant_count": [
+          "launch"
+        ],
+        "has_described_role_separation": [
+          "launch"
+        ],
+        "has_feature": [
+          "features"
+        ],
+        "has_practice_section": [
+          "practice_context"
+        ],
+        "has_role": [
+          "launch"
+        ],
+        "has_source_action": [
+          "attack",
+          "control",
+          "defence"
+        ],
+        "has_source_advantage_condition_wording": [
+          "attack"
+        ],
+        "has_source_alias": [
+          "names"
+        ],
+        "has_source_competitive_purpose": [
+          "attack"
+        ],
+        "has_source_condition": [
+          "control",
+          "defence"
+        ],
+        "has_source_control_factor": [
+          "control"
+        ],
+        "has_source_control_goal": [
+          "control"
+        ],
+        "has_source_described_component": [
+          "forms"
+        ],
+        "has_source_described_form": [
+          "forms"
+        ],
+        "has_source_described_height": [
+          "control"
+        ],
+        "has_source_design_characterization": [
+          "features"
+        ],
+        "has_source_difficulty_comparison": [
+          "practice_context"
+        ],
+        "has_source_difficulty_condition": [
+          "control"
+        ],
+        "has_source_difficulty_reason": [
+          "control"
+        ],
+        "has_source_emphasis": [
+          "attack"
+        ],
+        "has_source_following_action": [
+          "control"
+        ],
+        "has_source_heading_label": [
+          "names"
+        ],
+        "has_source_initial_action": [
+          "control"
+        ],
+        "has_source_lock_condition": [
+          "control"
+        ],
+        "has_source_method": [
+          "launch"
+        ],
+        "has_source_name_explanation": [
+          "name_reason"
+        ],
+        "has_source_objective": [
+          "attack"
+        ],
+        "has_source_phase": [
+          "control"
+        ],
+        "has_source_preparation": [
+          "control"
+        ],
+        "has_source_reported_popularity_region": [
+          "place_status"
+        ],
+        "has_source_reported_western_label": [
+          "comparison"
+        ],
+        "has_source_role_label": [
+          "launch"
+        ],
+        "has_source_shape_wording": [
+          "forms"
+        ],
+        "has_source_skill_requirement": [
+          "practice_context"
+        ],
+        "has_source_stated_effect": [
+          "defence"
+        ],
+        "has_source_stated_result": [
+          "control"
+        ],
+        "includes_ascent_action": [
+          "launch"
+        ],
+        "includes_coordination": [
+          "launch"
+        ],
+        "includes_preparation": [
+          "launch"
+        ],
+        "is_a": [
+          "names"
+        ],
+        "most_have": [
+          "features"
+        ],
+        "normally_uses_in_source": [
+          "materials"
+        ],
+        "resembles": [
+          "comparison"
+        ],
+        "source_enumerates_form_count": [
+          "forms"
+        ],
+        "uses_decoration_technique": [
+          "features"
+        ]
+      },
+      "query_resolution": {
+        "feature_priority": [
+          "explicit_subtype_negative",
+          "explicit_subtype_positive",
+          "class_most_context_only",
+          "not_documented"
+        ],
+        "class_predicate": "most_have",
+        "class_quantifier": "most",
+        "class_quantifier_is_universal": false,
+        "class_membership_predicate": "is_a",
+        "subtype_feature_predicate": "has_feature",
+        "direct_negative_rule": "A direct source-scoped subtype negative determines the subtype answer and overrides any class-most candidate.",
+        "direct_positive_rule": "A direct source-scoped subtype positive supports the subtype answer when no unresolved equally specific contrary evidence exists.",
+        "class_only_rule": "If only a most_have class statement is available, return not_documented for that subtype and optionally explain the qualified class context. Never manufacture a subtype feature edge.",
+        "class_query_rule": "A question about the class may report the directly documented most statement with quantifier and source.",
+        "conflicting_direct_evidence_rule": "Preserve unresolved source conflict rather than silently erase an equally specific contrary statement.",
+        "absence_rule": "No matching edge is a documentation gap, not an explicit negative.",
+        "exception_trace": {
+          "subject": "wau_kikik",
+          "feature": "leaf_shaped_wings",
+          "class_edge_id": "E077",
+          "membership_record_id": "RQ1-N01",
+          "direct_record_id": "RQ1-C05",
+          "result": "explicit_negative",
+          "class_candidate_action": "overridden_for_subtype_answer"
+        },
+        "undocumented_subtype_trace": {
+          "subject": "wau_laga_named_type",
+          "feature": "leaf_shaped_wings",
+          "class_edge_id": "E077",
+          "membership_record_id": "RQ1-S01",
+          "result": "not_documented",
+          "class_candidate_action": "context_only_not_inherited"
+        },
+        "trace_kind": "data-contract examples; not chatbot run results"
+      },
+      "answer_groups": [
+        {
+          "semantic_fact_id": "SF-LAGA-DEFENCE-SLACKEN-STRING",
+          "canonical_answer_edge_id": "E012",
+          "member_edge_ids": [
+            "E012",
+            "E052"
+          ],
+          "record_ids": [
+            "RQ1-S09",
+            "RQ1-P09"
+          ],
+          "rendering_rule": "One answer; retain both provenance paths and all required condition/context edges."
+        }
+      ],
+      "evidence_language_policy": {
+        "primary_language": "en",
+        "supplementary_language": "ms",
+        "rule": "English is the primary answer and evidence language. Malay verbatim evidence is included where it clarifies wording, negation or purpose. A record scoped to pp.72–73 need not contain duplicate quotations from both languages; each quotation retains its actual page and language. Metadata and paraphrases are in English."
+      },
+      "response_catalog": {
+        "description": "Scoped response compositions and evidence boundaries attached to the semantic network. The wording is for prototype presentation; author review of this operational wording is pending.",
+        "review_status": "pending",
+        "profiles": {
+          "classification": {
+            "intent": "names",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "is_a"
+              }
+            ],
+            "entity": "wau_kikik"
+          },
+          "overview": {
+            "intent": "names",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "is_a"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_design_characterization"
+              }
+            ],
+            "entity": "wau_kikik"
+          },
+          "laga_classification": {
+            "intent": "practice_context",
+            "selectors": [
+              {
+                "subject": "wau_laga_named_type",
+                "relation": "is_a"
+              }
+            ],
+            "entity": "wau_laga"
+          },
+          "aliases": {
+            "intent": "names",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_alias"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_heading_label"
+              }
+            ],
+            "text": "The book also calls Wau Kikik “Wau Kaca” and uses “Laga Kite” in its heading. These names are not established as interchangeable in every context.",
+            "entity": "wau_kikik",
+            "details_en": "The English heading is “Wau Kikik or the Laga Kite”; the Malay heading is “Wau Kikik Atau Layang-layang Laga”. A heading links names within that passage, but does not prove that every use of Kikik and Laga refers to the same kite."
+          },
+          "laga_names": {
+            "intent": "names",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_heading_label"
+              },
+              {
+                "subject": "wau_laga_named_type",
+                "relation": "is_a"
+              }
+            ],
+            "text": "The Kikik profile heading says “Wau Kikik or the Laga Kite”. The playing section also describes Wau Laga as a type of traditional Malay wau. These statements do not settle whether Kikik and Laga are interchangeable names in every context.",
+            "entity": "wau_kikik"
+          },
+          "kaca_names": {
+            "intent": "names",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_alias"
+              }
+            ],
+            "entity": "wau_kikik"
+          },
+          "kaca_reason": {
+            "intent": "name_reason",
+            "selectors": [
+              {
+                "subject": "wau_kaca_name",
+                "relation": "has_source_name_explanation"
+              },
+              {
+                "subject": "powdered_glass_on_string",
+                "relation": "has_source_competitive_purpose"
+              }
+            ],
+            "text": "The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.",
+            "entity": "wau_kikik",
+            "referent": "glass_string",
+            "details_en": "The English account describes defeating an opponent’s wau on contact; the Malay account names the intended cutting action. This historical explanation does not establish that every Wau Kikik uses glass-coated string or that the practice continues today."
+          },
+          "kaca_body": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kaca_name",
+                "relation": "has_source_name_explanation"
+              }
+            ],
+            "text": "The glass in the name explanation is on the string. The source does not say the kite’s body is made of glass.",
+            "entity": "wau_kikik",
+            "referent": "glass_string"
+          },
+          "glass_universal": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kaca_name",
+                "relation": "has_source_name_explanation"
+              }
+            ],
+            "text": "The profile explains the name through glass-coated string, but it does not establish that every Wau Kikik uses that string. Missing evidence for “every” is not evidence that no kite uses it.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "referent": "glass_string"
+          },
+          "glass_current": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kaca_name",
+                "relation": "has_source_name_explanation"
+              }
+            ],
+            "text": "The naming explanation is from the 2002 book. The reviewed passages do not verify whether all, some or no Wau Kikik use glass-coated string today.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "referent": "glass_string"
+          },
+          "laga_glass": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_laga_practice",
+                "relation": "normally_uses_in_source"
+              }
+            ],
+            "entity": "wau_laga",
+            "referent": "glass_string"
+          },
+          "laga_glass_universal": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_laga_practice",
+                "relation": "normally_uses_in_source"
+              }
+            ],
+            "text": "The Wau Laga passage says the strings are normally glazed with fine powdered glass to cut the opponent’s string. “Normally” does not mean “always” or “every kite”.",
+            "status": "not_documented",
+            "entity": "wau_laga",
+            "referent": "glass_string"
+          },
+          "laga_glass_current": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_laga_practice",
+                "relation": "normally_uses_in_source"
+              }
+            ],
+            "text": "The book describes the string practice in its 2002 account. It does not verify present-day use.",
+            "status": "not_documented",
+            "entity": "wau_laga",
+            "referent": "glass_string"
+          },
+          "glass_recipe": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kaca_name",
+                "relation": "has_source_name_explanation"
+              }
+            ],
+            "text": "The reviewed passages describe powdered glass on the string, but do not provide a preparation recipe or mixture specification.",
+            "status": "not_documented",
+            "referent": "glass_string"
+          },
+          "kemetek": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "Kemetek occurs in the assigned project topic, but its occurrence or equivalence with Wau Kikik has not been verified in the reviewed book passages. No supporting book page can be supplied for that equivalence.",
+            "status": "not_documented",
+            "candidate_ref": "wau_kemetek_name"
+          },
+          "eddy": {
+            "intent": "comparison",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "resembles"
+              },
+              {
+                "subject": "eddy_kite",
+                "relation": "has_source_reported_western_label"
+              }
+            ],
+            "text": "The profile says Wau Kikik resembles the Eddy Kite and reports “Malay Kite” as a Western name for the Eddy Kite. Resemblance does not establish that they are the same kite.",
+            "entity": "wau_kikik"
+          },
+          "official": {
+            "intent": "place_status",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "described_as_official_wau_of"
+              }
+            ],
+            "entity": "wau_kikik",
+            "location_scope": {
+              "node_id": "melaka",
+              "aliases": [
+                "Melaka",
+                "Malacca"
+              ],
+              "relationship": "official_status",
+              "scope_year": 2002,
+              "entity": "wau_kikik"
+            }
+          },
+          "official_current": {
+            "intent": "place_status",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "described_as_official_wau_of"
+              }
+            ],
+            "text": "The 2002 book identifies Wau Kikik as the official wau of Melaka. Its current official status is not verified by that historical statement.",
+            "status": "not_documented",
+            "entity": "wau_kikik"
+          },
+          "popularity": {
+            "intent": "place_status",
+            "selectors": [
+              {
+                "subject": "wau_laga_practice",
+                "relation": "has_source_reported_popularity_region"
+              }
+            ],
+            "entity": "wau_laga",
+            "location_scope": {
+              "node_id": "west_coast_peninsular_malaysia",
+              "aliases": [
+                "West coast of Peninsular Malaysia",
+                "West coast Peninsular Malaysia",
+                "West coast of the Malay Peninsula"
+              ],
+              "relationship": "reported_popularity",
+              "scope_year": 2002,
+              "entity": "wau_laga"
+            }
+          },
+          "hummer": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_component",
+                "object_value": "hummer"
+              }
+            ],
+            "text": "The profile explicitly says Wau Kikik has no hummer (busur). This does not establish that the kite produces no sound at all.",
+            "status": "explicit_negative",
+            "entity": "wau_kikik",
+            "referent": "hummer"
+          },
+          "sobek": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "uses_decoration_technique",
+                "object_value": "sobek"
+              }
+            ],
+            "text": "The profile explicitly says Wau Kikik has no sobek carvings. This excludes that carving technique; it does not establish the absence of all decoration.",
+            "status": "explicit_negative",
+            "entity": "wau_kikik",
+            "referent": "sobek"
+          },
+          "plain": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "uses_decoration_technique",
+                "object_value": "sobek"
+              }
+            ],
+            "text": "The absence of sobek carvings does not establish that Wau Kikik is completely plain or lacks every type of decoration.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "referent": "sobek"
+          },
+          "wings": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_feature",
+                "object_value": "leaf_shaped_wings"
+              },
+              {
+                "subject": "traditional_malay_wau",
+                "relation": "most_have",
+                "object_value": "leaf_shaped_wings"
+              }
+            ],
+            "text": "The profile excludes leaf-shaped wings for Wau Kikik, while saying most traditional Malay wau have that feature. The explicit exclusion applies to leaf-shaped wings; it does not mean Wau Kikik has no wings at all.",
+            "status": "explicit_negative",
+            "entity": "wau_kikik",
+            "referent": "leaf_shaped_wings",
+            "graph_query": {
+              "operation": "resolve_feature",
+              "subject": "wau_kikik",
+              "feature": "leaf_shaped_wings",
+              "source_id": "S01",
+              "include_class_context": true
+            }
+          },
+          "class_wings": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "traditional_malay_wau",
+                "relation": "most_have",
+                "object_value": "leaf_shaped_wings"
+              }
+            ],
+            "entity": "traditional_malay_wau",
+            "referent": "leaf_shaped_wings",
+            "graph_query": {
+              "operation": "resolve_feature",
+              "subject": "traditional_malay_wau",
+              "feature": "leaf_shaped_wings",
+              "source_id": "S01",
+              "include_class_context": true
+            }
+          },
+          "laga_features": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_component",
+                "object_value": "hummer"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "uses_decoration_technique",
+                "object_value": "sobek"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_feature",
+                "object_value": "leaf_shaped_wings"
+              }
+            ],
+            "text": "The reviewed explicit exclusions for a hummer, sobek carvings and leaf-shaped wings belong to the Wau Kikik profile. They cannot be applied to every Wau Laga context without additional evidence.",
+            "status": "not_documented",
+            "entity": "wau_laga"
+          },
+          "form_count": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "source_enumerates_form_count"
+              }
+            ],
+            "entity": "wau_kikik",
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ]
+          },
+          "form_1": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "kikik_form_1",
+                "relation": "has_source_described_component"
+              },
+              {
+                "subject": "kikik_form_1",
+                "relation": "has_source_shape_wording"
+              }
+            ],
+            "text": "The first form has a head. The English text describes its shape as “dented/concaved”; the Malay text uses “berlekuk”.",
+            "entity": "wau_kikik",
+            "form_number": 1
+          },
+          "form_2": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "kikik_form_2",
+                "relation": "has_component"
+              },
+              {
+                "subject": "kikik_form_2",
+                "relation": "has_source_shape_wording"
+              }
+            ],
+            "text": "Both versions give the second form a tail. The Malay shape wording is “empat segi tidak sama”, while the English page says “rectangular”. The descriptions differ in specificity; the reviewed text does not resolve a single precise geometric template.",
+            "status": "source_variance",
+            "entity": "wau_kikik",
+            "form_number": 2
+          },
+          "form_3": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "kikik_form_3",
+                "relation": "has_source_shape_wording"
+              }
+            ],
+            "text": "For the third form, the Malay page says “segi empat tepat” (rectangle), while the English page says “perfect square shape”. The wording difference remains unresolved; neither description is silently chosen as definitive.",
+            "status": "source_variance",
+            "entity": "wau_kikik",
+            "form_number": 3
+          },
+          "form_tail": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "kikik_form_2",
+                "relation": "has_component",
+                "object_value": "tail"
+              }
+            ],
+            "entity": "wau_kikik",
+            "form_number": 2
+          },
+          "form_head": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "kikik_form_1",
+                "relation": "has_source_described_component",
+                "object_value": "head"
+              }
+            ],
+            "entity": "wau_kikik",
+            "form_number": 1
+          },
+          "form_component_unknown": {
+            "intent": "forms",
+            "selectors": [],
+            "text": "The reviewed description does not establish that component for the specified form. This is a limit of the reviewed evidence, not proof of absence.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "text_template": "The reviewed description does not establish whether the {form_label} form has a {component}. This is a limit of the source, not proof that the feature is absent.",
+            "preserve_form_context": true
+          },
+          "form_interpretation": {
+            "intent": "forms",
+            "selectors": [],
+            "text": "The difference between the language versions is not, by itself, proof that one page is wrong or that a translation error occurred. The interpretation remains unresolved.",
+            "status": "source_variance",
+            "entity": "wau_kikik",
+            "reuse_previous_evidence": true,
+            "preserve_form_context": true
+          },
+          "laga_forms": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "source_enumerates_form_count"
+              }
+            ],
+            "text": "The three-form description and its shape details belong to the Wau Kikik profile. The reviewed Wau Laga playing passages do not establish those forms or shapes for every Wau Laga context.",
+            "status": "not_documented",
+            "entity": "wau_laga"
+          },
+          "covering": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_covering_material"
+              }
+            ],
+            "text": "The profile describes Wau Kikik as having a basic covering of wau paper. It does not supply a complete construction specification or a full list of structural materials.",
+            "entity": "wau_kikik"
+          },
+          "paper_weight": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_covering_material"
+              }
+            ],
+            "text": "The profile names wau paper as the covering. The reviewed passages do not specify paper weight, GSM, thickness or exact dimensions.",
+            "status": "not_documented",
+            "entity": "wau_kikik"
+          },
+          "laga_covering": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_covering_material"
+              }
+            ],
+            "text": "The wau-paper covering statement belongs to the Wau Kikik profile. A complete covering or construction specification for the separate Wau Laga playing context is not established in the reviewed passages.",
+            "status": "not_documented",
+            "entity": "wau_laga"
+          },
+          "origin": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The reviewed passages do not state when this kite was first used or invented, who invented it, or where it originated. The book’s 2002 publication date is not an invention date.",
+            "status": "not_documented"
+          },
+          "legal": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The historical book passages do not establish current legal permission, flight restrictions or regulations. A current authoritative source is needed for those questions.",
+            "status": "not_documented"
+          },
+          "legal_height": {
+            "intent": "control",
+            "selectors": [
+              {
+                "subject": "wau_laga_control",
+                "relation": "has_source_described_height"
+              }
+            ],
+            "text": "The 2002 control passage describes about 200 feet (60 metres). That description is not a legal rule, current permission or a verified modern flight limit, and it does not establish whether another height is allowed.",
+            "status": "not_documented",
+            "entity": "wau_laga"
+          },
+          "limits": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The reviewed book pages do not establish an inventor or invention date, exact paper weight, a verified Kemetek equivalence, or current legal permission. The two language versions also differ in their descriptions of some forms.",
+            "status": "not_documented"
+          },
+          "practice": {
+            "intent": "practice_context",
+            "selectors": [
+              {
+                "subject": "wau_laga_practice",
+                "relation": "has_competitive_objective"
+              },
+              {
+                "subject": "wau_laga_practice",
+                "relation": "has_defensive_objective"
+              }
+            ],
+            "entity": "wau_laga"
+          },
+          "skill": {
+            "intent": "practice_context",
+            "selectors": [
+              {
+                "subject": "wau_laga_practice",
+                "relation": "has_source_skill_requirement"
+              },
+              {
+                "subject": "wau_laga_practice",
+                "relation": "has_source_difficulty_comparison"
+              }
+            ],
+            "entity": "wau_laga"
+          },
+          "string_count": {
+            "intent": "practice_context",
+            "selectors": [
+              {
+                "subject": "wau_laga_practice",
+                "relation": "has_source_difficulty_comparison"
+              }
+            ],
+            "text": "The comparison with a single-string wau does not establish that Wau Laga uses multiple strings. A verified numerical string count is not provided by the reviewed passages.",
+            "status": "not_documented",
+            "entity": "wau_laga"
+          },
+          "launch_people": {
+            "intent": "launch",
+            "selectors": [
+              {
+                "subject": "wau_laga_launch",
+                "relation": "has_described_participant_count"
+              },
+              {
+                "subject": "wau_laga_launch",
+                "relation": "has_role",
+                "object_value": "launcher"
+              }
+            ],
+            "text": "Two players launch Wau Laga: a launcher (juru lancar) and a puller (juru tarik). The book also names “juru anjong” and “juru main tali”, but does not explicitly map these labels to the later pair; they do not mean four players.",
+            "entity": "wau_laga",
+            "referent": "launch_people",
+            "details_en": "Page 144 first names juru anjong and juru main tali, then discusses the distance between juru lancar and juru tarik. The quoted passage requires two players; it does not provide an explicit one-to-one equivalence between the two pairs of labels."
+          },
+          "launch_distance": {
+            "intent": "launch",
+            "selectors": [
+              {
+                "subject": "wau_laga_launch",
+                "relation": "has_described_role_separation"
+              }
+            ],
+            "entity": "wau_laga",
+            "referent": "launch_distance"
+          },
+          "launch_process": {
+            "intent": "launch",
+            "selectors": [
+              {
+                "subject": "wau_laga_launch",
+                "relation": "includes_preparation",
+                "object_value": "organize_remaining_string_to_avoid_tangling"
+              },
+              {
+                "subject": "wau_laga_launch",
+                "relation": "includes_coordination"
+              },
+              {
+                "subject": "wau_laga_launch",
+                "relation": "includes_ascent_action"
+              }
+            ],
+            "text": "The book describes rolling the remaining string to prevent tangling and laying it on the ground. The juru tarik signals the juru lancar to release the wau; string is then released in stages as it rises.",
+            "entity": "wau_laga",
+            "referent": "launch_process"
+          },
+          "launch_ground": {
+            "intent": "launch",
+            "selectors": [
+              {
+                "subject": "wau_laga_launch",
+                "relation": "includes_preparation",
+                "object_value": "organize_remaining_string_to_avoid_tangling"
+              }
+            ],
+            "entity": "wau_laga"
+          },
+          "height": {
+            "intent": "control",
+            "selectors": [
+              {
+                "subject": "wau_laga_control",
+                "relation": "has_source_described_height"
+              }
+            ],
+            "entity": "wau_laga",
+            "referent": "control_height"
+          },
+          "height_separation": {
+            "intent": "control",
+            "selectors": [
+              {
+                "subject": "wau_laga_launch",
+                "relation": "has_described_role_separation"
+              },
+              {
+                "subject": "wau_laga_control",
+                "relation": "has_source_described_height"
+              }
+            ],
+            "text": "They are different measurements. The 30–50 feet (9–15 metres) separates the launcher and puller. The control section describes a flight height of about 200 feet (60 metres). These are historical descriptions, not current legal permission.",
+            "entity": "wau_laga",
+            "referent": "control_height"
+          },
+          "wind": {
+            "intent": "control",
+            "selectors": [
+              {
+                "subject": "wau_laga_control",
+                "relation": "has_source_difficulty_condition"
+              }
+            ],
+            "entity": "wau_laga"
+          },
+          "stability": {
+            "intent": "control",
+            "selectors": [
+              {
+                "subject": "laga_stability_response",
+                "relation": "has_source_condition"
+              },
+              {
+                "subject": "laga_stability_response",
+                "relation": "has_source_action"
+              }
+            ],
+            "text": "For a wau flying too far toward a direction and losing stability, the guide describes pulling the string until it becomes stable again.",
+            "entity": "wau_laga"
+          },
+          "dive": {
+            "intent": "control",
+            "selectors": [
+              {
+                "subject": "laga_low_dive_response",
+                "relation": "has_source_preparation"
+              },
+              {
+                "subject": "laga_low_dive_response",
+                "relation": "has_source_condition"
+              },
+              {
+                "subject": "laga_low_dive_response",
+                "relation": "has_source_action"
+              }
+            ],
+            "text": "For a wau diving at a low flight level, the guide describes keeping enough string in stacks on the ground so the prepared string can be released readily.",
+            "entity": "wau_laga"
+          },
+          "steer": {
+            "intent": "control",
+            "selectors": [
+              {
+                "subject": "laga_direction_control",
+                "relation": "has_source_phase"
+              },
+              {
+                "subject": "laga_direction_control",
+                "relation": "has_source_initial_action"
+              },
+              {
+                "subject": "laga_direction_control",
+                "relation": "has_source_lock_condition"
+              },
+              {
+                "subject": "laga_direction_control",
+                "relation": "has_source_following_action"
+              },
+              {
+                "subject": "laga_direction_control",
+                "relation": "has_source_stated_result"
+              }
+            ],
+            "text": "While the wau is taking flight, the guide describes releasing string slowly. When its head faces the intended direction, it describes locking the string with one or both hands so the wau moves in that direction.",
+            "entity": "wau_laga"
+          },
+          "defence": {
+            "intent": "defence",
+            "selectors": [
+              {
+                "subject": "wau_laga_defence",
+                "relation": "has_source_action"
+              },
+              {
+                "subject": "slack_string_in_laga_defence",
+                "relation": "has_source_stated_effect"
+              }
+            ],
+            "text": "When attacked, the passage describes releasing the kite string quickly so it slackens. In that defensive situation, the book says a slack string is harder to break.",
+            "entity": "wau_laga"
+          },
+          "attack": {
+            "intent": "attack",
+            "selectors": [
+              {
+                "subject": "wau_laga_attack",
+                "relation": "has_source_objective"
+              },
+              {
+                "subject": "wau_laga_attack",
+                "relation": "has_source_action"
+              }
+            ],
+            "text": "The attack passage describes trying to break the opponent’s string before it breaks yours, and crossing your kite string against the opponent’s string.",
+            "entity": "wau_laga"
+          },
+          "attack_speed": {
+            "intent": "attack",
+            "selectors": [
+              {
+                "subject": "wau_laga_attack",
+                "relation": "has_source_emphasis"
+              }
+            ],
+            "entity": "wau_laga"
+          },
+          "attack_position": {
+            "intent": "attack",
+            "selectors": [
+              {
+                "subject": "wau_laga_attack",
+                "relation": "has_source_advantage_condition_wording"
+              }
+            ],
+            "text": "The passage says there is an advantage when “the player’s position is below the opponents’”. Its precise spatial referent remains unresolved here. This cannot be converted into a definite instruction to fly your kite below the opponent’s kite.",
+            "status": "source_variance",
+            "entity": "wau_laga"
+          },
+          "silence": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_component",
+                "object_value": "hummer"
+              }
+            ],
+            "text": "The profile explicitly excludes a hummer (busur), but it does not establish that Wau Kikik makes no sound at all. Complete silence is not documented.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "referent": "hummer"
+          },
+          "global_wings": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_feature",
+                "object_value": "leaf_shaped_wings"
+              },
+              {
+                "subject": "traditional_malay_wau",
+                "relation": "most_have",
+                "object_value": "leaf_shaped_wings"
+              }
+            ],
+            "text": "The profile excludes leaf-shaped wings. That statement does not establish that Wau Kikik has no wings at all, and the reviewed passages do not provide a complete wing classification.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "referent": "leaf_shaped_wings"
+          },
+          "construction_specs": {
+            "intent": "materials",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_covering_material"
+              }
+            ],
+            "text": "The profile documents wau paper as Wau Kikik’s covering. The reviewed passages do not specify its frame material or establish that its frame, spars or sticks are made of bamboo or another wood. They also do not give construction dimensions.",
+            "status": "not_documented",
+            "entity": "wau_kikik"
+          },
+          "launch_signal": {
+            "intent": "launch",
+            "selectors": [
+              {
+                "subject": "wau_laga_launch",
+                "relation": "includes_coordination"
+              },
+              {
+                "subject": "launcher",
+                "relation": "has_source_role_label"
+              },
+              {
+                "subject": "puller",
+                "relation": "has_source_role_label"
+              }
+            ],
+            "entity": "wau_laga",
+            "text": "The puller (juru tarik) signals the launcher (juru lancar) to release the wau."
+          },
+          "form_overview": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "source_enumerates_form_count"
+              },
+              {
+                "subject": "kikik_form_1",
+                "relation": "has_source_described_component"
+              },
+              {
+                "subject": "kikik_form_1",
+                "relation": "has_source_shape_wording"
+              },
+              {
+                "subject": "kikik_form_2",
+                "relation": "has_component"
+              }
+            ],
+            "text": "The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.",
+            "status": "supported",
+            "entity": "wau_kikik",
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ]
+          },
+          "place_unknown": {
+            "intent": "place_status",
+            "selectors": [],
+            "text": "The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.",
+            "status": "not_documented"
+          },
+          "launch_roles": {
+            "intent": "launch",
+            "selectors": [
+              {
+                "subject": "wau_laga_launch",
+                "relation": "has_described_participant_count"
+              },
+              {
+                "subject": "launcher",
+                "relation": "has_source_role_label"
+              },
+              {
+                "subject": "puller",
+                "relation": "has_source_role_label"
+              },
+              {
+                "subject": "wau_laga_launch",
+                "relation": "includes_coordination"
+              }
+            ],
+            "text": "The described launch has two players. The puller (juru tarik) signals the launcher (juru lancar) to release the wau. These are the two roles in the coordination described by the book.",
+            "status": "supported",
+            "entity": "wau_laga",
+            "referent": "launch_people"
+          },
+          "laga_component_unknown": {
+            "intent": "features",
+            "selectors": [],
+            "text": "The reviewed Wau Laga playing passages do not establish the requested head or tail configuration. The descriptions of heads and tails on numbered forms belong to the Wau Kikik profile.",
+            "status": "not_documented",
+            "entity": "wau_laga"
+          },
+          "colour_unknown": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The reviewed passages do not establish the requested colour specification. This is a source limit, not a claim that the colour is absent.",
+            "status": "not_documented"
+          },
+          "wau_definition": {
+            "intent": "names",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "is_a"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_heading_label"
+              }
+            ],
+            "text": "In this guide, “wau” refers to the traditional Malay kites discussed in the book. Wau Kikik is one example.",
+            "status": "supported",
+            "entity": "traditional_malay_wau",
+            "details_en": "This is a contextual explanation of the term in the project source. The book classifies Wau Kikik among traditional Malay wau and labels its profile “Wau Kikik or the Laga Kite”. It is not a claim that every kite is a wau.",
+            "suggestions": [
+              "What is Wau Kikik?",
+              "What is special about Wau Kikik?",
+              "What is Wau Laga?"
+            ]
+          },
+          "distinctive_features": {
+            "intent": "features",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_design_characterization"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_covering_material"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_component",
+                "object_value": "hummer"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "uses_decoration_technique",
+                "object_value": "sobek"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_feature",
+                "object_value": "leaf_shaped_wings"
+              }
+            ],
+            "text": "The book describes Wau Kikik as having the simplest design among traditional Malay wau, with a basic wau-paper covering. It explicitly excludes a hummer (busur), sobek carvings and leaf-shaped wings. These exclusions do not mean that the kite is silent, completely undecorated or wingless.",
+            "status": "supported",
+            "entity": "wau_kikik",
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How is Wau Kikik related to the Eddy Kite?"
+            ]
+          },
+          "age_suitability": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The reviewed passages do not specify age suitability for this kite activity, including whether it is suitable for people over a particular age. They cannot support an age-based recommendation.",
+            "status": "not_documented"
+          },
+          "form_reason": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "source_enumerates_form_count"
+              }
+            ],
+            "text": "The book describes three forms of Wau Kikik, but the reviewed passages do not explain why three forms developed or why a particular form has its described design.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ]
+          },
+          "form_popularity": {
+            "intent": "forms",
+            "selectors": [],
+            "text": "The reviewed passages do not rank the Wau Kikik forms by popularity or identify a most popular form.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ]
+          },
+          "form_importance": {
+            "intent": "forms",
+            "selectors": [],
+            "text": "The reviewed passages do not rank the Wau Kikik forms by importance or identify a best or recommended form.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ]
+          },
+          "cultural_significance": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The reviewed passages do not directly explain the kite’s wider cultural significance or rank its cultural importance.",
+            "status": "not_documented"
+          },
+          "form_comparison_unknown": {
+            "intent": "forms",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "source_enumerates_form_count"
+              }
+            ],
+            "text": "The book describes three forms of Wau Kikik, but the reviewed passages do not rank them by popularity, importance or frequency, or identify a best or rarest form.",
+            "status": "not_documented",
+            "entity": "wau_kikik",
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ]
+          },
+          "importance_overview": {
+            "intent": "names",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "is_a"
+              },
+              {
+                "subject": "wau_kikik",
+                "relation": "has_source_design_characterization"
+              }
+            ],
+            "text": "The 2002 book classifies Wau Kikik as a traditional Malay wau and describes its design as the simplest among them. The reviewed passages do not give a reason for its importance or explain that design characterization.",
+            "status": "supported",
+            "entity": "wau_kikik",
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How is Wau Kikik related to the Eddy Kite?"
+            ]
+          },
+          "practice_current": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The reviewed source is a book published in 2002. It does not establish whether Wau Kikik or the described Wau Laga activity is still used or practised today.",
+            "status": "not_documented"
+          },
+          "exclusion_reason": {
+            "intent": "features",
+            "selectors": [],
+            "text": "The profile states that exclusion but does not explain why. The quoted passage supports the absence of that specific feature, not a reason for it.",
+            "status": "not_documented",
+            "reuse_previous_evidence": true
+          },
+          "origin_place": {
+            "intent": "not_documented",
+            "selectors": [
+              {
+                "subject": "wau_kikik",
+                "relation": "described_as_official_wau_of"
+              }
+            ],
+            "text": "The reviewed passages do not document Wau Kikik’s place of origin. The 2002 book identifies it as the official wau of Melaka; that designation does not establish where it originated.",
+            "status": "not_documented",
+            "entity": "wau_kikik"
+          },
+          "source_unknown": {
+            "intent": "not_documented",
+            "selectors": [],
+            "text": "The reviewed book passages do not establish the use or claim in your question.",
+            "status": "not_documented"
+          }
+        },
+        "clarifications": {
+          "laga_scope": {
+            "text": "Do you mean Laga as a name in the Wau Kikik profile, or the Wau Laga playing practice?",
+            "choices": [
+              {
+                "label": "The name",
+                "concepts": [
+                  "naming",
+                  "identity"
+                ],
+                "profile": "laga_names"
+              },
+              {
+                "label": "The playing practice",
+                "concepts": [
+                  "practice",
+                  "competition",
+                  "launch"
+                ],
+                "profile": "practice"
+              }
+            ]
+          },
+          "form_number": {
+            "text": "Which Wau Kikik form do you mean: first, second or third?",
+            "choices": [
+              {
+                "label": "First form",
+                "ordinal": 1,
+                "profile": "form_1"
+              },
+              {
+                "label": "Second form",
+                "ordinal": 2,
+                "profile": "form_2"
+              },
+              {
+                "label": "Third form",
+                "ordinal": 3,
+                "profile": "form_3"
+              }
+            ]
+          },
+          "generic": {
+            "text": "Which documented topic do you mean? Please choose a topic or add a little detail.",
+            "choices": []
+          },
+          "importance_scope": {
+            "text": "Do you mean the kite’s cultural significance, or the importance of a particular playing technique?",
+            "choices": [
+              {
+                "label": "Cultural significance",
+                "concepts": [
+                  "cultural"
+                ],
+                "ordinal": 1,
+                "profile": "cultural_significance"
+              },
+              {
+                "label": "Playing technique",
+                "concepts": [
+                  "practice",
+                  "technique"
+                ],
+                "ordinal": 2,
+                "clarification": "technique_scope"
+              }
+            ]
+          },
+          "technique_scope": {
+            "text": "Choose a documented playing topic: launching, control or competition. I can show what the book says about it.",
+            "choices": [
+              {
+                "label": "Launching",
+                "concepts": [
+                  "launch"
+                ],
+                "ordinal": 1,
+                "profile": "launch_process"
+              },
+              {
+                "label": "Control",
+                "concepts": [
+                  "control",
+                  "direction"
+                ],
+                "ordinal": 2,
+                "profile": "steer"
+              },
+              {
+                "label": "Competition",
+                "concepts": [
+                  "competition",
+                  "attack",
+                  "practice"
+                ],
+                "ordinal": 3,
+                "profile": "attack"
+              }
+            ]
+          },
+          "wau_scope": {
+            "text": "Do you mean Wau Kikik or the book’s Wau Laga playing account?",
+            "choices": [
+              {
+                "label": "Wau Kikik",
+                "entities": [
+                  "wau_kikik",
+                  "kaca"
+                ],
+                "ordinal": 1,
+                "profile": "overview"
+              },
+              {
+                "label": "Wau Laga playing practice",
+                "entities": [
+                  "wau_laga"
+                ],
+                "ordinal": 2,
+                "profile": "practice",
+                "concepts": [
+                  "practice"
+                ]
+              }
+            ]
+          }
+        },
+        "messages": {
+          "unknown": "I could not confidently connect that wording to a documented topic. Please choose a topic or rephrase it. This does not mean the book lacks the information.",
+          "out_of_scope": "That question is outside the reviewed Wau topic. I can help with the names, forms and features of Wau Kikik or the book’s Wau Laga playing account.",
+          "no_source": "No supporting book page is available for that claim in the reviewed passages.",
+          "current_unknown": "The reviewed source is a historical account; it does not establish present-day practice.",
+          "hello": "{greeting}{name}! I’m WauTrace. Ask about Wau Kikik or the book’s Wau Laga playing account, or choose a topic.",
+          "bye": "Goodbye{name}. Thank you for exploring WauTrace.",
+          "thanks": "You’re welcome{name}. What else would you like to explore?",
+          "name_saved": "Nice to meet you, {nickname}. I’ll use your name during this chat.",
+          "name_recalled": "Your name is {nickname}.",
+          "name_missing": "You have not given me a name in this chat.",
+          "name_prompt": "What name would you like me to use?",
+          "reset": "Your name and conversation context have been cleared. Choose a topic or ask a question.",
+          "empty": "Please type a question or choose a topic.",
+          "help": "I can help you explore the documented names, forms, materials and features of Wau Kikik, its comparison with the Eddy Kite, and the book’s Wau Laga playing account. Ask a question or choose a topic. I show source pages and distinguish supported facts, explicit exclusions, differences between sources and information the reviewed passages do not document."
+        },
+        "suggestions": [
+          {
+            "topic": "forms",
+            "text": "What forms does Wau Kikik have?"
+          },
+          {
+            "topic": "name_reason",
+            "text": "Why is it called Wau Kaca?"
+          },
+          {
+            "topic": "launch",
+            "text": "How many people launch Wau Laga?"
+          },
+          {
+            "topic": "features",
+            "text": "Does Wau Kikik have a hummer?"
+          },
+          {
+            "topic": "materials",
+            "text": "What is Wau Kikik covered with?"
+          },
+          {
+            "topic": "control",
+            "text": "How is Wau Laga steered?"
+          },
+          {
+            "topic": "defence",
+            "text": "What happens when a player is attacked?"
+          },
+          {
+            "topic": "comparison",
+            "text": "How is Wau Kikik related to the Eddy Kite?"
+          }
+        ]
+      }
+    }
+  },
+  "files": {
+    "full_graph.json": {
+      "sha256": "5e90fc290d83008a95d5e89fdb8752b3381c8e6f93b18a141b4edbbe928546a7"
+    },
+    "full_graph_edges.csv": {
+      "sha256": "30c8d4475be3d00f99023fb03c05fac3e212db6757d0a8c99fe15fc78a58df87"
+    },
+    "full_graph.graphml": {
+      "sha256": "4790872f14dec010f4395e30bf84bd8c2c6177a571fe2c7e9fefca31bd8d25f1"
+    },
+    "full_graph.dot": {
+      "sha256": "6806f2635bc147435d3dd56f67e70a8ee8e1b5253e1ae86a1710c273696d192f"
+    }
+  },
+  "csv_encoding": "UTF-8 with BOM; nested values are JSON; edge_json is the lossless row payload.",
+  "graphml_encoding": "String attributes; nested values are JSON; node_json and edge_json preserve exact types and field presence.",
+  "dot_encoding": "Quoted UTF-8 strings; node_json and edge_json preserve full records.",
+  "publication_figure": "Separate selected 18-edge drawing; not overwritten by this exporter."
+}

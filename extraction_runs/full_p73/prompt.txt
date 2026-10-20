@@ -1,0 +1,1 @@
+Extract atomic subject–relation–object claims only from the supplied passage. Preserve explicit negation, aliases, comparison versus identity, and source scope. Attach the printed page and supporting text to each claim. Mark missing or ambiguous information explicitly. Do not add facts from outside the passage.
