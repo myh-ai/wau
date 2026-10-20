@@ -1,0 +1,38 @@
+{
+  "purpose": "Independent RQ2 build lock",
+  "frozen_at_utc": "2026-10-20T21:05:24.584628+00:00",
+  "artifacts": {
+    "WauTrace_Network_Template.json": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+    "app.py": "eb1d87e9f8c179ba2a126a83e13d5a59ed4e650a5678f5009c9b9b4229aa1773",
+    "cuq_adapted_instrument.json": "7232f4354c13fc10582ef47f43e714eb700453a500ae056b6479294d7b9bcedf",
+    "evaluation/RQ2_PROTOCOL.txt": "578513d0151ecebe87912e9a85217fe1fe504365ffc108a99a1bc3e59ff80309",
+    "evaluation/additional_development.json": "c135648d20803f7c0af895d21d528fa7d2ca229e1b165528202bfabc4a2acbca",
+    "evaluation/conversation_development.json": "5cb786a040c296a6508bffb419cab96d3159c4e198f1eea54adfe05ace1cd315",
+    "evaluation/development_questions.json": "169cddf271d7bfd5e4512d15a177f1e01389490b61e9029de33980927d45afee",
+    "evaluation/fixlist_development.json": "aa1740c4b9b7cf17beedb43487d0800355a3b6381ad92f85b4ce26aea5e1b617",
+    "evaluation/rq2_tool.py": "895ffd4e13a259c819d0deaf50c8e9e5bd84998cb1530f3066cd20fe8a33787a",
+    "evaluation/scope_routing_development.json": "97422621754747835a7d000d94fb44ab6d53fe68335d80aac758317d85eaef73",
+    "graph_inference.py": "e8e320a1c61b835ddbd2518f73c30166fa757bc967141a6c6b47c665de3c0044",
+    "knowledge.json": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481",
+    "language_rules.json": "9b5438d9c46c6014853882db0f8a2b6554d1e72bb684596142038b956367a930",
+    "requirements.txt": "ef5ff8b4fcbfaa749f2d675a2d48fa455a14c62fd98c28b399940a9e24fd90ef",
+    "reviews/operational_approval_receipt.json": "14279ca1bbfe1bd57655ad0c4703ecb66dd5b16413f1c57e476da5a7118d4fd5",
+    "reviews/operational_claim_review.json": "b49546c7c58ecf31494b65cb6a62281ca2b1bc5df1ea39d46ab9566feeaa980b",
+    "reviews/response_composition_review.json": "b83f9b135f29b797d11043053b0881cd34960738184aa2ac87683c0f1be9fda6",
+    "study/config.json": "727c2bea169bdb407c9d736126e8c60e683d7243cbccc196fa13ee18056ca61e",
+    "test_app.py": "84b8ee7d88da83e46548f94eaa534e0a45a45b74819457fecc9ed0d41e9c492c",
+    "test_conversation.py": "c467820174770e03813012f1407f60cc255fedede8fd38781f011d153d7fc631",
+    "test_engine.py": "ac30ba4738ba5e46b256100a175fc754929581f3126cf651f1b8d94754f6d985",
+    "test_fixlist.py": "2684df10f4dd801fd0edddab3655879d67e1f2f0dd5be900e4a9befba7bcb429",
+    "test_scenarios.json": "bfa70c1947a3cf7f701d7fe830b50a7ddd6629bf06ecd3f6b5d87f23aff841e6",
+    "test_scope_routing.py": "59a0badb797bdc8fe41953791582d9998d4602620485392a643c98834c6bd375",
+    "wautrace_engine.py": "adbdac6b50e9e2875b92f39d01f7bb2c05931424327eb8cf1da162f49d6c40f0"
+  },
+  "question_authoring": "Must start after this timestamp. Keep all questions and gold answers outside the developer workflow until registration.",
+  "status": "awaiting_independent_questions",
+  "operational_review": {
+    "approved_edges": 74,
+    "reviewer": "Moustafa Hassan",
+    "reviewed_at_utc": "2026-10-21T00:05:24+03:00"
+  }
+}

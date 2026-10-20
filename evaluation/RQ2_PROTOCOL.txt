@@ -1,0 +1,60 @@
+WAUTRACE: INDEPENDENT RQ2 EVALUATION PROTOCOL
+
+Research question
+How accurately does WauTrace answer independently authored questions within its documented source scope, distinguish the four evidence states, and preserve context in follow-up questions?
+
+Current status
+Independent question collection, execution and human scoring are pending. No RQ2 accuracy result is available. test_scenarios.json contains 24 known development regression cases. Results from these cases describe development checks only.
+
+Fixed design: 72 question turns in 66 sessions
+- 12 standalone questions with supported answers.
+- 12 standalone questions requiring an explicit negative or correction of a false premise.
+- 12 standalone questions whose requested fact is not documented in the source corpus.
+- 12 standalone questions requiring an unresolved source difference to be preserved.
+- 12 context turns in six two-turn conversations. The six second turns test a pronoun, a short clarification response, a topic switch or another natural follow-up. Specify the expected context resolution for every second turn.
+- 12 out-of-scope controls.
+This gives 60 in-scope turns, 12 out-of-scope controls, six true follow-up turns and 66 independent sessions. Do not treat the two turns in a conversation as independent sessions. The corpus has few source disagreements; repeated questions about those disagreements test linguistic robustness, not broad cultural coverage.
+
+Collection roles and order
+1. Complete development and the author's per-edge operational knowledge review in reviews/operational_claim_review.json. Review every response-catalog profile and clarification in reviews/response_composition_review.json. Run prepare-approval to populate reviews/operational_approval_receipt.json with the hashes of the completed reviews and current knowledge; the named reviewer then records approval in that receipt. Freeze code, knowledge and language configuration with rq2_tool.py freeze. The tool refuses a pending or mismatched operational review. Keep build_lock.json unchanged. Do not call the build independent merely because it is frozen.
+2. Give a tester who did not develop the engine the source pages, this protocol and question_collection_template.json. Do not give them development questions, routing rules, bot outputs or implementation code. Ask for everyday English and one information goal per turn. Use varied natural wording; do not copy demonstration prompts. Avoid artificial difficulty and record unknown answers honestly.
+3. The tester writes all questions after the lock timestamp. A source reviewer records the required facts, forbidden inferences, printed pages, supporting quotations, answerability and evidence state before execution. Where feasible, the source reviewer is a second person. Record names or research IDs and times. A software hash cannot verify human independence; the signed collection declaration must be truthful.
+4. Keep the completed dataset from the developer until it is registered. Copy the template to independent_questions.json, complete every blank and declaration, then register it. Registration checks the fixed design, chronological collection, exact overlap with the development scenarios, additional examples, conversation checks and exposed-question registry, and evidence-field completeness. These collections and their test files are included in the build lock so the exclusion lists cannot be silently changed. It cannot detect all paraphrase leakage or verify cultural correctness.
+5. Execute exactly once against the locked artifacts. The tool verifies the build and registered dataset hashes and creates a single-execution marker before answering. It retains literal responses and execution errors. If the pass is interrupted, retain the partial response file and report the interruption; do not silently restart or discard failures.
+6. Review every literal answer against the preregistered source criteria. Record all omissions, irrelevant facts, contradictions and unsupported additions. Do not edit expected answers, allowed evidence or scoring criteria in reaction to bot outputs. If a gold-standard defect is discovered, describe it transparently and retain the planned result; do not present an altered test as the same independent pass.
+7. Complete scoring.json and produce rq2_results.json. Do not tune the bot using these questions and then present a rerun as an independent result. Further development makes this set development material; another independent claim requires newly collected questions and a newly frozen build.
+
+Manual scoring
+full: All required criteria are satisfied, source scope and evidence state are handled correctly, and no unsupported claim is added. An appropriate refusal or explicit acknowledgement of an unknown fact can receive full credit. Relevant factual claims need faithful citations.
+partial: At least one required criterion is satisfied, but material information is omitted or a qualification/citation is incomplete. There is no contradictory or unsupported substantive claim.
+wrong: The answer is factually wrong, on the wrong topic, contradicts a required limit, or adds a substantive unsupported claim. A correct fragment does not cancel a harmful invented fact.
+abstain: The bot fails to answer an answerable request, or asks an unnecessary clarification without providing the required answer. This is not full credit. A correct not-documented response is graded full, not abstain.
+answer_present: True only when the bot attempts a substantive answer to an answerable request; generic fallback or needless clarification is false. On genuine unknown/out-of-scope questions, it may be false even when the response earns full credit.
+state_correct: Judge the meaning of the answer, not just its badge.
+unsupported_claim_count: Count unsupported substantive claims in the answer.
+cited_claim_count / supported_cited_claim_count: Count distinct substantive claims linked to citations, and how many those citations actually support. Count claims, not duplicated source cards. No citations yields a denominator of zero, reported as not applicable.
+appropriate_refusal: Complete for out-of-scope controls; a reply must not invent or answer an unrelated world fact.
+context_correct: Complete for the six second turns; check the intended referent or clarification selection.
+Record reviewer, timestamp and a brief reason for every score. If two reviewers are available, have them score independently first, record their initial judgments, and then adjudicate disagreements. Report who scored, how many were double-scored and any disagreements. Do not claim inter-rater reliability without paired ratings.
+
+Reporting
+Primary: full-credit in-scope turns / 60, with full/partial/wrong/abstain counts by stratum. Also report all-criteria session success / 66 and label it separately.
+Answerable coverage: substantive attempts / source-answerable turns.
+Strict correctness among attempted answerable turns: full answers / substantive attempts. This must be accompanied by coverage so that abstention cannot inflate apparent performance.
+Answerable full credit: full answers / all source-answerable turns.
+Evidence-state treatment: correctly handled in-scope turns / 60.
+Scope refusal: appropriate refusals / 12 controls.
+Context: correct context resolution / six follow-up turns.
+Citation support: supported cited claims / all cited claims.
+Unsupported claims: responses with any unsupported substantive claim / 72.
+Report numerator and denominator, not a bare percentage. A zero denominator is not applicable. Turn counts are descriptive; do not report participant-level confidence intervals for these purposively selected questions. Keep RQ2 accuracy separate from CUQ usability and do not infer learning gains.
+
+Commands (run from the package directory)
+python evaluation/rq2_tool.py prepare-approval
+[Complete reviews/operational_approval_receipt.json after the actual review]
+python evaluation/rq2_tool.py freeze
+python evaluation/rq2_tool.py register --questions evaluation/independent_questions.json
+python evaluation/rq2_tool.py run --questions evaluation/independent_questions.json
+python evaluation/rq2_tool.py score --questions evaluation/independent_questions.json --scoring evaluation/independent_results/scoring.json
+
+The release may already include build_lock.json. In that case do not run freeze again; use that lock after verifying that no runtime files have been edited. A signature/identity assertion in a collection declaration must be completed by the named person, not inferred from general permission.

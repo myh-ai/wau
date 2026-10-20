@@ -1,0 +1,4087 @@
+{
+  "purpose": "Exposed development conversation; not independent RQ2 evidence.",
+  "executed_at_utc": "2026-10-20T20:54:55.563134+00:00",
+  "total_sessions": 1,
+  "total_turns": 32,
+  "runtime_hashes": {
+    "app.py": "eb1d87e9f8c179ba2a126a83e13d5a59ed4e650a5678f5009c9b9b4229aa1773",
+    "wautrace_engine.py": "adbdac6b50e9e2875b92f39d01f7bb2c05931424327eb8cf1da162f49d6c40f0",
+    "graph_inference.py": "e8e320a1c61b835ddbd2518f73c30166fa757bc967141a6c6b47c665de3c0044",
+    "language_rules.json": "9b5438d9c46c6014853882db0f8a2b6554d1e72bb684596142038b956367a930",
+    "WauTrace_Network_Template.json": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+    "reviews/operational_claim_review.json": "b49546c7c58ecf31494b65cb6a62281ca2b1bc5df1ea39d46ab9566feeaa980b",
+    "study/config.json": "727c2bea169bdb407c9d736126e8c60e683d7243cbccc196fa13ee18056ca61e"
+  },
+  "checks": {
+    "route_and_evidence_status_matches": 32,
+    "failures": []
+  },
+  "formal_accuracy": null,
+  "author_semantic_scoring": "pending",
+  "sessions": [
+    {
+      "session_id": "CONV01",
+      "topic": "Continuous heritage-guide conversation",
+      "turns": [
+        {
+          "turn": 1,
+          "question": "What other names does Wau Kikik have?",
+          "expected_profile": "aliases",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book also calls Wau Kikik “Wau Kaca” and uses “Laga Kite” in its heading. These names are not established as interchangeable in every context.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E003"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Wau Kikik or the Laga Kite",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E001"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik Atau Layang-layang Laga",
+                "scope": "Malay heading, p.72",
+                "scopes": [
+                  "Malay heading, p.72"
+                ],
+                "edge_ids": [
+                  "E014"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E003",
+              "E001",
+              "E014"
+            ],
+            "record_ids": [
+              "RQ1-N02",
+              "RQ1-N03"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "aliases",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E003",
+                "E001",
+                "E014"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E003"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Wau Kikik or the Laga Kite",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E001"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik Atau Layang-layang Laga",
+                  "scope": "Malay heading, p.72",
+                  "scopes": [
+                    "Malay heading, p.72"
+                  ],
+                  "edge_ids": [
+                    "E014"
+                  ]
+                }
+              ],
+              "last_answer": "The book also calls Wau Kikik “Wau Kaca” and uses “Laga Kite” in its heading. These names are not established as interchangeable in every context.",
+              "visited_intents": [
+                "names"
+              ]
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what other name does wau kikik have",
+              "concepts": [
+                "naming"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "aliases",
+                  "score": 6,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                }
+              ],
+              "selected_profile": "aliases"
+            },
+            "details_en": "The English heading is “Wau Kikik or the Laga Kite”; the Malay heading is “Wau Kikik Atau Layang-layang Laga”. A heading links names within that passage, but does not prove that every use of Kikik and Laga refers to the same kite."
+          }
+        },
+        {
+          "turn": 2,
+          "question": "Why is it called Wau Kaca?",
+          "expected_profile": "kaca_reason",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.",
+            "status": "supported",
+            "intent": "name_reason",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E004"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.",
+                "scope": "Wau Kikik profile, p.73; English purpose wording",
+                "scopes": [
+                  "Wau Kikik profile, p.73; English purpose wording"
+                ],
+                "edge_ids": [
+                  "E073"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+                "scope": "Wau Kikik profile, p.72; Malay purpose wording",
+                "scopes": [
+                  "Wau Kikik profile, p.72; Malay purpose wording"
+                ],
+                "edge_ids": [
+                  "E074"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E004",
+              "E073",
+              "E074"
+            ],
+            "record_ids": [
+              "RQ1-N03",
+              "RQ1-S11"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "kaca_reason",
+              "last_status": "supported",
+              "last_intent": "name_reason",
+              "last_edge_ids": [
+                "E004",
+                "E073",
+                "E074"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E004"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.",
+                  "scope": "Wau Kikik profile, p.73; English purpose wording",
+                  "scopes": [
+                    "Wau Kikik profile, p.73; English purpose wording"
+                  ],
+                  "edge_ids": [
+                    "E073"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+                  "scope": "Wau Kikik profile, p.72; Malay purpose wording",
+                  "scopes": [
+                    "Wau Kikik profile, p.72; Malay purpose wording"
+                  ],
+                  "edge_ids": [
+                    "E074"
+                  ]
+                }
+              ],
+              "last_answer": "The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.",
+              "visited_intents": [
+                "names",
+                "name_reason"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "How many people launch Wau Laga?",
+              "Does Wau Kikik have a hummer?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "why is it call wau kaca",
+              "concepts": [
+                "causal",
+                "followup",
+                "naming",
+                "reason"
+              ],
+              "entities": [
+                "kaca"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "kaca_reason",
+                  "score": 17,
+                  "matched_concepts": [
+                    "naming",
+                    "reason"
+                  ]
+                },
+                {
+                  "profile": "kaca_names",
+                  "score": 9,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                },
+                {
+                  "profile": "aliases",
+                  "score": 5,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                }
+              ],
+              "selected_profile": "kaca_reason"
+            },
+            "details_en": "The English account describes defeating an opponent’s wau on contact; the Malay account names the intended cutting action. This historical explanation does not establish that every Wau Kikik uses glass-coated string or that the practice continues today."
+          }
+        },
+        {
+          "turn": 3,
+          "question": "is this the most famous wau in kuala lampour ?",
+          "expected_profile": "place_unknown",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.",
+            "status": "not_documented",
+            "intent": "place_status",
+            "source_cards": [],
+            "edge_ids": [],
+            "record_ids": [],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "place_unknown",
+              "last_status": "not_documented",
+              "last_intent": "place_status",
+              "last_edge_ids": [],
+              "last_source_cards": [],
+              "last_answer": "The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "How many people launch Wau Laga?",
+              "Does Wau Kikik have a hummer?"
+            ],
+            "review_status": "not_applicable",
+            "author_review_status": "not_applicable",
+            "routing": {
+              "normalized": "is this the most famous wau in kuala lampour",
+              "concepts": [
+                "followup",
+                "ranking"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "location_request": {
+                "requested": true,
+                "places": [
+                  "kuala lampour"
+                ],
+                "geography": false
+              },
+              "selected_profile": "place_unknown"
+            }
+          }
+        },
+        {
+          "turn": 4,
+          "question": "does it have tail?",
+          "expected_profile": null,
+          "expected_status": "clarification",
+          "route_and_status_match": true,
+          "response": {
+            "text": "Which Wau Kikik form do you mean: first, second or third?",
+            "status": "clarification",
+            "intent": null,
+            "source_cards": [],
+            "edge_ids": [],
+            "record_ids": [],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "place_unknown",
+              "last_status": "not_documented",
+              "last_intent": "place_status",
+              "last_edge_ids": [],
+              "last_source_cards": [],
+              "last_answer": "The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status"
+              ],
+              "referent": "glass_string",
+              "pending_clarification": "form_number",
+              "pending_question": {
+                "message": "does it have tail?"
+              }
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "not_applicable",
+            "author_review_status": "not_applicable",
+            "routing": {
+              "normalized": "does it have tail",
+              "concepts": [
+                "followup",
+                "tail"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing"
+            }
+          }
+        },
+        {
+          "turn": 5,
+          "question": "First form",
+          "expected_profile": "form_component_unknown",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The reviewed description does not establish whether the first form has a tail. This is a limit of the source, not proof that the feature is absent.",
+            "status": "not_documented",
+            "intent": "forms",
+            "source_cards": [],
+            "edge_ids": [],
+            "record_ids": [],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_component_unknown",
+              "last_status": "not_documented",
+              "last_intent": "forms",
+              "last_edge_ids": [],
+              "last_source_cards": [],
+              "last_answer": "The reviewed description does not establish whether the first form has a tail. This is a limit of the source, not proof that the feature is absent.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms"
+              ],
+              "referent": "glass_string",
+              "form_number": 1
+            },
+            "suggestions": [
+              "How many people launch Wau Laga?",
+              "Does Wau Kikik have a hummer?",
+              "What is Wau Kikik covered with?"
+            ],
+            "review_status": "not_applicable",
+            "author_review_status": "not_applicable",
+            "routing": {
+              "normalized": "does it have tail",
+              "concepts": [
+                "followup",
+                "forms",
+                "tail"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "form_component_unknown",
+              "selection": "clarification_completed_request"
+            }
+          }
+        },
+        {
+          "turn": 6,
+          "question": "How many people launch Wau Laga?",
+          "expected_profile": "launch_people",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "Two players launch Wau Laga: a launcher (juru lancar) and a puller (juru tarik). The book also names “juru anjong” and “juru main tali”, but does not explicitly map these labels to the later pair; they do not mean four players.",
+            "status": "supported",
+            "intent": "launch",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 144,
+                "language": "en",
+                "quote": "the long distance launching technique is used. Two players are required.",
+                "scope": "The technic of raising the Wau Laga, p.144",
+                "scopes": [
+                  "The technic of raising the Wau Laga, p.144"
+                ],
+                "edge_ids": [
+                  "E038",
+                  "E039"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 144,
+                "language": "en",
+                "quote": "One is the ‘juru anjong’ and the other, the ‘juru main tali’.",
+                "scope": "The technic of raising the Wau Laga, p.144 | The technic of raising the Wau Laga, p.144; names of the two players in the described launch",
+                "scopes": [
+                  "The technic of raising the Wau Laga, p.144",
+                  "The technic of raising the Wau Laga, p.144; names of the two players in the described launch"
+                ],
+                "edge_ids": [
+                  "E039",
+                  "E069",
+                  "E070"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 144,
+                "language": "en",
+                "quote": "‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller)",
+                "scope": "The technic of raising the Wau Laga, p.144",
+                "scopes": [
+                  "The technic of raising the Wau Laga, p.144"
+                ],
+                "edge_ids": [
+                  "E039",
+                  "E041",
+                  "E042"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E038",
+              "E039",
+              "E069",
+              "E070",
+              "E041",
+              "E042"
+            ],
+            "record_ids": [
+              "RQ1-P05"
+            ],
+            "state": {
+              "entity": "wau_laga",
+              "last_facet": "launch_people",
+              "last_status": "supported",
+              "last_intent": "launch",
+              "last_edge_ids": [
+                "E038",
+                "E039",
+                "E069",
+                "E070",
+                "E041",
+                "E042"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 144,
+                  "language": "en",
+                  "quote": "the long distance launching technique is used. Two players are required.",
+                  "scope": "The technic of raising the Wau Laga, p.144",
+                  "scopes": [
+                    "The technic of raising the Wau Laga, p.144"
+                  ],
+                  "edge_ids": [
+                    "E038",
+                    "E039"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 144,
+                  "language": "en",
+                  "quote": "One is the ‘juru anjong’ and the other, the ‘juru main tali’.",
+                  "scope": "The technic of raising the Wau Laga, p.144 | The technic of raising the Wau Laga, p.144; names of the two players in the described launch",
+                  "scopes": [
+                    "The technic of raising the Wau Laga, p.144",
+                    "The technic of raising the Wau Laga, p.144; names of the two players in the described launch"
+                  ],
+                  "edge_ids": [
+                    "E039",
+                    "E069",
+                    "E070"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 144,
+                  "language": "en",
+                  "quote": "‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller)",
+                  "scope": "The technic of raising the Wau Laga, p.144",
+                  "scopes": [
+                    "The technic of raising the Wau Laga, p.144"
+                  ],
+                  "edge_ids": [
+                    "E039",
+                    "E041",
+                    "E042"
+                  ]
+                }
+              ],
+              "last_answer": "Two players launch Wau Laga: a launcher (juru lancar) and a puller (juru tarik). The book also names “juru anjong” and “juru main tali”, but does not explicitly map these labels to the later pair; they do not mean four players.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch"
+              ],
+              "referent": "launch_people"
+            },
+            "suggestions": [
+              "Does Wau Kikik have a hummer?",
+              "What is Wau Kikik covered with?",
+              "How is Wau Laga steered?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "how many people launch wau laga",
+              "concepts": [
+                "count",
+                "launch",
+                "people"
+              ],
+              "entities": [
+                "wau_laga"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "launch_people",
+                  "score": 16,
+                  "matched_concepts": [
+                    "count",
+                    "people"
+                  ]
+                },
+                {
+                  "profile": "form_count",
+                  "score": 6,
+                  "matched_concepts": [
+                    "count"
+                  ]
+                }
+              ],
+              "selected_profile": "launch_people"
+            },
+            "details_en": "Page 144 first names juru anjong and juru main tali, then discusses the distance between juru lancar and juru tarik. The quoted passage requires two players; it does not provide an explicit one-to-one equivalence between the two pairs of labels."
+          }
+        },
+        {
+          "turn": 7,
+          "question": "when did this wau first used ?",
+          "expected_profile": "origin",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The reviewed passages do not state when this kite was first used or invented, who invented it, or where it originated. The book’s 2002 publication date is not an invention date.",
+            "status": "not_documented",
+            "intent": "not_documented",
+            "source_cards": [],
+            "edge_ids": [],
+            "record_ids": [],
+            "state": {
+              "entity": "wau_laga",
+              "last_facet": "origin",
+              "last_status": "not_documented",
+              "last_intent": "not_documented",
+              "last_edge_ids": [],
+              "last_source_cards": [],
+              "last_answer": "The reviewed passages do not state when this kite was first used or invented, who invented it, or where it originated. The book’s 2002 publication date is not an invention date.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented"
+              ],
+              "referent": "launch_people"
+            },
+            "suggestions": [
+              "Does Wau Kikik have a hummer?",
+              "What is Wau Kikik covered with?",
+              "How is Wau Laga steered?"
+            ],
+            "review_status": "not_applicable",
+            "author_review_status": "not_applicable",
+            "routing": {
+              "normalized": "when did this wau first used",
+              "concepts": [
+                "followup",
+                "origin"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "origin"
+            }
+          }
+        },
+        {
+          "turn": 8,
+          "question": "how is it steered?",
+          "expected_profile": "steer",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "While the wau is taking flight, the guide describes releasing string slowly. When its head faces the intended direction, it describes locking the string with one or both hands so the wau moves in that direction.",
+            "status": "supported",
+            "intent": "control",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 146,
+                "language": "en",
+                "quote": "The wau’s flight direction can be determined while the wau is taking flight.",
+                "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                "scopes": [
+                  "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                ],
+                "edge_ids": [
+                  "E058",
+                  "E059"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 146,
+                "language": "en",
+                "quote": "The kiter will release the string slowly",
+                "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                "scopes": [
+                  "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                ],
+                "edge_ids": [
+                  "E059"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 146,
+                "language": "en",
+                "quote": "when the head of the wau faces into the direction as required by the player",
+                "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                "scopes": [
+                  "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                ],
+                "edge_ids": [
+                  "E060",
+                  "E061",
+                  "E062"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 146,
+                "language": "en",
+                "quote": "the string will be locked using one or both hands.",
+                "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                "scopes": [
+                  "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                ],
+                "edge_ids": [
+                  "E061",
+                  "E062"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 146,
+                "language": "en",
+                "quote": "The wau will then move in the direction required.",
+                "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                "scopes": [
+                  "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                ],
+                "edge_ids": [
+                  "E062"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E058",
+              "E059",
+              "E060",
+              "E061",
+              "E062"
+            ],
+            "record_ids": [
+              "RQ1-S04",
+              "RQ1-S05"
+            ],
+            "state": {
+              "entity": "wau_laga",
+              "last_facet": "steer",
+              "last_status": "supported",
+              "last_intent": "control",
+              "last_edge_ids": [
+                "E058",
+                "E059",
+                "E060",
+                "E061",
+                "E062"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 146,
+                  "language": "en",
+                  "quote": "The wau’s flight direction can be determined while the wau is taking flight.",
+                  "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                  "scopes": [
+                    "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                  ],
+                  "edge_ids": [
+                    "E058",
+                    "E059"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 146,
+                  "language": "en",
+                  "quote": "The kiter will release the string slowly",
+                  "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                  "scopes": [
+                    "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                  ],
+                  "edge_ids": [
+                    "E059"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 146,
+                  "language": "en",
+                  "quote": "when the head of the wau faces into the direction as required by the player",
+                  "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                  "scopes": [
+                    "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                  ],
+                  "edge_ids": [
+                    "E060",
+                    "E061",
+                    "E062"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 146,
+                  "language": "en",
+                  "quote": "the string will be locked using one or both hands.",
+                  "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                  "scopes": [
+                    "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                  ],
+                  "edge_ids": [
+                    "E061",
+                    "E062"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 146,
+                  "language": "en",
+                  "quote": "The wau will then move in the direction required.",
+                  "scope": "Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+                  "scopes": [
+                    "Guidelines to control the Wau Laga, p.146; descriptive source guidance"
+                  ],
+                  "edge_ids": [
+                    "E062"
+                  ]
+                }
+              ],
+              "last_answer": "While the wau is taking flight, the guide describes releasing string slowly. When its head faces the intended direction, it describes locking the string with one or both hands so the wau moves in that direction.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control"
+              ],
+              "referent": "launch_people"
+            },
+            "suggestions": [
+              "Does Wau Kikik have a hummer?",
+              "What is Wau Kikik covered with?",
+              "What happens when a player is attacked?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "how is it steer",
+              "concepts": [
+                "direction",
+                "followup"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "steer",
+                  "score": 11,
+                  "matched_concepts": [
+                    "direction"
+                  ]
+                }
+              ],
+              "selected_profile": "steer"
+            }
+          }
+        },
+        {
+          "turn": 9,
+          "question": "What is Wau Kikik covered with?",
+          "expected_profile": "covering",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The profile describes Wau Kikik as having a basic covering of wau paper. It does not supply a complete construction specification or a full list of structural materials.",
+            "status": "supported",
+            "intent": "materials",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "With a few basic layers of wau papers",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E030"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Dengan mempunyai lapisan asas kertas wau",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E030"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E030"
+            ],
+            "record_ids": [
+              "RQ1-C06"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "covering",
+              "last_status": "supported",
+              "last_intent": "materials",
+              "last_edge_ids": [
+                "E030"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "With a few basic layers of wau papers",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E030"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Dengan mempunyai lapisan asas kertas wau",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E030"
+                  ]
+                }
+              ],
+              "last_answer": "The profile describes Wau Kikik as having a basic covering of wau paper. It does not supply a complete construction specification or a full list of structural materials.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials"
+              ],
+              "referent": "launch_people"
+            },
+            "suggestions": [
+              "Does Wau Kikik have a hummer?",
+              "What happens when a player is attacked?",
+              "How is Wau Kikik related to the Eddy Kite?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what is wau kikik cover with",
+              "concepts": [
+                "covering",
+                "overview"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "covering",
+                  "score": 11,
+                  "matched_concepts": [
+                    "covering"
+                  ]
+                }
+              ],
+              "selected_profile": "covering"
+            }
+          }
+        },
+        {
+          "turn": 10,
+          "question": "What happens when a player is attacked?",
+          "expected_profile": "defence",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "When attacked, the passage describes releasing the kite string quickly so it slackens. In that defensive situation, the book says a slack string is harder to break.",
+            "status": "supported",
+            "intent": "defence",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 148,
+                "language": "en",
+                "quote": "If a player is being attacked, he must release his wau string quickly so that it slackens",
+                "scope": "The technic of attacking Wau Laga, p.148; descriptive source guidance",
+                "scopes": [
+                  "The technic of attacking Wau Laga, p.148; descriptive source guidance"
+                ],
+                "edge_ids": [
+                  "E012",
+                  "E052",
+                  "E065"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 148,
+                "language": "en",
+                "quote": "so that it slackens and will make it harder for the string to be broken.",
+                "scope": "The technic of attacking Wau Laga, p.148; descriptive source guidance",
+                "scopes": [
+                  "The technic of attacking Wau Laga, p.148; descriptive source guidance"
+                ],
+                "edge_ids": [
+                  "E066"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E012",
+              "E052",
+              "E066",
+              "E065"
+            ],
+            "record_ids": [
+              "RQ1-P09",
+              "RQ1-S09",
+              "RQ1-S10"
+            ],
+            "state": {
+              "entity": "wau_laga",
+              "last_facet": "defence",
+              "last_status": "supported",
+              "last_intent": "defence",
+              "last_edge_ids": [
+                "E012",
+                "E052",
+                "E066",
+                "E065"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 148,
+                  "language": "en",
+                  "quote": "If a player is being attacked, he must release his wau string quickly so that it slackens",
+                  "scope": "The technic of attacking Wau Laga, p.148; descriptive source guidance",
+                  "scopes": [
+                    "The technic of attacking Wau Laga, p.148; descriptive source guidance"
+                  ],
+                  "edge_ids": [
+                    "E012",
+                    "E052",
+                    "E065"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 148,
+                  "language": "en",
+                  "quote": "so that it slackens and will make it harder for the string to be broken.",
+                  "scope": "The technic of attacking Wau Laga, p.148; descriptive source guidance",
+                  "scopes": [
+                    "The technic of attacking Wau Laga, p.148; descriptive source guidance"
+                  ],
+                  "edge_ids": [
+                    "E066"
+                  ]
+                }
+              ],
+              "last_answer": "When attacked, the passage describes releasing the kite string quickly so it slackens. In that defensive situation, the book says a slack string is harder to break.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence"
+              ],
+              "referent": "launch_people"
+            },
+            "suggestions": [
+              "Does Wau Kikik have a hummer?",
+              "How is Wau Kikik related to the Eddy Kite?",
+              "What forms does Wau Kikik have?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what happens when a player is attack",
+              "concepts": [
+                "attack",
+                "defence",
+                "people"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "defence",
+                  "score": 22,
+                  "matched_concepts": [
+                    "defence"
+                  ]
+                },
+                {
+                  "profile": "attack",
+                  "score": 11,
+                  "matched_concepts": [
+                    "attack"
+                  ]
+                }
+              ],
+              "selected_profile": "defence"
+            }
+          }
+        },
+        {
+          "turn": 11,
+          "question": "Does Wau Kikik have a hummer?",
+          "expected_profile": "hummer",
+          "expected_status": "explicit_negative",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The profile explicitly says Wau Kikik has no hummer (busur). This does not establish that the kite produces no sound at all.",
+            "status": "explicit_negative",
+            "intent": "features",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E007"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik tidak mempunyai busur dan juga ukiran sobek.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E007"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E007"
+            ],
+            "record_ids": [
+              "RQ1-C03"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "hummer",
+              "last_status": "explicit_negative",
+              "last_intent": "features",
+              "last_edge_ids": [
+                "E007"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E007"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik tidak mempunyai busur dan juga ukiran sobek.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E007"
+                  ]
+                }
+              ],
+              "last_answer": "The profile explicitly says Wau Kikik has no hummer (busur). This does not establish that the kite produces no sound at all.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features"
+              ],
+              "referent": "hummer"
+            },
+            "suggestions": [
+              "How is Wau Kikik related to the Eddy Kite?",
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "does wau kikik have a hummer",
+              "concepts": [
+                "hummer"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "hummer",
+                  "score": 12,
+                  "matched_concepts": [
+                    "hummer"
+                  ]
+                }
+              ],
+              "selected_profile": "hummer"
+            }
+          }
+        },
+        {
+          "turn": 12,
+          "question": "Why is it called Wau Kaca?",
+          "expected_profile": "kaca_reason",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.",
+            "status": "supported",
+            "intent": "name_reason",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E004"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.",
+                "scope": "Wau Kikik profile, p.73; English purpose wording",
+                "scopes": [
+                  "Wau Kikik profile, p.73; English purpose wording"
+                ],
+                "edge_ids": [
+                  "E073"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+                "scope": "Wau Kikik profile, p.72; Malay purpose wording",
+                "scopes": [
+                  "Wau Kikik profile, p.72; Malay purpose wording"
+                ],
+                "edge_ids": [
+                  "E074"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E004",
+              "E073",
+              "E074"
+            ],
+            "record_ids": [
+              "RQ1-N03",
+              "RQ1-S11"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "kaca_reason",
+              "last_status": "supported",
+              "last_intent": "name_reason",
+              "last_edge_ids": [
+                "E004",
+                "E073",
+                "E074"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E004"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.",
+                  "scope": "Wau Kikik profile, p.73; English purpose wording",
+                  "scopes": [
+                    "Wau Kikik profile, p.73; English purpose wording"
+                  ],
+                  "edge_ids": [
+                    "E073"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+                  "scope": "Wau Kikik profile, p.72; Malay purpose wording",
+                  "scopes": [
+                    "Wau Kikik profile, p.72; Malay purpose wording"
+                  ],
+                  "edge_ids": [
+                    "E074"
+                  ]
+                }
+              ],
+              "last_answer": "The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "How is Wau Kikik related to the Eddy Kite?",
+              "What forms does Wau Kikik have?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "why is it call wau kaca",
+              "concepts": [
+                "causal",
+                "followup",
+                "naming",
+                "reason"
+              ],
+              "entities": [
+                "kaca"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "kaca_reason",
+                  "score": 17,
+                  "matched_concepts": [
+                    "naming",
+                    "reason"
+                  ]
+                },
+                {
+                  "profile": "kaca_names",
+                  "score": 9,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                },
+                {
+                  "profile": "aliases",
+                  "score": 5,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                }
+              ],
+              "selected_profile": "kaca_reason"
+            },
+            "details_en": "The English account describes defeating an opponent’s wau on contact; the Malay account names the intended cutting action. This historical explanation does not establish that every Wau Kikik uses glass-coated string or that the practice continues today."
+          }
+        },
+        {
+          "turn": 13,
+          "question": "is it good for people above 30 years old ?",
+          "expected_profile": "age_suitability",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The reviewed passages do not specify age suitability for this kite activity, including whether it is suitable for people over a particular age. They cannot support an age-based recommendation.",
+            "status": "not_documented",
+            "intent": "not_documented",
+            "source_cards": [],
+            "edge_ids": [],
+            "record_ids": [],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "age_suitability",
+              "last_status": "not_documented",
+              "last_intent": "not_documented",
+              "last_edge_ids": [],
+              "last_source_cards": [],
+              "last_answer": "The reviewed passages do not specify age suitability for this kite activity, including whether it is suitable for people over a particular age. They cannot support an age-based recommendation.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "How is Wau Kikik related to the Eddy Kite?",
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?"
+            ],
+            "review_status": "not_applicable",
+            "author_review_status": "not_applicable",
+            "routing": {
+              "normalized": "is it good for people above 30 year old",
+              "concepts": [
+                "age_suitability",
+                "followup",
+                "people",
+                "position",
+                "reason"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "age_suitability"
+            }
+          }
+        },
+        {
+          "turn": 14,
+          "question": "What forms does Wau Kikik have?",
+          "expected_profile": "form_overview",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.",
+            "status": "supported",
+            "intent": "forms",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "It consists of three different types.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E016"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+                "scope": "Wau Kikik profile, pp.72–73 | p.73:English wording",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73",
+                  "p.73:English wording"
+                ],
+                "edge_ids": [
+                  "E020",
+                  "E021"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "mempunyai kepala dan berlekuk.",
+                "scope": "p.72:Malay wording",
+                "scopes": [
+                  "p.72:Malay wording"
+                ],
+                "edge_ids": [
+                  "E022"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E023"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E023"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E016",
+              "E020",
+              "E021",
+              "E022",
+              "E023"
+            ],
+            "record_ids": [
+              "RQ1-F01",
+              "RQ1-F02",
+              "RQ1-F03"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_overview",
+              "last_status": "supported",
+              "last_intent": "forms",
+              "last_edge_ids": [
+                "E016",
+                "E020",
+                "E021",
+                "E022",
+                "E023"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "It consists of three different types.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E016"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+                  "scope": "Wau Kikik profile, pp.72–73 | p.73:English wording",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73",
+                    "p.73:English wording"
+                  ],
+                  "edge_ids": [
+                    "E020",
+                    "E021"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "mempunyai kepala dan berlekuk.",
+                  "scope": "p.72:Malay wording",
+                  "scopes": [
+                    "p.72:Malay wording"
+                  ],
+                  "edge_ids": [
+                    "E022"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E023"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E023"
+                  ]
+                }
+              ],
+              "last_answer": "The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what form does wau kikik have",
+              "concepts": [
+                "form_collection",
+                "forms"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "form_overview"
+            }
+          }
+        },
+        {
+          "turn": 15,
+          "question": "is it used outside Malaysia?",
+          "expected_profile": "place_unknown",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.",
+            "status": "not_documented",
+            "intent": "place_status",
+            "source_cards": [],
+            "edge_ids": [],
+            "record_ids": [],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "place_unknown",
+              "last_status": "not_documented",
+              "last_intent": "place_status",
+              "last_edge_ids": [],
+              "last_source_cards": [],
+              "last_answer": "The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "How is Wau Kikik related to the Eddy Kite?",
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?"
+            ],
+            "review_status": "not_applicable",
+            "author_review_status": "not_applicable",
+            "routing": {
+              "normalized": "is it used outside malaysia",
+              "concepts": [
+                "followup"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "location_request": {
+                "requested": true,
+                "places": [
+                  "malaysia"
+                ],
+                "geography": false
+              },
+              "selected_profile": "place_unknown"
+            }
+          }
+        },
+        {
+          "turn": 16,
+          "question": "why is it important ?",
+          "expected_profile": "importance_overview",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The 2002 book classifies Wau Kikik as a traditional Malay wau and describes its design as the simplest among them. The reviewed passages do not give a reason for its importance or explain that design characterization.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E013",
+                  "E027"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E013",
+              "E027"
+            ],
+            "record_ids": [
+              "RQ1-C01",
+              "RQ1-N01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "importance_overview",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E013",
+                "E027"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E013",
+                    "E027"
+                  ]
+                }
+              ],
+              "last_answer": "The 2002 book classifies Wau Kikik as a traditional Malay wau and describes its design as the simplest among them. The reviewed passages do not give a reason for its importance or explain that design characterization.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How is Wau Kikik related to the Eddy Kite?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "why is it important",
+              "concepts": [
+                "causal",
+                "followup",
+                "importance",
+                "reason"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "importance_overview"
+            }
+          }
+        },
+        {
+          "turn": 17,
+          "question": "How is Wau Kikik related to the Eddy Kite?",
+          "expected_profile": "eddy",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The profile says Wau Kikik resembles the Eddy Kite and reports “Malay Kite” as a Western name for the Eddy Kite. Resemblance does not establish that they are the same kite.",
+            "status": "supported",
+            "intent": "comparison",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The Wau Kikik shares a resemblance with the ‘Eddy Kite’ which is also known as the ‘Malay Kite’ by the westerners.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E010",
+                  "E028"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E010",
+              "E028"
+            ],
+            "record_ids": [
+              "RQ1-C02"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "eddy",
+              "last_status": "supported",
+              "last_intent": "comparison",
+              "last_edge_ids": [
+                "E010",
+                "E028"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The Wau Kikik shares a resemblance with the ‘Eddy Kite’ which is also known as the ‘Malay Kite’ by the westerners.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E010",
+                    "E028"
+                  ]
+                }
+              ],
+              "last_answer": "The profile says Wau Kikik resembles the Eddy Kite and reports “Malay Kite” as a Western name for the Eddy Kite. Resemblance does not establish that they are the same kite.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "how is wau kikik related to the eddy kite",
+              "concepts": [],
+              "entities": [
+                "eddy",
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "eddy",
+                  "score": 13,
+                  "matched_concepts": []
+                }
+              ],
+              "selected_profile": "eddy"
+            }
+          }
+        },
+        {
+          "turn": 18,
+          "question": "what is Wou kikik ?",
+          "expected_profile": "overview",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E013",
+                  "E027"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E013",
+              "E027"
+            ],
+            "record_ids": [
+              "RQ1-C01",
+              "RQ1-N01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "overview",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E013",
+                "E027"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E013",
+                    "E027"
+                  ]
+                }
+              ],
+              "last_answer": "The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what is wau kikik",
+              "concepts": [
+                "overview"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [
+                {
+                  "input": "wou",
+                  "normalized": "wau"
+                }
+              ],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "overview",
+                  "score": 6,
+                  "matched_concepts": [
+                    "overview"
+                  ]
+                }
+              ],
+              "selected_profile": "overview"
+            }
+          }
+        },
+        {
+          "turn": 19,
+          "question": "what is Wau kikik ?",
+          "expected_profile": "overview",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E013",
+                  "E027"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E013",
+              "E027"
+            ],
+            "record_ids": [
+              "RQ1-C01",
+              "RQ1-N01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "overview",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E013",
+                "E027"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E013",
+                    "E027"
+                  ]
+                }
+              ],
+              "last_answer": "The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what is wau kikik",
+              "concepts": [
+                "overview"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "overview",
+                  "score": 6,
+                  "matched_concepts": [
+                    "overview"
+                  ]
+                }
+              ],
+              "selected_profile": "overview"
+            }
+          }
+        },
+        {
+          "turn": 20,
+          "question": "what is wau at the first place ?",
+          "expected_profile": "wau_definition",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "In this guide, “wau” refers to the traditional Malay kites discussed in the book. Wau Kikik is one example.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E013"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Wau Kikik or the Laga Kite",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E001"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik Atau Layang-layang Laga",
+                "scope": "Malay heading, p.72",
+                "scopes": [
+                  "Malay heading, p.72"
+                ],
+                "edge_ids": [
+                  "E014"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E013",
+              "E001",
+              "E014"
+            ],
+            "record_ids": [
+              "RQ1-N01",
+              "RQ1-N02"
+            ],
+            "state": {
+              "entity": "traditional_malay_wau",
+              "last_facet": "wau_definition",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E013",
+                "E001",
+                "E014"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E013"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Wau Kikik or the Laga Kite",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E001"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik Atau Layang-layang Laga",
+                  "scope": "Malay heading, p.72",
+                  "scopes": [
+                    "Malay heading, p.72"
+                  ],
+                  "edge_ids": [
+                    "E014"
+                  ]
+                }
+              ],
+              "last_answer": "In this guide, “wau” refers to the traditional Malay kites discussed in the book. Wau Kikik is one example.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What is Wau Kikik?",
+              "What is special about Wau Kikik?",
+              "What is Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what is wau",
+              "concepts": [
+                "overview",
+                "wau_definition"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "wau_definition"
+            },
+            "details_en": "This is a contextual explanation of the term in the project source. The book classifies Wau Kikik among traditional Malay wau and labels its profile “Wau Kikik or the Laga Kite”. It is not a claim that every kite is a wau."
+          }
+        },
+        {
+          "turn": 21,
+          "question": "what is a wau ?",
+          "expected_profile": "wau_definition",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "In this guide, “wau” refers to the traditional Malay kites discussed in the book. Wau Kikik is one example.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E013"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Wau Kikik or the Laga Kite",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E001"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik Atau Layang-layang Laga",
+                "scope": "Malay heading, p.72",
+                "scopes": [
+                  "Malay heading, p.72"
+                ],
+                "edge_ids": [
+                  "E014"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E013",
+              "E001",
+              "E014"
+            ],
+            "record_ids": [
+              "RQ1-N01",
+              "RQ1-N02"
+            ],
+            "state": {
+              "entity": "traditional_malay_wau",
+              "last_facet": "wau_definition",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E013",
+                "E001",
+                "E014"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E013"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Wau Kikik or the Laga Kite",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E001"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik Atau Layang-layang Laga",
+                  "scope": "Malay heading, p.72",
+                  "scopes": [
+                    "Malay heading, p.72"
+                  ],
+                  "edge_ids": [
+                    "E014"
+                  ]
+                }
+              ],
+              "last_answer": "In this guide, “wau” refers to the traditional Malay kites discussed in the book. Wau Kikik is one example.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What is Wau Kikik?",
+              "What is special about Wau Kikik?",
+              "What is Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what is a wau",
+              "concepts": [
+                "overview",
+                "wau_definition"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "wau_definition"
+            },
+            "details_en": "This is a contextual explanation of the term in the project source. The book classifies Wau Kikik among traditional Malay wau and labels its profile “Wau Kikik or the Laga Kite”. It is not a claim that every kite is a wau."
+          }
+        },
+        {
+          "turn": 22,
+          "question": "what is special about wau kikik ?",
+          "expected_profile": "overview",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E013",
+                  "E027"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E013",
+              "E027"
+            ],
+            "record_ids": [
+              "RQ1-C01",
+              "RQ1-N01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "overview",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E013",
+                "E027"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E013",
+                    "E027"
+                  ]
+                }
+              ],
+              "last_answer": "The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what is special about wau kikik",
+              "concepts": [
+                "distinctive",
+                "overview"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "overview"
+            }
+          }
+        },
+        {
+          "turn": 23,
+          "question": "What forms does Wau Kikik have?",
+          "expected_profile": "form_overview",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.",
+            "status": "supported",
+            "intent": "forms",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "It consists of three different types.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E016"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+                "scope": "Wau Kikik profile, pp.72–73 | p.73:English wording",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73",
+                  "p.73:English wording"
+                ],
+                "edge_ids": [
+                  "E020",
+                  "E021"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "mempunyai kepala dan berlekuk.",
+                "scope": "p.72:Malay wording",
+                "scopes": [
+                  "p.72:Malay wording"
+                ],
+                "edge_ids": [
+                  "E022"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E023"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E023"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E016",
+              "E020",
+              "E021",
+              "E022",
+              "E023"
+            ],
+            "record_ids": [
+              "RQ1-F01",
+              "RQ1-F02",
+              "RQ1-F03"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_overview",
+              "last_status": "supported",
+              "last_intent": "forms",
+              "last_edge_ids": [
+                "E016",
+                "E020",
+                "E021",
+                "E022",
+                "E023"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "It consists of three different types.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E016"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+                  "scope": "Wau Kikik profile, pp.72–73 | p.73:English wording",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73",
+                    "p.73:English wording"
+                  ],
+                  "edge_ids": [
+                    "E020",
+                    "E021"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "mempunyai kepala dan berlekuk.",
+                  "scope": "p.72:Malay wording",
+                  "scopes": [
+                    "p.72:Malay wording"
+                  ],
+                  "edge_ids": [
+                    "E022"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E023"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E023"
+                  ]
+                }
+              ],
+              "last_answer": "The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what form does wau kikik have",
+              "concepts": [
+                "form_collection",
+                "forms"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "form_overview"
+            }
+          }
+        },
+        {
+          "turn": 24,
+          "question": "How many people launch Wau Laga?",
+          "expected_profile": "launch_people",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "Two players launch Wau Laga: a launcher (juru lancar) and a puller (juru tarik). The book also names “juru anjong” and “juru main tali”, but does not explicitly map these labels to the later pair; they do not mean four players.",
+            "status": "supported",
+            "intent": "launch",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 144,
+                "language": "en",
+                "quote": "the long distance launching technique is used. Two players are required.",
+                "scope": "The technic of raising the Wau Laga, p.144",
+                "scopes": [
+                  "The technic of raising the Wau Laga, p.144"
+                ],
+                "edge_ids": [
+                  "E038",
+                  "E039"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 144,
+                "language": "en",
+                "quote": "One is the ‘juru anjong’ and the other, the ‘juru main tali’.",
+                "scope": "The technic of raising the Wau Laga, p.144 | The technic of raising the Wau Laga, p.144; names of the two players in the described launch",
+                "scopes": [
+                  "The technic of raising the Wau Laga, p.144",
+                  "The technic of raising the Wau Laga, p.144; names of the two players in the described launch"
+                ],
+                "edge_ids": [
+                  "E039",
+                  "E069",
+                  "E070"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 144,
+                "language": "en",
+                "quote": "‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller)",
+                "scope": "The technic of raising the Wau Laga, p.144",
+                "scopes": [
+                  "The technic of raising the Wau Laga, p.144"
+                ],
+                "edge_ids": [
+                  "E039",
+                  "E041",
+                  "E042"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E038",
+              "E039",
+              "E069",
+              "E070",
+              "E041",
+              "E042"
+            ],
+            "record_ids": [
+              "RQ1-P05"
+            ],
+            "state": {
+              "entity": "wau_laga",
+              "last_facet": "launch_people",
+              "last_status": "supported",
+              "last_intent": "launch",
+              "last_edge_ids": [
+                "E038",
+                "E039",
+                "E069",
+                "E070",
+                "E041",
+                "E042"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 144,
+                  "language": "en",
+                  "quote": "the long distance launching technique is used. Two players are required.",
+                  "scope": "The technic of raising the Wau Laga, p.144",
+                  "scopes": [
+                    "The technic of raising the Wau Laga, p.144"
+                  ],
+                  "edge_ids": [
+                    "E038",
+                    "E039"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 144,
+                  "language": "en",
+                  "quote": "One is the ‘juru anjong’ and the other, the ‘juru main tali’.",
+                  "scope": "The technic of raising the Wau Laga, p.144 | The technic of raising the Wau Laga, p.144; names of the two players in the described launch",
+                  "scopes": [
+                    "The technic of raising the Wau Laga, p.144",
+                    "The technic of raising the Wau Laga, p.144; names of the two players in the described launch"
+                  ],
+                  "edge_ids": [
+                    "E039",
+                    "E069",
+                    "E070"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 144,
+                  "language": "en",
+                  "quote": "‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller)",
+                  "scope": "The technic of raising the Wau Laga, p.144",
+                  "scopes": [
+                    "The technic of raising the Wau Laga, p.144"
+                  ],
+                  "edge_ids": [
+                    "E039",
+                    "E041",
+                    "E042"
+                  ]
+                }
+              ],
+              "last_answer": "Two players launch Wau Laga: a launcher (juru lancar) and a puller (juru tarik). The book also names “juru anjong” and “juru main tali”, but does not explicitly map these labels to the later pair; they do not mean four players.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "launch_people"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "Does Wau Kikik have a hummer?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "how many people launch wau laga",
+              "concepts": [
+                "count",
+                "launch",
+                "people"
+              ],
+              "entities": [
+                "wau_laga"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "launch_people",
+                  "score": 16,
+                  "matched_concepts": [
+                    "count",
+                    "people"
+                  ]
+                },
+                {
+                  "profile": "form_count",
+                  "score": 6,
+                  "matched_concepts": [
+                    "count"
+                  ]
+                }
+              ],
+              "selected_profile": "launch_people"
+            },
+            "details_en": "Page 144 first names juru anjong and juru main tali, then discusses the distance between juru lancar and juru tarik. The quoted passage requires two players; it does not provide an explicit one-to-one equivalence between the two pairs of labels."
+          }
+        },
+        {
+          "turn": 25,
+          "question": "Does Wau Kikik have a hummer?",
+          "expected_profile": "hummer",
+          "expected_status": "explicit_negative",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The profile explicitly says Wau Kikik has no hummer (busur). This does not establish that the kite produces no sound at all.",
+            "status": "explicit_negative",
+            "intent": "features",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E007"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik tidak mempunyai busur dan juga ukiran sobek.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E007"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E007"
+            ],
+            "record_ids": [
+              "RQ1-C03"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "hummer",
+              "last_status": "explicit_negative",
+              "last_intent": "features",
+              "last_edge_ids": [
+                "E007"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E007"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik tidak mempunyai busur dan juga ukiran sobek.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E007"
+                  ]
+                }
+              ],
+              "last_answer": "The profile explicitly says Wau Kikik has no hummer (busur). This does not establish that the kite produces no sound at all.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "hummer"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "does wau kikik have a hummer",
+              "concepts": [
+                "hummer"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "hummer",
+                  "score": 12,
+                  "matched_concepts": [
+                    "hummer"
+                  ]
+                }
+              ],
+              "selected_profile": "hummer"
+            }
+          }
+        },
+        {
+          "turn": 26,
+          "question": "Why is it called Wau Kaca?",
+          "expected_profile": "kaca_reason",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.",
+            "status": "supported",
+            "intent": "name_reason",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E004"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.",
+                "scope": "Wau Kikik profile, p.73; English purpose wording",
+                "scopes": [
+                  "Wau Kikik profile, p.73; English purpose wording"
+                ],
+                "edge_ids": [
+                  "E073"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+                "scope": "Wau Kikik profile, p.72; Malay purpose wording",
+                "scopes": [
+                  "Wau Kikik profile, p.72; Malay purpose wording"
+                ],
+                "edge_ids": [
+                  "E074"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E004",
+              "E073",
+              "E074"
+            ],
+            "record_ids": [
+              "RQ1-N03",
+              "RQ1-S11"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "kaca_reason",
+              "last_status": "supported",
+              "last_intent": "name_reason",
+              "last_edge_ids": [
+                "E004",
+                "E073",
+                "E074"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E004"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.",
+                  "scope": "Wau Kikik profile, p.73; English purpose wording",
+                  "scopes": [
+                    "Wau Kikik profile, p.73; English purpose wording"
+                  ],
+                  "edge_ids": [
+                    "E073"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+                  "scope": "Wau Kikik profile, p.72; Malay purpose wording",
+                  "scopes": [
+                    "Wau Kikik profile, p.72; Malay purpose wording"
+                  ],
+                  "edge_ids": [
+                    "E074"
+                  ]
+                }
+              ],
+              "last_answer": "The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "How many people launch Wau Laga?",
+              "Does Wau Kikik have a hummer?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "why is it call wau kaca",
+              "concepts": [
+                "causal",
+                "followup",
+                "naming",
+                "reason"
+              ],
+              "entities": [
+                "kaca"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "kaca_reason",
+                  "score": 17,
+                  "matched_concepts": [
+                    "naming",
+                    "reason"
+                  ]
+                },
+                {
+                  "profile": "kaca_names",
+                  "score": 9,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                },
+                {
+                  "profile": "aliases",
+                  "score": 5,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                }
+              ],
+              "selected_profile": "kaca_reason"
+            },
+            "details_en": "The English account describes defeating an opponent’s wau on contact; the Malay account names the intended cutting action. This historical explanation does not establish that every Wau Kikik uses glass-coated string or that the practice continues today."
+          }
+        },
+        {
+          "turn": 27,
+          "question": "how many forms does it have ?",
+          "expected_profile": "form_count",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The profile enumerates three forms of Wau Kikik.",
+            "status": "supported",
+            "intent": "forms",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "It consists of three different types.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E016"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E016"
+            ],
+            "record_ids": [
+              "RQ1-F01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_count",
+              "last_status": "supported",
+              "last_intent": "forms",
+              "last_edge_ids": [
+                "E016"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "It consists of three different types.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E016"
+                  ]
+                }
+              ],
+              "last_answer": "The profile enumerates three forms of Wau Kikik.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "how many form does it have",
+              "concepts": [
+                "count",
+                "followup",
+                "form_collection",
+                "forms"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "form_count",
+                  "score": 13,
+                  "matched_concepts": [
+                    "count",
+                    "forms"
+                  ]
+                }
+              ],
+              "selected_profile": "form_count"
+            }
+          }
+        },
+        {
+          "turn": 28,
+          "question": "what are these forms ?",
+          "expected_profile": "form_overview",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.",
+            "status": "supported",
+            "intent": "forms",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "It consists of three different types.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E016"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+                "scope": "Wau Kikik profile, pp.72–73 | p.73:English wording",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73",
+                  "p.73:English wording"
+                ],
+                "edge_ids": [
+                  "E020",
+                  "E021"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "mempunyai kepala dan berlekuk.",
+                "scope": "p.72:Malay wording",
+                "scopes": [
+                  "p.72:Malay wording"
+                ],
+                "edge_ids": [
+                  "E022"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E023"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E023"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E016",
+              "E020",
+              "E021",
+              "E022",
+              "E023"
+            ],
+            "record_ids": [
+              "RQ1-F01",
+              "RQ1-F02",
+              "RQ1-F03"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_overview",
+              "last_status": "supported",
+              "last_intent": "forms",
+              "last_edge_ids": [
+                "E016",
+                "E020",
+                "E021",
+                "E022",
+                "E023"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "It consists of three different types.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E016"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+                  "scope": "Wau Kikik profile, pp.72–73 | p.73:English wording",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73",
+                    "p.73:English wording"
+                  ],
+                  "edge_ids": [
+                    "E020",
+                    "E021"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "mempunyai kepala dan berlekuk.",
+                  "scope": "p.72:Malay wording",
+                  "scopes": [
+                    "p.72:Malay wording"
+                  ],
+                  "edge_ids": [
+                    "E022"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E023"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E023"
+                  ]
+                }
+              ],
+              "last_answer": "The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what are these form",
+              "concepts": [
+                "form_collection",
+                "forms"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "form_overview"
+            }
+          }
+        },
+        {
+          "turn": 29,
+          "question": "why does it have 3 forms ?",
+          "expected_profile": "form_reason",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book describes three forms of Wau Kikik, but the reviewed passages do not explain why three forms developed or why a particular form has its described design.",
+            "status": "not_documented",
+            "intent": "forms",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "It consists of three different types.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E016"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E016"
+            ],
+            "record_ids": [
+              "RQ1-F01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_reason",
+              "last_status": "not_documented",
+              "last_intent": "forms",
+              "last_edge_ids": [
+                "E016"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "It consists of three different types.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E016"
+                  ]
+                }
+              ],
+              "last_answer": "The book describes three forms of Wau Kikik, but the reviewed passages do not explain why three forms developed or why a particular form has its described design.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "why does it have 3 form",
+              "concepts": [
+                "causal",
+                "followup",
+                "form_collection",
+                "forms",
+                "reason"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "form_reason"
+            }
+          }
+        },
+        {
+          "turn": 30,
+          "question": "which form is more popular ?",
+          "expected_profile": "form_comparison_unknown",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book describes three forms of Wau Kikik, but the reviewed passages do not rank them by popularity, importance or frequency, or identify a best or rarest form.",
+            "status": "not_documented",
+            "intent": "forms",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "It consists of three different types.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E016"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E016"
+            ],
+            "record_ids": [
+              "RQ1-F01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_comparison_unknown",
+              "last_status": "not_documented",
+              "last_intent": "forms",
+              "last_edge_ids": [
+                "E016"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "It consists of three different types.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E016"
+                  ]
+                }
+              ],
+              "last_answer": "The book describes three forms of Wau Kikik, but the reviewed passages do not rank them by popularity, importance or frequency, or identify a best or rarest form.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "which form is more popular",
+              "concepts": [
+                "forms",
+                "popularity",
+                "ranking"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "form_comparison_unknown"
+            }
+          }
+        },
+        {
+          "turn": 31,
+          "question": "what other names does wau kikik has ?",
+          "expected_profile": "aliases",
+          "expected_status": "supported",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book also calls Wau Kikik “Wau Kaca” and uses “Laga Kite” in its heading. These names are not established as interchangeable in every context.",
+            "status": "supported",
+            "intent": "names",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E003"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "Wau Kikik or the Laga Kite",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E001"
+                ]
+              },
+              {
+                "source_id": "S01",
+                "page": 72,
+                "language": "ms",
+                "quote": "Wau Kikik Atau Layang-layang Laga",
+                "scope": "Malay heading, p.72",
+                "scopes": [
+                  "Malay heading, p.72"
+                ],
+                "edge_ids": [
+                  "E014"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E003",
+              "E001",
+              "E014"
+            ],
+            "record_ids": [
+              "RQ1-N02",
+              "RQ1-N03"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "aliases",
+              "last_status": "supported",
+              "last_intent": "names",
+              "last_edge_ids": [
+                "E003",
+                "E001",
+                "E014"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E003"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "Wau Kikik or the Laga Kite",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E001"
+                  ]
+                },
+                {
+                  "source_id": "S01",
+                  "page": 72,
+                  "language": "ms",
+                  "quote": "Wau Kikik Atau Layang-layang Laga",
+                  "scope": "Malay heading, p.72",
+                  "scopes": [
+                    "Malay heading, p.72"
+                  ],
+                  "edge_ids": [
+                    "E014"
+                  ]
+                }
+              ],
+              "last_answer": "The book also calls Wau Kikik “Wau Kaca” and uses “Laga Kite” in its heading. These names are not established as interchangeable in every context.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "What forms does Wau Kikik have?",
+              "Why is it called Wau Kaca?",
+              "How many people launch Wau Laga?"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "what other name does wau kikik has",
+              "concepts": [
+                "naming"
+              ],
+              "entities": [
+                "wau_kikik"
+              ],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "candidates": [
+                {
+                  "profile": "aliases",
+                  "score": 6,
+                  "matched_concepts": [
+                    "naming"
+                  ]
+                }
+              ],
+              "selected_profile": "aliases"
+            },
+            "details_en": "The English heading is “Wau Kikik or the Laga Kite”; the Malay heading is “Wau Kikik Atau Layang-layang Laga”. A heading links names within that passage, but does not prove that every use of Kikik and Laga refers to the same kite."
+          }
+        },
+        {
+          "turn": 32,
+          "question": "which form is more important ?",
+          "expected_profile": "form_comparison_unknown",
+          "expected_status": "not_documented",
+          "route_and_status_match": true,
+          "response": {
+            "text": "The book describes three forms of Wau Kikik, but the reviewed passages do not rank them by popularity, importance or frequency, or identify a best or rarest form.",
+            "status": "not_documented",
+            "intent": "forms",
+            "source_cards": [
+              {
+                "source_id": "S01",
+                "page": 73,
+                "language": "en",
+                "quote": "It consists of three different types.",
+                "scope": "Wau Kikik profile, pp.72–73",
+                "scopes": [
+                  "Wau Kikik profile, pp.72–73"
+                ],
+                "edge_ids": [
+                  "E016"
+                ]
+              }
+            ],
+            "edge_ids": [
+              "E016"
+            ],
+            "record_ids": [
+              "RQ1-F01"
+            ],
+            "state": {
+              "entity": "wau_kikik",
+              "last_facet": "form_comparison_unknown",
+              "last_status": "not_documented",
+              "last_intent": "forms",
+              "last_edge_ids": [
+                "E016"
+              ],
+              "last_source_cards": [
+                {
+                  "source_id": "S01",
+                  "page": 73,
+                  "language": "en",
+                  "quote": "It consists of three different types.",
+                  "scope": "Wau Kikik profile, pp.72–73",
+                  "scopes": [
+                    "Wau Kikik profile, pp.72–73"
+                  ],
+                  "edge_ids": [
+                    "E016"
+                  ]
+                }
+              ],
+              "last_answer": "The book describes three forms of Wau Kikik, but the reviewed passages do not rank them by popularity, importance or frequency, or identify a best or rarest form.",
+              "visited_intents": [
+                "names",
+                "name_reason",
+                "place_status",
+                "forms",
+                "launch",
+                "not_documented",
+                "control",
+                "materials",
+                "defence",
+                "features",
+                "comparison"
+              ],
+              "referent": "glass_string"
+            },
+            "suggestions": [
+              "First form",
+              "Second form",
+              "Third form"
+            ],
+            "review_status": "source_checked_representation_pending",
+            "author_review_status": "approved",
+            "routing": {
+              "normalized": "which form is more important",
+              "concepts": [
+                "forms",
+                "importance",
+                "ranking"
+              ],
+              "entities": [],
+              "normalizations": [],
+              "method": "weighted_facet_routing",
+              "selected_profile": "form_comparison_unknown"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1711 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conversation development review</title><style>body{font:16px/1.5 Arial;max-width:1000px;margin:30px auto;padding:20px}section{border:1px solid #ccc;padding:18px;margin:16px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere}blockquote{border-left:3px solid #555;padding:12px}</style><h1>Conversation development review</h1><p>Exposed development dialogue. Topic, evidence state, context and source excerpts are checked; this is not an independent accuracy estimate.</p><p>1 sessions · 32 turns</p><section><h2>CONV01 · Continuous heritage-guide conversation</h2><h3>What other names does Wau Kikik have?</h3><p><b>supported</b> · names</p><blockquote>The book also calls Wau Kikik “Wau Kaca” and uses “Laga Kite” in its heading. These names are not established as interchangeable in every context.</blockquote><details><summary>More detail</summary><p>The English heading is “Wau Kikik or the Laga Kite”; the Malay heading is “Wau Kikik Atau Layang-layang Laga”. A heading links names within that passage, but does not prove that every use of Kikik and Laga refers to the same kite.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Another name for it is Wau Kaca, due to the powdered glass glazed on its string.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E003&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik or the Laga Kite&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E001&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik Atau Layang-layang Laga&quot;,
+      &quot;scope&quot;: &quot;Malay heading, p.72&quot;,
+      &quot;scopes&quot;: [
+        &quot;Malay heading, p.72&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E014&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E003&quot;,
+    &quot;E001&quot;,
+    &quot;E014&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what other name does wau kikik have&quot;,
+    &quot;concepts&quot;: [
+      &quot;naming&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;aliases&quot;,
+        &quot;score&quot;: 6,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;aliases&quot;
+  }
+}</pre></details><h3>Why is it called Wau Kaca?</h3><p><b>supported</b> · name_reason</p><blockquote>The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.</blockquote><details><summary>More detail</summary><p>The English account describes defeating an opponent’s wau on contact; the Malay account names the intended cutting action. This historical explanation does not establish that every Wau Kikik uses glass-coated string or that the practice continues today.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Another name for it is Wau Kaca, due to the powdered glass glazed on its string.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E004&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, p.73; English purpose wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, p.73; English purpose wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E073&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, p.72; Malay purpose wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, p.72; Malay purpose wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E074&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E004&quot;,
+    &quot;E073&quot;,
+    &quot;E074&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;why is it call wau kaca&quot;,
+    &quot;concepts&quot;: [
+      &quot;causal&quot;,
+      &quot;followup&quot;,
+      &quot;naming&quot;,
+      &quot;reason&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;kaca&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;kaca_reason&quot;,
+        &quot;score&quot;: 17,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;,
+          &quot;reason&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;kaca_names&quot;,
+        &quot;score&quot;: 9,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;aliases&quot;,
+        &quot;score&quot;: 5,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;kaca_reason&quot;
+  }
+}</pre></details><h3>is this the most famous wau in kuala lampour ?</h3><p><b>not_documented</b> · place_status</p><blockquote>The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [],
+  &quot;edge_ids&quot;: [],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;is this the most famous wau in kuala lampour&quot;,
+    &quot;concepts&quot;: [
+      &quot;followup&quot;,
+      &quot;ranking&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;location_request&quot;: {
+      &quot;requested&quot;: true,
+      &quot;places&quot;: [
+        &quot;kuala lampour&quot;
+      ],
+      &quot;geography&quot;: false
+    },
+    &quot;selected_profile&quot;: &quot;place_unknown&quot;
+  }
+}</pre></details><h3>does it have tail?</h3><p><b>clarification</b> · None</p><blockquote>Which Wau Kikik form do you mean: first, second or third?</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [],
+  &quot;edge_ids&quot;: [],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;does it have tail&quot;,
+    &quot;concepts&quot;: [
+      &quot;followup&quot;,
+      &quot;tail&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;
+  }
+}</pre></details><h3>First form</h3><p><b>not_documented</b> · forms</p><blockquote>The reviewed description does not establish whether the first form has a tail. This is a limit of the source, not proof that the feature is absent.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [],
+  &quot;edge_ids&quot;: [],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;does it have tail&quot;,
+    &quot;concepts&quot;: [
+      &quot;followup&quot;,
+      &quot;forms&quot;,
+      &quot;tail&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;form_component_unknown&quot;,
+    &quot;selection&quot;: &quot;clarification_completed_request&quot;
+  }
+}</pre></details><h3>How many people launch Wau Laga?</h3><p><b>supported</b> · launch</p><blockquote>Two players launch Wau Laga: a launcher (juru lancar) and a puller (juru tarik). The book also names “juru anjong” and “juru main tali”, but does not explicitly map these labels to the later pair; they do not mean four players.</blockquote><details><summary>More detail</summary><p>Page 144 first names juru anjong and juru main tali, then discusses the distance between juru lancar and juru tarik. The quoted passage requires two players; it does not provide an explicit one-to-one equivalence between the two pairs of labels.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 144,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;the long distance launching technique is used. Two players are required.&quot;,
+      &quot;scope&quot;: &quot;The technic of raising the Wau Laga, p.144&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of raising the Wau Laga, p.144&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E038&quot;,
+        &quot;E039&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 144,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;One is the ‘juru anjong’ and the other, the ‘juru main tali’.&quot;,
+      &quot;scope&quot;: &quot;The technic of raising the Wau Laga, p.144 | The technic of raising the Wau Laga, p.144; names of the two players in the described launch&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of raising the Wau Laga, p.144&quot;,
+        &quot;The technic of raising the Wau Laga, p.144; names of the two players in the described launch&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E039&quot;,
+        &quot;E069&quot;,
+        &quot;E070&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 144,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller)&quot;,
+      &quot;scope&quot;: &quot;The technic of raising the Wau Laga, p.144&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of raising the Wau Laga, p.144&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E039&quot;,
+        &quot;E041&quot;,
+        &quot;E042&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E038&quot;,
+    &quot;E039&quot;,
+    &quot;E069&quot;,
+    &quot;E070&quot;,
+    &quot;E041&quot;,
+    &quot;E042&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;how many people launch wau laga&quot;,
+    &quot;concepts&quot;: [
+      &quot;count&quot;,
+      &quot;launch&quot;,
+      &quot;people&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_laga&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;launch_people&quot;,
+        &quot;score&quot;: 16,
+        &quot;matched_concepts&quot;: [
+          &quot;count&quot;,
+          &quot;people&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;form_count&quot;,
+        &quot;score&quot;: 6,
+        &quot;matched_concepts&quot;: [
+          &quot;count&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;launch_people&quot;
+  }
+}</pre></details><h3>when did this wau first used ?</h3><p><b>not_documented</b> · not_documented</p><blockquote>The reviewed passages do not state when this kite was first used or invented, who invented it, or where it originated. The book’s 2002 publication date is not an invention date.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [],
+  &quot;edge_ids&quot;: [],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;when did this wau first used&quot;,
+    &quot;concepts&quot;: [
+      &quot;followup&quot;,
+      &quot;origin&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;origin&quot;
+  }
+}</pre></details><h3>how is it steered?</h3><p><b>supported</b> · control</p><blockquote>While the wau is taking flight, the guide describes releasing string slowly. When its head faces the intended direction, it describes locking the string with one or both hands so the wau moves in that direction.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 146,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The wau’s flight direction can be determined while the wau is taking flight.&quot;,
+      &quot;scope&quot;: &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;,
+      &quot;scopes&quot;: [
+        &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E058&quot;,
+        &quot;E059&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 146,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The kiter will release the string slowly&quot;,
+      &quot;scope&quot;: &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;,
+      &quot;scopes&quot;: [
+        &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E059&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 146,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;when the head of the wau faces into the direction as required by the player&quot;,
+      &quot;scope&quot;: &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;,
+      &quot;scopes&quot;: [
+        &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E060&quot;,
+        &quot;E061&quot;,
+        &quot;E062&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 146,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;the string will be locked using one or both hands.&quot;,
+      &quot;scope&quot;: &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;,
+      &quot;scopes&quot;: [
+        &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E061&quot;,
+        &quot;E062&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 146,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The wau will then move in the direction required.&quot;,
+      &quot;scope&quot;: &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;,
+      &quot;scopes&quot;: [
+        &quot;Guidelines to control the Wau Laga, p.146; descriptive source guidance&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E062&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E058&quot;,
+    &quot;E059&quot;,
+    &quot;E060&quot;,
+    &quot;E061&quot;,
+    &quot;E062&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;how is it steer&quot;,
+    &quot;concepts&quot;: [
+      &quot;direction&quot;,
+      &quot;followup&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;steer&quot;,
+        &quot;score&quot;: 11,
+        &quot;matched_concepts&quot;: [
+          &quot;direction&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;steer&quot;
+  }
+}</pre></details><h3>What is Wau Kikik covered with?</h3><p><b>supported</b> · materials</p><blockquote>The profile describes Wau Kikik as having a basic covering of wau paper. It does not supply a complete construction specification or a full list of structural materials.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;With a few basic layers of wau papers&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E030&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Dengan mempunyai lapisan asas kertas wau&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E030&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E030&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what is wau kikik cover with&quot;,
+    &quot;concepts&quot;: [
+      &quot;covering&quot;,
+      &quot;overview&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;covering&quot;,
+        &quot;score&quot;: 11,
+        &quot;matched_concepts&quot;: [
+          &quot;covering&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;covering&quot;
+  }
+}</pre></details><h3>What happens when a player is attacked?</h3><p><b>supported</b> · defence</p><blockquote>When attacked, the passage describes releasing the kite string quickly so it slackens. In that defensive situation, the book says a slack string is harder to break.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 148,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;If a player is being attacked, he must release his wau string quickly so that it slackens&quot;,
+      &quot;scope&quot;: &quot;The technic of attacking Wau Laga, p.148; descriptive source guidance&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of attacking Wau Laga, p.148; descriptive source guidance&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E012&quot;,
+        &quot;E052&quot;,
+        &quot;E065&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 148,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;so that it slackens and will make it harder for the string to be broken.&quot;,
+      &quot;scope&quot;: &quot;The technic of attacking Wau Laga, p.148; descriptive source guidance&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of attacking Wau Laga, p.148; descriptive source guidance&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E066&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E012&quot;,
+    &quot;E052&quot;,
+    &quot;E066&quot;,
+    &quot;E065&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what happens when a player is attack&quot;,
+    &quot;concepts&quot;: [
+      &quot;attack&quot;,
+      &quot;defence&quot;,
+      &quot;people&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;defence&quot;,
+        &quot;score&quot;: 22,
+        &quot;matched_concepts&quot;: [
+          &quot;defence&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;attack&quot;,
+        &quot;score&quot;: 11,
+        &quot;matched_concepts&quot;: [
+          &quot;attack&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;defence&quot;
+  }
+}</pre></details><h3>Does Wau Kikik have a hummer?</h3><p><b>explicit_negative</b> · features</p><blockquote>The profile explicitly says Wau Kikik has no hummer (busur). This does not establish that the kite produces no sound at all.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik neither has a hummer nor any ‘sobek’ carvings.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E007&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik tidak mempunyai busur dan juga ukiran sobek.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E007&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E007&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;does wau kikik have a hummer&quot;,
+    &quot;concepts&quot;: [
+      &quot;hummer&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;hummer&quot;,
+        &quot;score&quot;: 12,
+        &quot;matched_concepts&quot;: [
+          &quot;hummer&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;hummer&quot;
+  }
+}</pre></details><h3>Why is it called Wau Kaca?</h3><p><b>supported</b> · name_reason</p><blockquote>The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.</blockquote><details><summary>More detail</summary><p>The English account describes defeating an opponent’s wau on contact; the Malay account names the intended cutting action. This historical explanation does not establish that every Wau Kikik uses glass-coated string or that the practice continues today.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Another name for it is Wau Kaca, due to the powdered glass glazed on its string.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E004&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, p.73; English purpose wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, p.73; English purpose wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E073&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, p.72; Malay purpose wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, p.72; Malay purpose wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E074&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E004&quot;,
+    &quot;E073&quot;,
+    &quot;E074&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;why is it call wau kaca&quot;,
+    &quot;concepts&quot;: [
+      &quot;causal&quot;,
+      &quot;followup&quot;,
+      &quot;naming&quot;,
+      &quot;reason&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;kaca&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;kaca_reason&quot;,
+        &quot;score&quot;: 17,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;,
+          &quot;reason&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;kaca_names&quot;,
+        &quot;score&quot;: 9,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;aliases&quot;,
+        &quot;score&quot;: 5,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;kaca_reason&quot;
+  }
+}</pre></details><h3>is it good for people above 30 years old ?</h3><p><b>not_documented</b> · not_documented</p><blockquote>The reviewed passages do not specify age suitability for this kite activity, including whether it is suitable for people over a particular age. They cannot support an age-based recommendation.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [],
+  &quot;edge_ids&quot;: [],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;is it good for people above 30 year old&quot;,
+    &quot;concepts&quot;: [
+      &quot;age_suitability&quot;,
+      &quot;followup&quot;,
+      &quot;people&quot;,
+      &quot;position&quot;,
+      &quot;reason&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;age_suitability&quot;
+  }
+}</pre></details><h3>What forms does Wau Kikik have?</h3><p><b>supported</b> · forms</p><blockquote>The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;It consists of three different types.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E016&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The first being, Wau Kikik with a head and dented/concaved.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73 | p.73:English wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;,
+        &quot;p.73:English wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E020&quot;,
+        &quot;E021&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;mempunyai kepala dan berlekuk.&quot;,
+      &quot;scope&quot;: &quot;p.72:Malay wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;p.72:Malay wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E022&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E023&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The second, Wau Kikik which is rectangular in shape with a tail&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E023&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E016&quot;,
+    &quot;E020&quot;,
+    &quot;E021&quot;,
+    &quot;E022&quot;,
+    &quot;E023&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what form does wau kikik have&quot;,
+    &quot;concepts&quot;: [
+      &quot;form_collection&quot;,
+      &quot;forms&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;form_overview&quot;
+  }
+}</pre></details><h3>is it used outside Malaysia?</h3><p><b>not_documented</b> · place_status</p><blockquote>The reviewed book passages do not establish that place-specific claim. Missing evidence about a location does not mean Wau is absent there.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [],
+  &quot;edge_ids&quot;: [],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;is it used outside malaysia&quot;,
+    &quot;concepts&quot;: [
+      &quot;followup&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;location_request&quot;: {
+      &quot;requested&quot;: true,
+      &quot;places&quot;: [
+        &quot;malaysia&quot;
+      ],
+      &quot;geography&quot;: false
+    },
+    &quot;selected_profile&quot;: &quot;place_unknown&quot;
+  }
+}</pre></details><h3>why is it important ?</h3><p><b>supported</b> · names</p><blockquote>The 2002 book classifies Wau Kikik as a traditional Malay wau and describes its design as the simplest among them. The reviewed passages do not give a reason for its importance or explain that design characterization.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The Wau Kikik represents the simplest design of all traditional Malay wau.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E013&quot;,
+        &quot;E027&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E013&quot;,
+    &quot;E027&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;why is it important&quot;,
+    &quot;concepts&quot;: [
+      &quot;causal&quot;,
+      &quot;followup&quot;,
+      &quot;importance&quot;,
+      &quot;reason&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;importance_overview&quot;
+  }
+}</pre></details><h3>How is Wau Kikik related to the Eddy Kite?</h3><p><b>supported</b> · comparison</p><blockquote>The profile says Wau Kikik resembles the Eddy Kite and reports “Malay Kite” as a Western name for the Eddy Kite. Resemblance does not establish that they are the same kite.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The Wau Kikik shares a resemblance with the ‘Eddy Kite’ which is also known as the ‘Malay Kite’ by the westerners.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E010&quot;,
+        &quot;E028&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E010&quot;,
+    &quot;E028&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;how is wau kikik related to the eddy kite&quot;,
+    &quot;concepts&quot;: [],
+    &quot;entities&quot;: [
+      &quot;eddy&quot;,
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;eddy&quot;,
+        &quot;score&quot;: 13,
+        &quot;matched_concepts&quot;: []
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;eddy&quot;
+  }
+}</pre></details><h3>what is Wou kikik ?</h3><p><b>supported</b> · names</p><blockquote>The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The Wau Kikik represents the simplest design of all traditional Malay wau.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E013&quot;,
+        &quot;E027&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E013&quot;,
+    &quot;E027&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what is wau kikik&quot;,
+    &quot;concepts&quot;: [
+      &quot;overview&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [
+      {
+        &quot;input&quot;: &quot;wou&quot;,
+        &quot;normalized&quot;: &quot;wau&quot;
+      }
+    ],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;overview&quot;,
+        &quot;score&quot;: 6,
+        &quot;matched_concepts&quot;: [
+          &quot;overview&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;overview&quot;
+  }
+}</pre></details><h3>what is Wau kikik ?</h3><p><b>supported</b> · names</p><blockquote>The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The Wau Kikik represents the simplest design of all traditional Malay wau.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E013&quot;,
+        &quot;E027&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E013&quot;,
+    &quot;E027&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what is wau kikik&quot;,
+    &quot;concepts&quot;: [
+      &quot;overview&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;overview&quot;,
+        &quot;score&quot;: 6,
+        &quot;matched_concepts&quot;: [
+          &quot;overview&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;overview&quot;
+  }
+}</pre></details><h3>what is wau at the first place ?</h3><p><b>supported</b> · names</p><blockquote>In this guide, “wau” refers to the traditional Malay kites discussed in the book. Wau Kikik is one example.</blockquote><details><summary>More detail</summary><p>This is a contextual explanation of the term in the project source. The book classifies Wau Kikik among traditional Malay wau and labels its profile “Wau Kikik or the Laga Kite”. It is not a claim that every kite is a wau.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The Wau Kikik represents the simplest design of all traditional Malay wau.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E013&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik or the Laga Kite&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E001&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik Atau Layang-layang Laga&quot;,
+      &quot;scope&quot;: &quot;Malay heading, p.72&quot;,
+      &quot;scopes&quot;: [
+        &quot;Malay heading, p.72&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E014&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E013&quot;,
+    &quot;E001&quot;,
+    &quot;E014&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what is wau&quot;,
+    &quot;concepts&quot;: [
+      &quot;overview&quot;,
+      &quot;wau_definition&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;wau_definition&quot;
+  }
+}</pre></details><h3>what is a wau ?</h3><p><b>supported</b> · names</p><blockquote>In this guide, “wau” refers to the traditional Malay kites discussed in the book. Wau Kikik is one example.</blockquote><details><summary>More detail</summary><p>This is a contextual explanation of the term in the project source. The book classifies Wau Kikik among traditional Malay wau and labels its profile “Wau Kikik or the Laga Kite”. It is not a claim that every kite is a wau.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The Wau Kikik represents the simplest design of all traditional Malay wau.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E013&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik or the Laga Kite&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E001&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik Atau Layang-layang Laga&quot;,
+      &quot;scope&quot;: &quot;Malay heading, p.72&quot;,
+      &quot;scopes&quot;: [
+        &quot;Malay heading, p.72&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E014&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E013&quot;,
+    &quot;E001&quot;,
+    &quot;E014&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what is a wau&quot;,
+    &quot;concepts&quot;: [
+      &quot;overview&quot;,
+      &quot;wau_definition&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;wau_definition&quot;
+  }
+}</pre></details><h3>what is special about wau kikik ?</h3><p><b>supported</b> · names</p><blockquote>The 2002 profile classifies Wau Kikik as a traditional Malay wau. The book characterizes Wau Kikik as having the simplest design among traditional Malay wau.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The Wau Kikik represents the simplest design of all traditional Malay wau.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E013&quot;,
+        &quot;E027&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E013&quot;,
+    &quot;E027&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what is special about wau kikik&quot;,
+    &quot;concepts&quot;: [
+      &quot;distinctive&quot;,
+      &quot;overview&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;overview&quot;
+  }
+}</pre></details><h3>What forms does Wau Kikik have?</h3><p><b>supported</b> · forms</p><blockquote>The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;It consists of three different types.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E016&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The first being, Wau Kikik with a head and dented/concaved.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73 | p.73:English wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;,
+        &quot;p.73:English wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E020&quot;,
+        &quot;E021&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;mempunyai kepala dan berlekuk.&quot;,
+      &quot;scope&quot;: &quot;p.72:Malay wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;p.72:Malay wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E022&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E023&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The second, Wau Kikik which is rectangular in shape with a tail&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E023&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E016&quot;,
+    &quot;E020&quot;,
+    &quot;E021&quot;,
+    &quot;E022&quot;,
+    &quot;E023&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what form does wau kikik have&quot;,
+    &quot;concepts&quot;: [
+      &quot;form_collection&quot;,
+      &quot;forms&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;form_overview&quot;
+  }
+}</pre></details><h3>How many people launch Wau Laga?</h3><p><b>supported</b> · launch</p><blockquote>Two players launch Wau Laga: a launcher (juru lancar) and a puller (juru tarik). The book also names “juru anjong” and “juru main tali”, but does not explicitly map these labels to the later pair; they do not mean four players.</blockquote><details><summary>More detail</summary><p>Page 144 first names juru anjong and juru main tali, then discusses the distance between juru lancar and juru tarik. The quoted passage requires two players; it does not provide an explicit one-to-one equivalence between the two pairs of labels.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 144,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;the long distance launching technique is used. Two players are required.&quot;,
+      &quot;scope&quot;: &quot;The technic of raising the Wau Laga, p.144&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of raising the Wau Laga, p.144&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E038&quot;,
+        &quot;E039&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 144,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;One is the ‘juru anjong’ and the other, the ‘juru main tali’.&quot;,
+      &quot;scope&quot;: &quot;The technic of raising the Wau Laga, p.144 | The technic of raising the Wau Laga, p.144; names of the two players in the described launch&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of raising the Wau Laga, p.144&quot;,
+        &quot;The technic of raising the Wau Laga, p.144; names of the two players in the described launch&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E039&quot;,
+        &quot;E069&quot;,
+        &quot;E070&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 144,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller)&quot;,
+      &quot;scope&quot;: &quot;The technic of raising the Wau Laga, p.144&quot;,
+      &quot;scopes&quot;: [
+        &quot;The technic of raising the Wau Laga, p.144&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E039&quot;,
+        &quot;E041&quot;,
+        &quot;E042&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E038&quot;,
+    &quot;E039&quot;,
+    &quot;E069&quot;,
+    &quot;E070&quot;,
+    &quot;E041&quot;,
+    &quot;E042&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;how many people launch wau laga&quot;,
+    &quot;concepts&quot;: [
+      &quot;count&quot;,
+      &quot;launch&quot;,
+      &quot;people&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_laga&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;launch_people&quot;,
+        &quot;score&quot;: 16,
+        &quot;matched_concepts&quot;: [
+          &quot;count&quot;,
+          &quot;people&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;form_count&quot;,
+        &quot;score&quot;: 6,
+        &quot;matched_concepts&quot;: [
+          &quot;count&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;launch_people&quot;
+  }
+}</pre></details><h3>Does Wau Kikik have a hummer?</h3><p><b>explicit_negative</b> · features</p><blockquote>The profile explicitly says Wau Kikik has no hummer (busur). This does not establish that the kite produces no sound at all.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik neither has a hummer nor any ‘sobek’ carvings.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E007&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik tidak mempunyai busur dan juga ukiran sobek.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E007&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E007&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;does wau kikik have a hummer&quot;,
+    &quot;concepts&quot;: [
+      &quot;hummer&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;hummer&quot;,
+        &quot;score&quot;: 12,
+        &quot;matched_concepts&quot;: [
+          &quot;hummer&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;hummer&quot;
+  }
+}</pre></details><h3>Why is it called Wau Kaca?</h3><p><b>supported</b> · name_reason</p><blockquote>The book links the name “Wau Kaca” to powdered glass on the kite string, intended to defeat an opponent’s wau in competition. The Malay text explicitly describes cutting the opponent’s string. The glass concerns the string, not the kite’s body.</blockquote><details><summary>More detail</summary><p>The English account describes defeating an opponent’s wau on contact; the Malay account names the intended cutting action. This historical explanation does not establish that every Wau Kikik uses glass-coated string or that the practice continues today.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Another name for it is Wau Kaca, due to the powdered glass glazed on its string.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E004&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, p.73; English purpose wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, p.73; English purpose wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E073&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, p.72; Malay purpose wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, p.72; Malay purpose wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E074&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E004&quot;,
+    &quot;E073&quot;,
+    &quot;E074&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;why is it call wau kaca&quot;,
+    &quot;concepts&quot;: [
+      &quot;causal&quot;,
+      &quot;followup&quot;,
+      &quot;naming&quot;,
+      &quot;reason&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;kaca&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;kaca_reason&quot;,
+        &quot;score&quot;: 17,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;,
+          &quot;reason&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;kaca_names&quot;,
+        &quot;score&quot;: 9,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      },
+      {
+        &quot;profile&quot;: &quot;aliases&quot;,
+        &quot;score&quot;: 5,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;kaca_reason&quot;
+  }
+}</pre></details><h3>how many forms does it have ?</h3><p><b>supported</b> · forms</p><blockquote>The profile enumerates three forms of Wau Kikik.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;It consists of three different types.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E016&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E016&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;how many form does it have&quot;,
+    &quot;concepts&quot;: [
+      &quot;count&quot;,
+      &quot;followup&quot;,
+      &quot;form_collection&quot;,
+      &quot;forms&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;form_count&quot;,
+        &quot;score&quot;: 13,
+        &quot;matched_concepts&quot;: [
+          &quot;count&quot;,
+          &quot;forms&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;form_count&quot;
+  }
+}</pre></details><h3>what are these forms ?</h3><p><b>supported</b> · forms</p><blockquote>The book lists three forms of Wau Kikik. The first has a head and is described as “dented/concaved”; the second has a tail. Choose First form, Second form or Third form below to see the exact source description for each.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;It consists of three different types.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E016&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The first being, Wau Kikik with a head and dented/concaved.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73 | p.73:English wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;,
+        &quot;p.73:English wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E020&quot;,
+        &quot;E021&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;mempunyai kepala dan berlekuk.&quot;,
+      &quot;scope&quot;: &quot;p.72:Malay wording&quot;,
+      &quot;scopes&quot;: [
+        &quot;p.72:Malay wording&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E022&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E023&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;The second, Wau Kikik which is rectangular in shape with a tail&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E023&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E016&quot;,
+    &quot;E020&quot;,
+    &quot;E021&quot;,
+    &quot;E022&quot;,
+    &quot;E023&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what are these form&quot;,
+    &quot;concepts&quot;: [
+      &quot;form_collection&quot;,
+      &quot;forms&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;form_overview&quot;
+  }
+}</pre></details><h3>why does it have 3 forms ?</h3><p><b>not_documented</b> · forms</p><blockquote>The book describes three forms of Wau Kikik, but the reviewed passages do not explain why three forms developed or why a particular form has its described design.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;It consists of three different types.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E016&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E016&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;why does it have 3 form&quot;,
+    &quot;concepts&quot;: [
+      &quot;causal&quot;,
+      &quot;followup&quot;,
+      &quot;form_collection&quot;,
+      &quot;forms&quot;,
+      &quot;reason&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;form_reason&quot;
+  }
+}</pre></details><h3>which form is more popular ?</h3><p><b>not_documented</b> · forms</p><blockquote>The book describes three forms of Wau Kikik, but the reviewed passages do not rank them by popularity, importance or frequency, or identify a best or rarest form.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;It consists of three different types.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E016&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E016&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;which form is more popular&quot;,
+    &quot;concepts&quot;: [
+      &quot;forms&quot;,
+      &quot;popularity&quot;,
+      &quot;ranking&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;form_comparison_unknown&quot;
+  }
+}</pre></details><h3>what other names does wau kikik has ?</h3><p><b>supported</b> · names</p><blockquote>The book also calls Wau Kikik “Wau Kaca” and uses “Laga Kite” in its heading. These names are not established as interchangeable in every context.</blockquote><details><summary>More detail</summary><p>The English heading is “Wau Kikik or the Laga Kite”; the Malay heading is “Wau Kikik Atau Layang-layang Laga”. A heading links names within that passage, but does not prove that every use of Kikik and Laga refers to the same kite.</p></details><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Another name for it is Wau Kaca, due to the powdered glass glazed on its string.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E003&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik or the Laga Kite&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E001&quot;
+      ]
+    },
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 72,
+      &quot;language&quot;: &quot;ms&quot;,
+      &quot;quote&quot;: &quot;Wau Kikik Atau Layang-layang Laga&quot;,
+      &quot;scope&quot;: &quot;Malay heading, p.72&quot;,
+      &quot;scopes&quot;: [
+        &quot;Malay heading, p.72&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E014&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E003&quot;,
+    &quot;E001&quot;,
+    &quot;E014&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;what other name does wau kikik has&quot;,
+    &quot;concepts&quot;: [
+      &quot;naming&quot;
+    ],
+    &quot;entities&quot;: [
+      &quot;wau_kikik&quot;
+    ],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;candidates&quot;: [
+      {
+        &quot;profile&quot;: &quot;aliases&quot;,
+        &quot;score&quot;: 6,
+        &quot;matched_concepts&quot;: [
+          &quot;naming&quot;
+        ]
+      }
+    ],
+    &quot;selected_profile&quot;: &quot;aliases&quot;
+  }
+}</pre></details><h3>which form is more important ?</h3><p><b>not_documented</b> · forms</p><blockquote>The book describes three forms of Wau Kikik, but the reviewed passages do not rank them by popularity, importance or frequency, or identify a best or rarest form.</blockquote><p>Expected topic and evidence state: pass.</p><details><summary>Evidence and routing</summary><pre>{
+  &quot;source_cards&quot;: [
+    {
+      &quot;source_id&quot;: &quot;S01&quot;,
+      &quot;page&quot;: 73,
+      &quot;language&quot;: &quot;en&quot;,
+      &quot;quote&quot;: &quot;It consists of three different types.&quot;,
+      &quot;scope&quot;: &quot;Wau Kikik profile, pp.72–73&quot;,
+      &quot;scopes&quot;: [
+        &quot;Wau Kikik profile, pp.72–73&quot;
+      ],
+      &quot;edge_ids&quot;: [
+        &quot;E016&quot;
+      ]
+    }
+  ],
+  &quot;edge_ids&quot;: [
+    &quot;E016&quot;
+  ],
+  &quot;routing&quot;: {
+    &quot;normalized&quot;: &quot;which form is more important&quot;,
+    &quot;concepts&quot;: [
+      &quot;forms&quot;,
+      &quot;importance&quot;,
+      &quot;ranking&quot;
+    ],
+    &quot;entities&quot;: [],
+    &quot;normalizations&quot;: [],
+    &quot;method&quot;: &quot;weighted_facet_routing&quot;,
+    &quot;selected_profile&quot;: &quot;form_comparison_unknown&quot;
+  }
+}</pre></details></section></html>

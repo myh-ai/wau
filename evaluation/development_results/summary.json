@@ -1,0 +1,11 @@
+{
+  "purpose": "development_regression_only",
+  "rq2_accuracy": null,
+  "cases": 24,
+  "steps": 44,
+  "machine_checks_passed": 620,
+  "machine_checks_failed": 0,
+  "manual_flags": 49,
+  "semantic_review": "pending",
+  "generated_at_utc": "2026-10-20T20:54:56.026782+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "purpose": "Evaluation tooling safeguard checks, not chatbot accuracy",
+  "status": "passed",
+  "tests_run": 20,
+  "failures": 0,
+  "errors": 0,
+  "checked_at_utc": "2026-10-20T20:55:25.400596+00:00",
+  "command": "python evaluation/test_rq2_tool.py",
+  "coverage": [
+    "fixed design validation",
+    "collection chronology",
+    "exact development overlap",
+    "duplicate questions",
+    "context rubric requirement",
+    "pending operational review blocks formal freeze",
+    "locked artifact integrity",
+    "single execution marker",
+    "registered gold integrity",
+    "literal response integrity",
+    "coverage and correctness denominators",
+    "unsupported claims scoring",
+    "incomplete scoring refusal",
+    "zero denominator handling",
+    "exact approved review payload binding and changed response-profile rejection",
+    "exact additional development-question overlap",
+    "literal exposed-question registry overlap",
+    "conversation development dataset exclusion"
+  ]
+}
