@@ -1,0 +1,47 @@
+{
+  "collection_enabled": false,
+  "approval_status": "pending",
+  "approval_reference": "",
+  "questionnaire_url": "https://forms.gle/vHHtfYTKqShZF1zc8",
+  "estimated_minutes": "10–15",
+  "researcher_contact": "Moustafa Hassan — reply through the channel used to send your study invitation.",
+  "familiarity_question": "Before this session, how familiar were you with Wau Kikik?",
+  "familiarity_options": [
+    "I had no prior knowledge of Wau Kikik.",
+    "I had heard of Wau Kikik but knew little about it.",
+    "I knew some basic information about Wau Kikik.",
+    "I knew Wau Kikik well."
+  ],
+  "tasks": [
+    {
+      "id": "T1",
+      "title": "Find a starting point",
+      "instruction": "Read the opening message and use the topic menu to find something you want to know about Wau Kikik."
+    },
+    {
+      "id": "T2",
+      "title": "Explore a name or a form",
+      "instruction": "In your own words, ask about a name or a shape mentioned in the guide. Ask a follow-up question if you want more detail."
+    },
+    {
+      "id": "T3",
+      "title": "Check the evidence",
+      "instruction": "Ask about a feature of Wau Kikik. Open a source card and compare the answer with the quoted passage."
+    },
+    {
+      "id": "T4",
+      "title": "Explore the flying account",
+      "instruction": "Ask about one aspect of the book’s account of launching, controlling or competing with Wau Laga. Use your own wording."
+    },
+    {
+      "id": "T5",
+      "title": "Try a clarification",
+      "instruction": "Ask a short question that leaves a detail unclear. If the guide asks for clarification, explain what you meant. Observe what actually happens, including any difficulty."
+    },
+    {
+      "id": "T6",
+      "title": "Ask your own question",
+      "instruction": "Ask another question you are curious about. It is fine if the book does not answer it. You can try a follow-up or restart the conversation."
+    }
+  ]
+}

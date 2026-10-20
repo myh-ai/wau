@@ -1,0 +1,47 @@
+{
+  "captured_at_utc": "2026-10-20T20:38:19.751813+00:00",
+  "source": "Actual locally running Streamlit app rendered in Chromium",
+  "capture_type": "Controlled-clock interface demonstration, not participant evidence",
+  "app_sha256": "eb1d87e9f8c179ba2a126a83e13d5a59ed4e650a5678f5009c9b9b4229aa1773",
+  "captures": [
+    {
+      "file": "greeting_morning.png",
+      "hour": 9,
+      "nickname": "Moustafa",
+      "clock": "controlled demonstration, labelled in the app",
+      "browser_timezone": "Asia/Kuala_Lumpur",
+      "viewport": {
+        "width": 1360,
+        "height": 1000
+      },
+      "sha256": "c6add7091067820b0b2c291ecc1794546b0ea66066889a51dd987b5a459c7e32"
+    },
+    {
+      "file": "greeting_evening.png",
+      "hour": 20,
+      "nickname": "Moustafa",
+      "clock": "controlled demonstration, labelled in the app",
+      "browser_timezone": "Asia/Kuala_Lumpur",
+      "viewport": {
+        "width": 1360,
+        "height": 1000
+      },
+      "sha256": "d398c375ada1bda6579e1267836d8425bd50a8e3b62487c2d2b447bf0d2b2a3d"
+    }
+  ],
+  "combined": {
+    "file": "greeting_morning_evening.png",
+    "crop_rectangle": [
+      250,
+      60,
+      1110,
+      400
+    ],
+    "arrangement": "Two unchanged source crops, vertically arranged with labels outside the crops.",
+    "dimensions": {
+      "width": 900,
+      "height": 780
+    },
+    "sha256": "8d081a2f841d80001c2c32c685b4cb5f3a8ee1806dd26141e6fbf9219685700d"
+  }
+}

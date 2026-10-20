@@ -1,0 +1,1 @@
+Figure. WauTrace greeting with an optional nickname: (a) morning and (b) evening. The actual interface was captured with labelled controlled hours, 09:00 and 20:00. The browser timezone was Asia/Kuala_Lumpur. These screenshots demonstrate the greeting interface; they are not participant data.

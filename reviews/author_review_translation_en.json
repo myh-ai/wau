@@ -1,0 +1,337 @@
+{
+  "reviewer_name": "Moustafa Hassan",
+  "review_date": "2026-10-18",
+  "reviewer_role": "human author",
+  "instructions": "Compare each English claim, scope, evidence and triple against the cited source before filling decision. Accept, revise or defer; do not mark reviewed without doing the review. This file records author approval, separate from source checks.",
+  "records": [
+    {
+      "record_id": "RQ1-N01",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The claim and relation were checked against pp.73 and 72. Presenting Wau Kikik as a traditional Malay wau is explicitly documented, without inferring its date of invention.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-N02",
+      "pages": [
+        72,
+        73,
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The headings on pp.72 and 73 and the practice-section heading on p.144 were checked. The Kikik–Laga link is documented within each section’s scope, without assuming universal identity.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-N03",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The name Wau Kaca and its explanation through powdered glass on the string were checked against pp.73 and 72. The glass concerns the string, not the kite body.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-N04",
+      "pages": [],
+      "decision": "accepted",
+      "comment": "The reviewed book pages do not contain the name Wau Kemetek. It is retained as a candidate name within the assignment scope, without an asserted factual edge.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-N05",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The statements on pp.73 and 72 identifying Wau Kikik as the official wau of Melaka were checked. The claim is restricted to the book’s 2002 publication context.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-F01",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The statements on pp.73 and 72 enumerating three described types of Wau Kikik within the book’s classification were checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-F02",
+      "pages": [
+        72,
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The first form’s head and dented/concaved description (berlekuk) were checked against pp.72 and 73, without assuming unspecified geometric dimensions.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-F03",
+      "pages": [
+        72,
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The second form was checked in both languages. A tail is common to both accounts; the Malay and English shape descriptions are both retained as a difference in specification, without imposing one form.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-F04",
+      "pages": [
+        72,
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The third-form descriptions on p.72 (segi empat tepat) and p.73 (perfect square shape) were checked. Both descriptions are retained as a difference in geometric specificity.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-C01",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The characterization of Wau Kikik as the simplest design among traditional wau was checked against pp.73 and 72 and retained as the book author’s qualitative description.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-C02",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The resemblance to Eddy Kite and its reported Western name Malay Kite were checked against pp.73 and 72, maintaining a strict distinction between resemblance and identity.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-C03",
+      "pages": [
+        72,
+        73
+      ],
+      "decision": "revised",
+      "comment": "The explicit absence of a hummer/busur was checked against pp.72 and 73, with Wau restored at the start of the Malay quotation and the negation limited to the specified component.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-C04",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The explicit absence of sobek carvings was checked against pp.73 and 72, without extending the negation to the coloured patterns visible in the kite images.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-C05",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The explicit absence of the leaf-shaped wings common in traditional wau was checked against pp.73 and 72. The negation is restricted to the described wing shape.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-C06",
+      "pages": [
+        72,
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The basic covering of layers of wau paper was checked against pp.72 and 73, without assuming a specific layer count or standard specifications.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P01",
+      "pages": [
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The p.144 description of Wau Laga practice as more challenging than the single-string kite used in the comparison, requiring considerable skill, speed and concentration, was checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P02",
+      "pages": [
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The competitive objective of breaking the opponent’s string and the defensive objective of protecting one’s own string from being cut were checked against pp.144 and 148.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P03",
+      "pages": [
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The p.144 account of string normally glazed with fine powdered glass to cut the opponent’s string during competition was checked, preserving the qualifier normally and the historical context.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P04",
+      "pages": [
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The p.144 statement describing Wau Laga as more popular on the west coast of Peninsular Malaysia was checked and retained as a qualitative account in the 2002 edition.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P05",
+      "pages": [
+        144
+      ],
+      "decision": "revised",
+      "comment": "The p.144 long-range launch involving two players was checked, including both pairs of role labels used in the text: juru anjong/juru main tali and juru lancar/juru tarik.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P06",
+      "pages": [
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The p.144 distance between launcher and puller, 30–50 feet / 9–15 metres, was checked and restricted to the launch separation between the players.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P07",
+      "pages": [
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The p.144 preparation and launch-coordination steps were checked: rolling up the remaining string to prevent tangling, the puller signalling the launcher, and releasing the string in stages.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P08",
+      "pages": [
+        146
+      ],
+      "decision": "revised",
+      "comment": "The p.146 account of control difficulty when the kite is close to the player and the altitude condition of about 200 feet / 60 metres was checked, including its attribution to The technic of controlling Wau Laga.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-P09",
+      "pages": [
+        146,
+        148
+      ],
+      "decision": "accepted",
+      "comment": "The summary record linking string handling with stability and direction on p.146 and defensive slackening on p.148 was checked against the accompanying detailed records.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S01",
+      "pages": [
+        144
+      ],
+      "decision": "accepted",
+      "comment": "The opening sentence on p.144 presenting Wau Laga as another type of traditional Malay wau was checked and retained alongside the headings on pp.72 and 73.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S02",
+      "pages": [
+        146
+      ],
+      "decision": "accepted",
+      "comment": "The p.146 conditional action of pulling the string to restore stability when the kite moves too far in a particular direction was checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S03",
+      "pages": [
+        146
+      ],
+      "decision": "accepted",
+      "comment": "The p.146 guidance to prepare sufficient string in piles on the ground so it can be released easily if the kite starts diving sharply at low altitude was checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S04",
+      "pages": [
+        146
+      ],
+      "decision": "accepted",
+      "comment": "The first stage of directing flight during ascent on p.146, by releasing the string slowly, was checked and linked to the next conditional step.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S05",
+      "pages": [
+        146
+      ],
+      "decision": "accepted",
+      "comment": "The p.146 condition and result were checked: when the kite’s head points towards the desired direction, holding the string with one or both hands makes it move in that direction.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S06",
+      "pages": [
+        148
+      ],
+      "decision": "accepted",
+      "comment": "The p.148 statement identifying speed as the most decisive factor in the described competitive attacking situation was checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S07",
+      "pages": [
+        148
+      ],
+      "decision": "accepted",
+      "comment": "The p.148 account of the attacking manoeuvre, in which players compete to cross their kite string with the opponent’s string, was checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S08",
+      "pages": [
+        148
+      ],
+      "decision": "accepted",
+      "comment": "The wording on p.148 about the advantage of being positioned below the opponent was checked. Its precise spatial referent is not resolved without further evidence.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S09",
+      "pages": [
+        148
+      ],
+      "decision": "accepted",
+      "comment": "The p.148 defensive action of releasing the string quickly so it slackens when under attack was checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S10",
+      "pages": [
+        148
+      ],
+      "decision": "accepted",
+      "comment": "The p.148 explanation that slackening the string when defending makes it more difficult to cut was checked.",
+      "reviewed_claim_and_triples": true
+    },
+    {
+      "record_id": "RQ1-S11",
+      "pages": [
+        73
+      ],
+      "decision": "accepted",
+      "comment": "The conditional competitive relation on p.73 concerning defeat of the opponent’s wau upon contact with Wau Kaca during a competition was checked.",
+      "reviewed_claim_and_triples": true
+    }
+  ],
+  "document_type": "English translation of the submitted Arabic author review",
+  "translation_metadata": {
+    "source_filename": "Auther_review_done.json",
+    "source_language": "ar",
+    "target_language": "en",
+    "source_sha256": "a0c27eaf629faea36fc79201bef69a078ffa941b7ce8e901abe4716560142225",
+    "scope": "The comments and decisions concern the submitted source records. This translation is not the original document and does not certify the current operational edges."
+  }
+}
