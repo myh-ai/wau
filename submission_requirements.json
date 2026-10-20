@@ -1,0 +1,27 @@
+{
+  "source_type": "user_transcription_of_Moodle_assessment_page",
+  "reported_by": "Moustafa Hassan",
+  "received_on": "2026-10-18",
+  "independently_verified": false,
+  "course": "Artificial Intelligence (082026-VTK) Async",
+  "navigation": [
+    "My Assessments",
+    "Individual Assignment"
+  ],
+  "assessment": "Individual Assignment",
+  "opened_display": "Thursday, 15 October 2026, 12:00 AM",
+  "opened_local_datetime": "2026-10-15T00:00:00",
+  "due_display": "Friday, 23 October 2026, 11:45 PM",
+  "due_local_datetime": "2026-10-23T23:45:00",
+  "displayed_timezone": null,
+  "timezone_status": "The supplied page transcription does not state its timezone. Datetimes are display values without offsets; no timezone conversion is asserted.",
+  "upload_instruction": "Please upload in pdf format",
+  "required_format": "PDF",
+  "observed_submission_status": "No submissions have been made yet",
+  "observed_grading_status": "Not graded",
+  "observed_time_remaining": "5 days 6 hours remaining",
+  "countdown_scope": "A transcribed display value at the user’s observation time, not a live countdown or evidence of the display timezone.",
+  "last_modified_as_displayed": "-",
+  "submission_comments_count": 0,
+  "completion_status": "No submission is recorded by this transcription. This package does not submit the assignment."
+}

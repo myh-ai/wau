@@ -1,0 +1,189 @@
+[
+  {
+    "item_id": 1,
+    "english_item": "WauTrace felt like a friendly and engaging guide to Wau Kikik.",
+    "original_construct": "Chatbot personality and engagement",
+    "polarity": "positive",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": true,
+    "descriptors": [
+      "friendly",
+      "engaging"
+    ],
+    "adaptation_rationale": "The wording describes WauTrace as a friendly and engaging guide to Wau Kikik. It preserves both descriptors in the authorised item; it is not claimed to be a single judgement or a measure of avatar attractiveness."
+  },
+  {
+    "item_id": 2,
+    "english_item": "WauTrace’s replies felt too robotic.",
+    "original_construct": "Robotic or mechanical interaction",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Preserves perceived mechanical interaction and negative polarity, without introducing content accuracy or response speed."
+  },
+  {
+    "item_id": 3,
+    "english_item": "WauTrace’s greeting made me feel welcome when I started.",
+    "original_construct": "Welcoming initial interaction",
+    "polarity": "positive",
+    "ui_link": "opening_greeting",
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Connects feeling welcome to the opening greeting; it does not ask separate judgements about time, name or avatar."
+  },
+  {
+    "item_id": 4,
+    "english_item": "WauTrace’s tone felt unfriendly.",
+    "original_construct": "Unfriendly interaction",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Retains the negative judgement of an unfriendly tone without adding information quality."
+  },
+  {
+    "item_id": 5,
+    "english_item": "WauTrace’s opening message made clear what it could tell me about Wau Kikik.",
+    "original_construct": "Clarity of chatbot scope and purpose",
+    "polarity": "positive",
+    "ui_link": "opening_scope",
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Measures how clearly the opening message communicates what WauTrace can explain about Wau Kikik, within the purpose and scope construct."
+  },
+  {
+    "item_id": 6,
+    "english_item": "I could not tell what WauTrace was meant to help me with.",
+    "original_construct": "Unclear chatbot purpose",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Measures unclear chatbot purpose and preserves negative polarity."
+  },
+  {
+    "item_id": 7,
+    "english_item": "The topic menu made it easy to find my way around WauTrace.",
+    "original_construct": "Ease of navigation",
+    "polarity": "positive",
+    "ui_link": "topic_menu",
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Connects navigation ease to the topic menu without adding colour preferences or information accuracy."
+  },
+  {
+    "item_id": 8,
+    "english_item": "I easily got confused about what to do next in WauTrace.",
+    "original_construct": "Confusing chatbot use",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Measures confusion about the next interaction step, rather than difficulty of the cultural subject itself."
+  },
+  {
+    "item_id": 9,
+    "english_item": "WauTrace understood my questions about Wau Kikik.",
+    "original_construct": "Understanding user input",
+    "polarity": "positive",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Measures recognition of users’ Wau Kikik questions; understanding a question is not equated with historical answer accuracy."
+  },
+  {
+    "item_id": 10,
+    "english_item": "WauTrace failed to recognise many of my questions.",
+    "original_construct": "Input recognition failures",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Preserves failure to recognise many user questions and the item’s negative polarity."
+  },
+  {
+    "item_id": 11,
+    "english_item": "WauTrace’s answers were useful, relevant and informative.",
+    "original_construct": "Usefulness of informative responses",
+    "polarity": "positive",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": true,
+    "descriptors": [
+      "useful",
+      "relevant",
+      "informative"
+    ],
+    "adaptation_rationale": "The authorised wording combines useful, relevant and informative in one response. It is not claimed to be a single judgement; these descriptors do not establish historical accuracy or learning gains."
+  },
+  {
+    "item_id": 12,
+    "english_item": "WauTrace’s answers were unrelated to what I asked.",
+    "original_construct": "Irrelevance of responses",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Measures irrelevance to the user’s question without adding a judgement of style."
+  },
+  {
+    "item_id": 13,
+    "english_item": "When my question was unclear, WauTrace helped me get back on track.",
+    "original_construct": "Recovery from errors or misunderstandings",
+    "polarity": "positive",
+    "ui_link": "clarification_recovery",
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "response_condition": "The participant attempts an ambiguous question in their own words and then clarifies it. Rate the actual recovery, including unsuccessful recovery; success is not assumed.",
+    "ui_link_note": "The wording is conditional on unclear input; clarification is the planned recovery feature, not an extra phrase inserted into the item.",
+    "adaptation_rationale": "Measures recovery from an unclear question. The study task invites participants to use their own wording and clarify their intended topic without supplying a scripted test sentence."
+  },
+  {
+    "item_id": 14,
+    "english_item": "WauTrace handled problems in our conversation poorly.",
+    "original_construct": "Failure to handle interaction errors",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Measures poor handling of conversational problems. An evidence-grounded refusal is not automatically treated as a failure."
+  },
+  {
+    "item_id": 15,
+    "english_item": "WauTrace was easy to use.",
+    "original_construct": "Overall ease of use",
+    "polarity": "positive",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Preserves overall ease of chatbot use without converting it into a measure of acquired knowledge."
+  },
+  {
+    "item_id": 16,
+    "english_item": "Using WauTrace felt complicated.",
+    "original_construct": "Overall interaction complexity",
+    "polarity": "negative",
+    "ui_link": null,
+    "wording_provenance": "User-specified wording, preserved verbatim.",
+    "psychometric_validation": "Not established for this adapted wording.",
+    "contains_multiple_descriptors": false,
+    "adaptation_rationale": "Preserves perceived interaction complexity without confusing it with complexity of the heritage topic."
+  }
+]

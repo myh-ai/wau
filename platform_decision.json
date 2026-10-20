@@ -1,0 +1,14 @@
+{
+  "platform": "Streamlit",
+  "architecture": "single Python application",
+  "decision_basis": "No existing Typebot project was supplied for reuse. Streamlit supports session state, deterministic graph traversal and source cards in a small implementation.",
+  "knowledge_representation": "semantic network only",
+  "runtime_llm_required": false,
+  "hosting_provider": "not yet selected or deployed",
+  "nickname_storage": "Optional chat or interface name; session only; excluded from study-response downloads.",
+  "timezone": "Browser-reported timezone by default, with explicit UTC fallback and optional manual override.",
+  "status": "Local Streamlit application; guided study preview available; public deployment and formal evaluation pending.",
+  "review_readiness": "Source-checked content supports the internal prototype. Record-level source review and pending per-edge operational review are tracked separately.",
+  "submission_requirements": "Final Moodle upload must be PDF; see submission_requirements.json for the user-transcribed deadline and timezone limitation.",
+  "approval_basis": "The author authorised proceeding provisionally while awaiting the lecturer’s actual response. This does not constitute lecturer approval or ethical clearance."
+}

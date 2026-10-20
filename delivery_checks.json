@@ -1,0 +1,271 @@
+{
+  "prepared_at_utc": "2026-10-20T20:55:49.671245+00:00",
+  "package_language": "English explanations and metadata; exact Malay source quotations retained",
+  "local_launch_ready": true,
+  "knowledge_counts": {
+    "records": 36,
+    "assertion_edges": 74,
+    "nodes": 83,
+    "candidate_names": 1,
+    "edge_statuses": {
+      "supported": 67,
+      "explicit_negative": 3,
+      "source_variance": 4
+    },
+    "assertion_endpoint_nodes": 82,
+    "candidate_only_nodes": 1,
+    "factual_intents": 12,
+    "fallback_intents": 1,
+    "edges_by_intent": {
+      "names": 5,
+      "name_reason": 1,
+      "place_status": 2,
+      "features": 5,
+      "forms": 12,
+      "comparison": 2,
+      "attack": 8,
+      "defence": 5,
+      "practice_context": 3,
+      "materials": 2,
+      "launch": 13,
+      "control": 16
+    },
+    "unique_semantic_facts": 73,
+    "interpretation": "Representation counts only; not accuracy, user-study results or a measure of cultural completeness.",
+    "node_count_note": "82 assertion endpoint nodes plus one isolated, non-traversable Kemetek candidate node."
+  },
+  "response_profiles": 80,
+  "raw_extraction_integrity": {
+    "files": 9,
+    "result": "pass"
+  },
+  "source_assertion_integrity": {
+    "assertions": 74,
+    "result": "pass",
+    "knowledge_sha256": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481"
+  },
+  "author_review_integrity": {
+    "approved_assertions": 74,
+    "byte_identical_to_supplied_file": true,
+    "sha256": "b49546c7c58ecf31494b65cb6a62281ca2b1bc5df1ea39d46ab9566feeaa980b"
+  },
+  "requested_question_checks": {
+    "acceptance_cases": 69,
+    "passed_cases": 69,
+    "failures": [],
+    "formal_accuracy": null
+  },
+  "scope_and_inference_checks": {
+    "acceptance_cases": 31,
+    "passed_cases": 31,
+    "failures": [],
+    "formal_accuracy": null
+  },
+  "adapted_cuq_verbatim_items": 16,
+  "knowledge_validation": {
+    "result": "pass",
+    "checks": 1484,
+    "original_source_image_bytes_checked": false
+  },
+  "implementation_checks": {
+    "executed_at_utc": "2026-10-20T20:54:55.222509+00:00",
+    "python": "3.12.14",
+    "suites": [
+      {
+        "suite": "test_engine",
+        "tests": 41,
+        "passed": true,
+        "failures": [],
+        "errors": [],
+        "skipped": []
+      },
+      {
+        "suite": "test_app",
+        "tests": 14,
+        "passed": true,
+        "failures": [],
+        "errors": [],
+        "skipped": []
+      },
+      {
+        "suite": "test_conversation",
+        "tests": 8,
+        "passed": true,
+        "failures": [],
+        "errors": [],
+        "skipped": []
+      },
+      {
+        "suite": "test_fixlist",
+        "tests": 3,
+        "passed": true,
+        "failures": [],
+        "errors": [],
+        "skipped": []
+      },
+      {
+        "suite": "test_scope_routing",
+        "tests": 3,
+        "passed": true,
+        "failures": [],
+        "errors": [],
+        "skipped": []
+      }
+    ],
+    "total_tests": 69,
+    "all_passed": true,
+    "scope": "Development unit and interface checks. These do not estimate independent RQ2 accuracy.",
+    "runtime_sha256": {
+      "app.py": "eb1d87e9f8c179ba2a126a83e13d5a59ed4e650a5678f5009c9b9b4229aa1773",
+      "wautrace_engine.py": "adbdac6b50e9e2875b92f39d01f7bb2c05931424327eb8cf1da162f49d6c40f0",
+      "graph_inference.py": "e8e320a1c61b835ddbd2518f73c30166fa757bc967141a6c6b47c665de3c0044",
+      "language_rules.json": "9b5438d9c46c6014853882db0f8a2b6554d1e72bb684596142038b956367a930",
+      "WauTrace_Network_Template.json": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+      "reviews/operational_claim_review.json": "b49546c7c58ecf31494b65cb6a62281ca2b1bc5df1ea39d46ab9566feeaa980b",
+      "study/config.json": "727c2bea169bdb407c9d736126e8c60e683d7243cbccc196fa13ee18056ca61e"
+    }
+  },
+  "evaluation_tool_checks": {
+    "purpose": "Evaluation tooling safeguard checks, not chatbot accuracy",
+    "status": "passed",
+    "tests_run": 20,
+    "failures": 0,
+    "errors": 0,
+    "checked_at_utc": "2026-10-20T20:55:25.400596+00:00",
+    "command": "python evaluation/test_rq2_tool.py",
+    "coverage": [
+      "fixed design validation",
+      "collection chronology",
+      "exact development overlap",
+      "duplicate questions",
+      "context rubric requirement",
+      "pending operational review blocks formal freeze",
+      "locked artifact integrity",
+      "single execution marker",
+      "registered gold integrity",
+      "literal response integrity",
+      "coverage and correctness denominators",
+      "unsupported claims scoring",
+      "incomplete scoring refusal",
+      "zero denominator handling",
+      "exact approved review payload binding and changed response-profile rejection",
+      "exact additional development-question overlap",
+      "literal exposed-question registry overlap",
+      "conversation development dataset exclusion"
+    ]
+  },
+  "graph_export_checks": {
+    "suite": "Operational export round-trip checks",
+    "not_a_bot_evaluation": true,
+    "passed": true,
+    "tests_run": 8,
+    "failures": [],
+    "errors": []
+  },
+  "development_regression": {
+    "purpose": "development_regression_only",
+    "rq2_accuracy": null,
+    "cases": 24,
+    "steps": 44,
+    "machine_checks_passed": 620,
+    "machine_checks_failed": 0,
+    "manual_flags": 49,
+    "semantic_review": "pending",
+    "generated_at_utc": "2026-10-20T20:54:56.026782+00:00"
+  },
+  "additional_development": {
+    "sessions": 80,
+    "turns": 96,
+    "execution_and_source_quote_checks": {
+      "execution_errors": 0,
+      "nonempty_answers_and_exact_source_excerpts": "pass",
+      "failures": []
+    },
+    "formal_accuracy": null
+  },
+  "conversation_development": {
+    "turns": 32,
+    "checks": {
+      "route_and_evidence_status_matches": 32,
+      "failures": []
+    },
+    "formal_accuracy": null
+  },
+  "exposed_development_questions": 455,
+  "greeting_capture_integrity": "passed",
+  "local_navigation_links_checked": 22,
+  "browser_checks": {
+    "status": "passed",
+    "checked_at_utc": "2026-10-20T20:55:24.744180+00:00",
+    "streamlit_version": "1.50.0",
+    "runtime_hashes": {
+      "app.py": "eb1d87e9f8c179ba2a126a83e13d5a59ed4e650a5678f5009c9b9b4229aa1773",
+      "wautrace_engine.py": "adbdac6b50e9e2875b92f39d01f7bb2c05931424327eb8cf1da162f49d6c40f0",
+      "graph_inference.py": "e8e320a1c61b835ddbd2518f73c30166fa757bc967141a6c6b47c665de3c0044",
+      "WauTrace_Network_Template.json": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+      "language_rules.json": "9b5438d9c46c6014853882db0f8a2b6554d1e72bb684596142038b956367a930",
+      "reviews/operational_claim_review.json": "b49546c7c58ecf31494b65cb6a62281ca2b1bc5df1ea39d46ab9566feeaa980b",
+      "study/config.json": "727c2bea169bdb407c9d736126e8c60e683d7243cbccc196fa13ee18056ca61e"
+    },
+    "mobile": {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sidebar_initial_aria_expanded": "false",
+      "horizontal_overflow_pixels": 0,
+      "browser_timezone_detected": "Asia/Kuala_Lumpur",
+      "greeting_matches_browser_hour": true,
+      "guided_visit_intro_visible": true,
+      "six_tasks_to_external_form_link": "passed",
+      "questionnaire_url": "https://forms.gle/vHHtfYTKqShZF1zc8",
+      "duplicate_questionnaire_absent": true,
+      "external_form_not_submitted": true,
+      "completion_screen_visible": true
+    },
+    "desktop": {
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "conversation_checks": [
+        "nickname from chat",
+        "help",
+        "launch-role follow-up",
+        "unsupported place",
+        "hummer exclusion",
+        "commercial out-of-scope",
+        "thanks",
+        "tail clarification button preserves requested attribute",
+        "three form choices",
+        "generic wau definition and nonspatial idiom",
+        "bounded subtype spelling correction",
+        "form design reason is undocumented",
+        "optional source-scoped details",
+        "new chat clears messages"
+      ],
+      "status": "passed"
+    }
+  },
+  "documents": {
+    "WauTrace_Assignment_Plan_EN.docx": {
+      "pages": 21,
+      "visual_qa": "passed"
+    },
+    "WauTrace_Step1_Research_Package_EN.docx": {
+      "pages": 26,
+      "visual_qa": "passed"
+    }
+  },
+  "author_operational_review": {
+    "assertions": "approved",
+    "approved_count": 74,
+    "response_compositions": "pending"
+  },
+  "independent_RQ2": "not_collected_or_run",
+  "participant_study": "not_performed",
+  "public_deployment": "not_performed",
+  "study_interface": "external_questionnaire_with_collection_disabled",
+  "windows_execution": "Not executed in this Linux verification environment.",
+  "student_identifier_present": false
+}

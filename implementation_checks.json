@@ -1,0 +1,58 @@
+{
+  "executed_at_utc": "2026-10-20T20:54:55.222509+00:00",
+  "python": "3.12.14",
+  "suites": [
+    {
+      "suite": "test_engine",
+      "tests": 41,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "skipped": []
+    },
+    {
+      "suite": "test_app",
+      "tests": 14,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "skipped": []
+    },
+    {
+      "suite": "test_conversation",
+      "tests": 8,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "skipped": []
+    },
+    {
+      "suite": "test_fixlist",
+      "tests": 3,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "skipped": []
+    },
+    {
+      "suite": "test_scope_routing",
+      "tests": 3,
+      "passed": true,
+      "failures": [],
+      "errors": [],
+      "skipped": []
+    }
+  ],
+  "total_tests": 69,
+  "all_passed": true,
+  "scope": "Development unit and interface checks. These do not estimate independent RQ2 accuracy.",
+  "runtime_sha256": {
+    "app.py": "eb1d87e9f8c179ba2a126a83e13d5a59ed4e650a5678f5009c9b9b4229aa1773",
+    "wautrace_engine.py": "adbdac6b50e9e2875b92f39d01f7bb2c05931424327eb8cf1da162f49d6c40f0",
+    "graph_inference.py": "e8e320a1c61b835ddbd2518f73c30166fa757bc967141a6c6b47c665de3c0044",
+    "language_rules.json": "9b5438d9c46c6014853882db0f8a2b6554d1e72bb684596142038b956367a930",
+    "WauTrace_Network_Template.json": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+    "reviews/operational_claim_review.json": "b49546c7c58ecf31494b65cb6a62281ca2b1bc5df1ea39d46ab9566feeaa980b",
+    "study/config.json": "727c2bea169bdb407c9d736126e8c60e683d7243cbccc196fa13ee18056ca61e"
+  }
+}

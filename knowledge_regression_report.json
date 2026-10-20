@@ -1,0 +1,105 @@
+{
+  "validation_kind": "knowledge_and_retrieval_regression",
+  "validated_at_utc": "2026-10-20T20:55:25+00:00",
+  "result": "pass",
+  "checks_count": 18,
+  "failed_checks": 0,
+  "network_sha256": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+  "bot_tests_executed": false,
+  "performance_results_claimed": false,
+  "study_ready": false,
+  "author_edge_review": "pending",
+  "synthetic_probe_scope": "Only dedup_preserves_opposition uses an in-memory synthetic edge; it is never saved to the knowledge base.",
+  "checks": [
+    {
+      "check": "controlling_heading",
+      "result": "pass",
+      "detail": "The proximity and height claims refer to the first p.146 subsection."
+    },
+    {
+      "check": "guidelines_heading",
+      "result": "pass",
+      "detail": "The second subsection retains the exact article in its title."
+    },
+    {
+      "check": "complete_malay_negative",
+      "result": "pass",
+      "detail": "The Malay hummer/busur quotation begins with the complete name."
+    },
+    {
+      "check": "launch_role_labels",
+      "result": "pass",
+      "detail": "All four source labels are represented under the two-player launch record."
+    },
+    {
+      "check": "two_players_not_four",
+      "result": "pass",
+      "detail": "Role labels do not create a four-player factual assertion."
+    },
+    {
+      "check": "glass_competitive_purpose",
+      "result": "pass",
+      "detail": "The naming profile and practice section retain their distinct purpose evidence."
+    },
+    {
+      "check": "glass_answer_scope",
+      "result": "pass",
+      "detail": "The normal-practice qualifier and the English contact condition remain explicit."
+    },
+    {
+      "check": "launch_ground_preparation",
+      "result": "pass",
+      "detail": "Laying rolled string on the ground is represented in launch preparation on p.144."
+    },
+    {
+      "check": "wind_movement_qualifiers",
+      "result": "pass",
+      "detail": "Side movement and possible rotation retain proximity and strong-wind conditions."
+    },
+    {
+      "check": "attack_objective_additional_page",
+      "result": "pass",
+      "detail": "Both competition objectives retain the additional p.148 source sentence."
+    },
+    {
+      "check": "one_defence_answer",
+      "result": "pass",
+      "detail": "One conditional answer keeps both record references, the shared quote and attack context."
+    },
+    {
+      "check": "dedup_preserves_opposition",
+      "result": "pass",
+      "detail": "A synthetic opposite-polarity probe cannot be hidden by presentation deduplication."
+    },
+    {
+      "check": "dedup_order_independent",
+      "result": "pass",
+      "detail": "Canonical answer selection and merged provenance do not depend on retrieval order."
+    },
+    {
+      "check": "explicit_subtype_exception",
+      "result": "pass",
+      "detail": "The direct Kikik negative controls its answer while retaining qualified class context."
+    },
+    {
+      "check": "no_universal_inheritance",
+      "result": "pass",
+      "detail": "A class-most statement does not manufacture a Laga feature claim."
+    },
+    {
+      "check": "class_majority_qualified",
+      "result": "pass",
+      "detail": "A query about the class reports the documented non-universal quantifier."
+    },
+    {
+      "check": "pending_operational_author_review",
+      "result": "pass",
+      "detail": "Source checks do not constitute per-edge operational author approval."
+    },
+    {
+      "check": "english_operational_metadata",
+      "result": "pass",
+      "detail": "Operational metadata is English; original Malay source quotations remain verbatim."
+    }
+  ]
+}

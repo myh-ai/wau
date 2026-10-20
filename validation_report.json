@@ -1,0 +1,55 @@
+{
+  "artifact": "Documentary knowledge structure and export checks",
+  "not_a_bot_evaluation": true,
+  "source_file": "knowledge.json",
+  "source_sha256": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481",
+  "network_sha256": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+  "generated_utc": "2026-10-20T20:55:24+00:00",
+  "passed": true,
+  "errors": [],
+  "checks": [
+    "Required bilingual record fields and four-state enum",
+    "Unique record IDs and valid parent references",
+    "Nonempty evidence page/quote and known source IDs for asserted records",
+    "Typed triples, explicit polarity, nonempty documentary scope",
+    "Kemetek retained unverified without assertion edges",
+    "No unconditional identity or disjointness relations",
+    "Separate p.73 heading and p.144 classification retained",
+    "Both language-specific discrepancy wordings retained",
+    "Declared counts match computed counts",
+    "Unique operational IDs and resolving endpoints",
+    "Exact bijection between knowledge triples and network assertion edges",
+    "Exact knowledge-file hash in network provenance"
+  ],
+  "computed_counts": {
+    "records": 36,
+    "by_status": {
+      "supported": 30,
+      "unverified": 1,
+      "discrepancy": 2,
+      "explicit_negative": 3
+    },
+    "triples": 74,
+    "evidence_entries": 59,
+    "core_records": 24,
+    "supplemental_records": 12,
+    "graph_nodes": 83,
+    "graph_edges": 74,
+    "assertion_endpoint_nodes": 82,
+    "edge_status_counts": {
+      "supported": 67,
+      "explicit_negative": 3,
+      "source_variance": 4
+    }
+  },
+  "author_edge_review": {
+    "approved": 0,
+    "pending": 74
+  },
+  "study_ready": false,
+  "limits": [
+    "Structural consistency does not establish factual correctness, cultural completeness or chatbot accuracy.",
+    "Source checking and author approval of the operational representation are separate activities.",
+    "This export does not certify participant-study readiness or institutional approval."
+  ]
+}

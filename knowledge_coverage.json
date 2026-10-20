@@ -1,0 +1,54 @@
+{
+  "coverage_type": "representation_counts",
+  "knowledge_sha256": "5218c38f14c1c5682833cfddeecb97919c14445f64e83ea9bc19c0e7c5d31481",
+  "record_status_counts": {
+    "supported": 30,
+    "unverified": 1,
+    "discrepancy": 2,
+    "explicit_negative": 3
+  },
+  "network_counts": {
+    "records": 36,
+    "assertion_edges": 74,
+    "nodes": 83,
+    "candidate_names": 1,
+    "edge_statuses": {
+      "supported": 67,
+      "explicit_negative": 3,
+      "source_variance": 4
+    },
+    "assertion_endpoint_nodes": 82,
+    "candidate_only_nodes": 1,
+    "factual_intents": 12,
+    "fallback_intents": 1,
+    "edges_by_intent": {
+      "names": 5,
+      "name_reason": 1,
+      "place_status": 2,
+      "features": 5,
+      "forms": 12,
+      "comparison": 2,
+      "attack": 8,
+      "defence": 5,
+      "practice_context": 3,
+      "materials": 2,
+      "launch": 13,
+      "control": 16
+    },
+    "unique_semantic_facts": 73,
+    "interpretation": "Representation counts only; not accuracy, user-study results or a measure of cultural completeness.",
+    "node_count_note": "82 assertion endpoint nodes plus one isolated, non-traversable Kemetek candidate node."
+  },
+  "evidence_entries": 59,
+  "all_canonical_triples_represented": true,
+  "unverified_record": "RQ1-N04",
+  "author_review": {
+    "documented_submitted_source_record_reviews": 35,
+    "documented_extraction_claim_reviews": 1,
+    "current_operational_edges_approved": 0,
+    "current_operational_edges_pending": 74,
+    "review_file": "reviews/operational_claim_review.json",
+    "meaning": "Documented source-claim reviews do not imply approval of every current triple, response or retrieval behaviour."
+  },
+  "limitations": "Counts describe the representation. They establish neither broad cultural completeness nor chatbot performance, independent validation or readiness for a human study."
+}

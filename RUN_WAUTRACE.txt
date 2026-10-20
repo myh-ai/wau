@@ -1,0 +1,54 @@
+WAUTRACE — RUN LOCALLY
+
+Use Python 3.11 or 3.12. Internet is needed for initial installation.
+No API key is needed. The chatbot reads the included local network.
+
+WINDOWS SHORTCUT
+Extract the complete ZIP. Open the WauTrace_Build_Foundation folder.
+Double-click start_windows.bat and keep its terminal open.
+The shortcut uses the Windows Python launcher and selects Python 3.12, or 3.11 if 3.12 is unavailable.
+If the py command is unavailable, use the manual commands with your installed Python executable.
+
+WINDOWS MANUAL COMMANDS
+  cd path\to\WauTrace_Build_Foundation
+  py -3.12 -m venv .venv
+  .venv\Scripts\activate
+  python -m pip install -r requirements.txt
+  python -m streamlit run app.py
+
+Use py -3.11 instead if Python 3.11 is installed. If py is unavailable but python is on PATH,
+check python --version, then use python -m venv .venv with Python 3.11 or 3.12.
+
+MACOS / LINUX
+  cd path/to/WauTrace_Build_Foundation
+  python3 -m venv .venv
+  source .venv/bin/activate
+  python -m pip install -r requirements.txt
+  python -m streamlit run app.py
+
+Open the local address printed by Streamlit, usually http://localhost:8501.
+Ctrl+C stops the server. Verification used Linux; the Windows launcher was not run on Windows.
+
+USING THE GUIDE
+The browser timezone is automatic. A manual override is in the collapsed visit settings.
+If no browser time information is available, the interface states its UTC fallback.
+You may type "My name is Sara" or use the optional nickname field.
+Ask a question, follow up, use a topic button, or select a suggested question.
+Open Read the source to see the book evidence. New chat clears the nickname and context.
+
+GUIDED VISIT
+The main Guided visit button opens eligibility/consent, prior familiarity, six tasks,
+the complete adapted CUQ and a completion screen. No external questionnaire link is needed.
+Responses remain in the session until the participant deliberately downloads them.
+Chat and nickname are excluded from downloads. Nothing is sent automatically.
+The supplied study configuration is a preview. Read study/README.txt before an actual study.
+
+RESEARCH CHECKS
+The 24 cases are development regressions, not an independent RQ2 test.
+Read evaluation/RQ2_PROTOCOL.txt for the independent question-collection and scoring procedure.
+Read reviews/operational_claim_review.html for the current per-edge review awaiting the author.
+
+DOCUMENTATION CLOCK
+WAUTRACE_DEMO_HOUR may be set to an integer from 0 to 23 for the required greeting figure.
+The interface visibly labels this controlled clock. Leave it unset for normal use.
+Do not describe a controlled demonstration as a participant observation.

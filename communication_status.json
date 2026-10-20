@@ -1,0 +1,28 @@
+{
+  "lecturer_message": {
+    "status": "sent_by_author_response_pending",
+    "provenance": "Moustafa Hassan reported in the conversation that he sent the message to the lecturer.",
+    "exact_message_and_timestamp": "Not supplied or independently inspected.",
+    "file": "lecturer_message.txt",
+    "file_scope": "Topic summary of the clarification request, not a verified copy of the sent message."
+  },
+  "lecturer_approval": {
+    "status": "pending",
+    "journal_candidate": "CJLT",
+    "template_confirmation": "pending",
+    "minimum_15_page_interpretation": "pending",
+    "abstract_and_keywords_confirmation": "pending",
+    "ethical_coverage": "not established by a provisional working assumption",
+    "publication_permission": "not established by a provisional working assumption"
+  },
+  "Moodle": {
+    "source": "Author-transcribed assessment page; display timezone unconfirmed.",
+    "requirements_file": "submission_requirements.json",
+    "due_displayed": "2026-10-23T23:45:00",
+    "displayed_timezone": null,
+    "timezone_status": "Not shown in the supplied transcription; no conversion to Asia/Qatar has been made.",
+    "submission_format": "PDF",
+    "submission_status_as_transcribed": "No submissions have been made yet",
+    "grading_status_as_transcribed": "Not graded"
+  }
+}

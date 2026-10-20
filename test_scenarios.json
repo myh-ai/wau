@@ -1,0 +1,2582 @@
+{
+  "artifact_type": "development_regression_scenarios",
+  "title": "WauTrace: 24 development regression scenarios",
+  "created_date": "2026-10-18",
+  "language": "en",
+  "status": "development_only",
+  "scenario_count": 24,
+  "provenance": {
+    "knowledge_file": "knowledge.json",
+    "source_scope": "Project source evidence and its stated limits.",
+    "independence": "Known development examples. Not an independent RQ2 evaluation.",
+    "human_semantic_review": "Pending for actual current responses.",
+    "execution": "Current response traces are written to evaluation/development_results/."
+  },
+  "category_counts": [
+    {
+      "category": "supported",
+      "planned_cases": 4,
+      "label_en": "Direct source support"
+    },
+    {
+      "category": "explicit_negative_or_false_premise",
+      "planned_cases": 4,
+      "label_en": "Explicit negative or false premise"
+    },
+    {
+      "category": "names_and_comparison_scope",
+      "planned_cases": 4,
+      "label_en": "Names and comparison scope"
+    },
+    {
+      "category": "missing_evidence_or_out_of_scope",
+      "planned_cases": 4,
+      "label_en": "Missing evidence or out of scope"
+    },
+    {
+      "category": "ambiguity_or_discrepancy",
+      "planned_cases": 4,
+      "label_en": "Ambiguity or discrepancy"
+    },
+    {
+      "category": "follow_up_or_context_switch",
+      "planned_cases": 4,
+      "label_en": "Follow-up or context switch"
+    }
+  ],
+  "evaluation_contract": {
+    "purpose": "Development regression checking only. Do not report its pass count as RQ2 accuracy or evidence of generalisation.",
+    "unit_of_analysis": "Report cases, question turns and UI actions separately. A case is successful only when all of its required turns succeed.",
+    "evidence_rule": "Each factual claim needs support for that claim. A contextual citation does not prove corpus-wide absence or a current fact.",
+    "citation_rule": "Book-supported factual answers require source cards. Pure clarification, reset and out-of-scope refusals must not fabricate citations.",
+    "state_rule": "Start every case with an empty state; preserve context within a case until reset.",
+    "semantic_scoring": "Automated checks inspect structure and provenance. Full semantic assessment remains a separate human task.",
+    "rq2_protocol": "evaluation/RQ2_PROTOCOL.txt"
+  },
+  "scenarios": [
+    {
+      "test_id": "TC01",
+      "category": "supported",
+      "title": "Count and first form within the book classification",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "How many types of Wau Kikik are there?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Report three forms in the book’s classification.",
+          "allowed_record_ids": [
+            "RQ1-F01"
+          ],
+          "pass_criteria": [
+            "Gives the source count of three.",
+            "Does not claim that all modern/local variants are exhausted."
+          ],
+          "expected_intent": "forms",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "What does the first one look like?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Describe the first form as having a head and an indentation/concavity.",
+          "allowed_record_ids": [
+            "RQ1-F02"
+          ],
+          "pass_criteria": [
+            "Resolves first shape to the Wau Kikik classification in the previous turn.",
+            "Preserves head and indentation/concavity.",
+            "Adds no invented dimensions or precise geometric template."
+          ],
+          "expected_intent": "forms",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-F01",
+        "RQ1-F02"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-F01",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Three is the count in this source classification, not proof that all local or modern variants are exhausted."
+        },
+        {
+          "record_id": "RQ1-F02",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Retain the source wording; it does not supply a technical profile, exact dimensions or a validated geometric drawing."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC02",
+      "category": "supported",
+      "title": "Melaka attribution with historical publication scope",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Is Wau Kikik Malacca's official kite?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Identify Melaka and attribute the designation to the 2002 book.",
+          "allowed_record_ids": [
+            "RQ1-N05"
+          ],
+          "pass_criteria": [
+            "Names Melaka.",
+            "Makes the 2002 source context clear.",
+            "Does not infer exclusive origin or independently verified current status."
+          ],
+          "expected_intent": "place_status",
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N05"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N05",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "“Today” belongs to the 2002 publication context. Do not infer date of invention, exclusive origin, or a newly verified current designation."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": true,
+        "kind": "common_name_spelling_variant",
+        "turn_number": 1,
+        "surface_form": "Malacca",
+        "canonical_equivalent": "Is Wau Kikik Melaka's official kite?"
+      }
+    },
+    {
+      "test_id": "TC03",
+      "category": "supported",
+      "title": "Launch roles and their separation",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Who is needed to launch Wau Laga?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Describe the launcher and the puller in the book’s long-distance launch.",
+          "allowed_record_ids": [
+            "RQ1-P05"
+          ],
+          "pass_criteria": [
+            "Identifies the two complementary roles.",
+            "Does not turn the four labels into four people.",
+            "Does not make this a universal requirement for every launch."
+          ],
+          "expected_intent": "launch",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "How far apart do they stand?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Report 30–50 feet, approximately 9–15 metres, between the launch roles.",
+          "allowed_record_ids": [
+            "RQ1-P06"
+          ],
+          "pass_criteria": [
+            "Resolves they to the launcher and puller.",
+            "Binds the number to role separation at launch, not height or kite dimensions.",
+            "Does not treat it as a universal or legal safety distance."
+          ],
+          "expected_intent": "launch",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-P05",
+        "RQ1-P06"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-P05",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Applies to the described launch procedure, not a universal requirement for every kite instance or setting."
+        },
+        {
+          "record_id": "RQ1-P06",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "The quantity is role separation at launch, not kite dimensions, flight height or a legal safety distance."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 144
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC04",
+      "category": "supported",
+      "title": "Conditional direction-control sequence",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "How do you steer Wau Laga?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Describe slow line release during flight, followed by locking the line with one or both hands when the head faces the intended direction, as a book-reported procedure.",
+          "allowed_record_ids": [
+            "RQ1-S04",
+            "RQ1-S05"
+          ],
+          "pass_criteria": [
+            "Preserves slow release followed by the head-direction condition and locking.",
+            "Allows one or both hands.",
+            "Does not turn the source procedure into an unconditional or experimentally verified guarantee."
+          ],
+          "expected_intent": "control",
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-S04",
+        "RQ1-S05"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-S04",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 146
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "The next action depends on the head facing the intended direction; keep this source sequence, not an unconditional command to release string."
+        },
+        {
+          "record_id": "RQ1-S05",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 146
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Do not erase the head-direction condition, change one/both hands to two mandatory hands, or treat the stated result as independently measured."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 146
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC05",
+      "category": "explicit_negative_or_false_premise",
+      "title": "Hummer absence is not universal silence",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "What sound does Wau Kikik's hummer make?",
+          "expected_evidence_state": "explicit_negative",
+          "expected_behaviour": "Correct the false premise: the Wau Kikik profile explicitly says there is no hummer/busur. Do not invent a sound from a component the source denies.",
+          "allowed_record_ids": [
+            "RQ1-C03"
+          ],
+          "pass_criteria": [
+            "Explicitly denies the named hummer/busur component.",
+            "Does not describe a Kikik hummer as present.",
+            "Recognises the presupposed hummer as a false premise instead of answering its requested sound."
+          ],
+          "expected_intent": "features",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Does that mean the kite is always silent?",
+          "expected_evidence_state": "unsupported_inference_from_explicit_negative",
+          "expected_behaviour": "Explain that absence of the named component does not establish complete silence.",
+          "allowed_record_ids": [
+            "RQ1-C03"
+          ],
+          "pass_criteria": [
+            "Maintains the Kikik and hummer context.",
+            "Does not extend the explicit negative to all incidental kite or line sound."
+          ],
+          "expected_intent": "features",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-C03"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-C03",
+          "record_status": "explicit_negative",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Absence of this named component does not imply that the kite or line can never produce any incidental sound."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC06",
+      "category": "explicit_negative_or_false_premise",
+      "title": "Sobek absence is not absence of all decoration",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "What sobek carvings does Wau Kikik have?",
+          "expected_evidence_state": "explicit_negative",
+          "expected_behaviour": "Correct the false premise by explaining that sobek carving is explicitly absent in the profile.",
+          "allowed_record_ids": [
+            "RQ1-C04"
+          ],
+          "pass_criteria": [
+            "Denies sobek specifically.",
+            "Does not assert that sobek is present.",
+            "Corrects the presupposition instead of inventing a sobek design."
+          ],
+          "expected_intent": "features",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Does that mean it is completely plain?",
+          "expected_evidence_state": "unsupported_inference_from_explicit_negative",
+          "expected_behaviour": "Explain that absence of sobek does not establish absence of all decoration.",
+          "allowed_record_ids": [
+            "RQ1-C04"
+          ],
+          "pass_criteria": [
+            "Maintains the Kikik/sobek context.",
+            "Does not generalise to an undecorated kite.",
+            "Does not invent the manufacturing technique of coloured patterns."
+          ],
+          "expected_intent": "features",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-C04"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-C04",
+          "record_status": "explicit_negative",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "This does not mean no decoration. The two profile photographs show colored patterns, but the pictures alone do not establish their manufacturing technique."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC07",
+      "category": "explicit_negative_or_false_premise",
+      "title": "Leaf-shaped wings versus all wings",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Does Wau Kikik have leaf-shaped wings?",
+          "expected_evidence_state": "explicit_negative",
+          "expected_behaviour": "State the profile’s specific negative for leaf-shaped wings.",
+          "allowed_record_ids": [
+            "RQ1-C05",
+            "RQ1-S12"
+          ],
+          "pass_criteria": [
+            "Recognises the explicit absence of leaf-shaped wings in Kikik.",
+            "Does not override subtype evidence with a general traditional-wau characteristic."
+          ],
+          "expected_intent": "features",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Does that mean it has no wings at all?",
+          "expected_evidence_state": "unsupported_inference_from_explicit_negative",
+          "expected_behaviour": "Explain that the source denies the leaf-shaped form only; do not extend it to the kite having no lateral structure or supporting surface.",
+          "allowed_record_ids": [
+            "RQ1-C05"
+          ],
+          "pass_criteria": [
+            "Keeps the negative limited to the named wing shape.",
+            "Does not conclude that Kikik has no lateral structure or supporting surface.",
+            "Does not fabricate a detailed structural design."
+          ],
+          "expected_intent": "features",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-C05",
+        "RQ1-S12"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-C05",
+          "record_status": "explicit_negative",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "This is a shape-specific negative, not an assertion that the kite has no lifting surface, lateral extent or transverse support."
+        },
+        {
+          "record_id": "RQ1-S12",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "class_context_only_no_subtype_inheritance",
+          "limit": "Most does not mean all. This class statement does not establish leaf-shaped wings for an undocumented subtype. Direct subtype evidence takes priority; the same passage explicitly excludes Wau Kikik. It gives no numeric prevalence or sample."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      },
+      "interpretation_note": "RQ1-S12 is optional class context, not a required additional assertion. If used, preserve most rather than all; its context-only inheritance cannot override the explicit Kikik exception in RQ1-C05."
+    },
+    {
+      "test_id": "TC08",
+      "category": "explicit_negative_or_false_premise",
+      "title": "Glass-body inference from the name Kaca",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "is wau kacha made of glass?",
+          "expected_evidence_state": "supported_naming_explanation_with_unsupported_material_inference",
+          "expected_behaviour": "Explain that the source attributes the name to powdered glass on the string. The name explanation does not establish a glass body; do not call this an explicit source denial of glass-body material.",
+          "allowed_record_ids": [
+            "RQ1-N03"
+          ],
+          "pass_criteria": [
+            "Locates the glass on the string in the naming explanation.",
+            "Treats glass-body material as an unsupported inference.",
+            "Does not say the book explicitly states that the body is not glass.",
+            "Recognises kacha as the intended Kaca spelling in this context without asserting glass-body material."
+          ],
+          "expected_intent": "name_reason",
+          "related_intents": [
+            "materials"
+          ],
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N03"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N03",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "The explanation concerns the string, not a glass body; it does not establish use of such string on every present-day Kikik."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "interpretation_note": "This case belongs to the mixed false-premise category, NOT to the explicit-negative knowledge status. RQ1-N03 is supported, not explicit_negative.",
+      "linguistic_variation": {
+        "enabled": true,
+        "kind": "misspelling",
+        "turn_number": 1,
+        "surface_form": "kacha",
+        "canonical_equivalent": "Is Wau Kaca made of glass?"
+      }
+    },
+    {
+      "test_id": "TC09",
+      "category": "names_and_comparison_scope",
+      "title": "Kaca alias with normal-versus-universal practice",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Are Wau Kaca and Wau Kikik different kites?",
+          "expected_evidence_state": "supported_with_scope_limit",
+          "expected_behaviour": "Explain that the source calls Kikik Wau Kaca in its naming context; the names alone do not establish two separate designs or global equivalence.",
+          "allowed_record_ids": [
+            "RQ1-N03"
+          ],
+          "pass_criteria": [
+            "Identifies the source-scoped alias.",
+            "Does not claim global or universal name equivalence."
+          ],
+          "expected_intent": "names",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Why is it called Kaca?",
+          "expected_evidence_state": "supported_with_scope_limit",
+          "expected_behaviour": "Explain the source’s name account: powdered glass on the string.",
+          "allowed_record_ids": [
+            "RQ1-N03"
+          ],
+          "pass_criteria": [
+            "Resolves it to the Kikik/Kaca context.",
+            "Locates glass on the string rather than the body."
+          ],
+          "expected_intent": "name_reason",
+          "actual_output": null,
+          "turn_number": 2
+        },
+        {
+          "input_type": "message",
+          "input": "Does every Kikik use glass-coated string?",
+          "expected_evidence_state": "supported_with_scope_limit",
+          "expected_behaviour": "Distinguish the described practice from an all-instances rule.",
+          "allowed_record_ids": [
+            "RQ1-N03",
+            "RQ1-P03"
+          ],
+          "pass_criteria": [
+            "Does not convert normally into always.",
+            "Does not require every Kikik to use that line.",
+            "Keeps the historical naming and practice scope."
+          ],
+          "expected_intent": "materials",
+          "actual_output": null,
+          "turn_number": 3,
+          "related_intents": [
+            "name_reason"
+          ]
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N03",
+        "RQ1-P03"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N03",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "The explanation concerns the string, not a glass body; it does not establish use of such string on every present-day Kikik."
+        },
+        {
+          "record_id": "RQ1-P03",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "“Normally” is not “always”. This is a historical practice description, not manufacturing guidance, a safety claim or current legal advice."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        },
+        {
+          "source_id": "S01",
+          "page": 144
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC10",
+      "category": "names_and_comparison_scope",
+      "title": "Laga heading and later classification do not settle identity",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Is Wau Kikik the same kite as Wau Laga?",
+          "expected_evidence_state": "supported_source_statements_with_unresolved_relationship",
+          "expected_behaviour": "Retain the Kikik-or-Laga heading and the later “another type” formulation. Do not assert universal identity or universal separation.",
+          "allowed_record_ids": [
+            "RQ1-N02",
+            "RQ1-S01"
+          ],
+          "pass_criteria": [
+            "Mentions both the profile and practice-section formulations.",
+            "Distinguishes the two page contexts.",
+            "Does not infer unconditional sameAs or disjointness."
+          ],
+          "expected_intent": "names",
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N02",
+        "RQ1-S01"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N02",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            },
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Do not use unconditional sameAs or disjointWith. A heading alias and a later “another type” formulation leave the broader relationship underdetermined."
+        },
+        {
+          "record_id": "RQ1-S01",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Retain alongside the Kikik-or-Laga heading. “Another type” does not resolve whether Laga and Kikik are separate designs in every context; do not assert global identity or disjointness."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        },
+        {
+          "source_id": "S01",
+          "page": 144
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC11",
+      "category": "names_and_comparison_scope",
+      "title": "Kemetek remains a course-scope candidate",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Is Wau Kemetek another name for Wau Kikik?",
+          "expected_evidence_state": "unverified",
+          "expected_behaviour": "Explain that Kemetek is a course-topic candidate whose equivalence to Kikik is not established in the reviewed book pages.",
+          "allowed_record_ids": [
+            "RQ1-N04"
+          ],
+          "pass_criteria": [
+            "Distinguishes assignment metadata S02 from book evidence.",
+            "Does not cite page 73 or fabricate another book page as Kemetek proof.",
+            "Does not reject the name as false or nonexistent."
+          ],
+          "expected_intent": "not_documented",
+          "related_intents": [
+            "names"
+          ],
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Which page says so?",
+          "expected_evidence_state": "unverified",
+          "expected_behaviour": "Say that no supporting book page has been established for the Kemetek equivalence in the reviewed corpus; do not turn the course-topic label into book evidence.",
+          "allowed_record_ids": [
+            "RQ1-N04"
+          ],
+          "pass_criteria": [
+            "Resolves the follow-up to the unverified Kemetek naming claim.",
+            "Does not invent a book page or present S02 assignment metadata as a paginated book source.",
+            "Does not conclude that the name cannot exist outside the reviewed corpus."
+          ],
+          "expected_intent": "not_documented",
+          "related_intents": [
+            "names"
+          ],
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N04"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N04",
+          "record_status": "unverified",
+          "source_pages": [],
+          "use": "claim_support_with_record_limits",
+          "limit": "Accept as a course-scope candidate label; do not cite p.73 as evidence for it and do not declare the name false."
+        }
+      ],
+      "allowed_pages": [],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [
+        {
+          "source_id": "S02",
+          "title": "Assigned kite topic",
+          "use": "Assignment-topic provenance for the candidate name only; not book evidence or verified alias equivalence."
+        }
+      ],
+      "interpretation_note": "No book page is allowed as evidence for Kemetek. If the response exposes provenance, label the assignment topic as S02; do not invent pagination.",
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC12",
+      "category": "names_and_comparison_scope",
+      "title": "Eddy resemblance is not identity",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "So the Eddy Kite is basically the same as Wau Kikik?",
+          "expected_evidence_state": "supported_with_scope_limit",
+          "expected_behaviour": "Explain the stated resemblance and retain name/entity distinctions; any “Malay Kite” statement must remain attached to the source’s Eddy description.",
+          "allowed_record_ids": [
+            "RQ1-C02"
+          ],
+          "pass_criteria": [
+            "Reports resemblance rather than identity.",
+            "Does not make the names universally interchangeable.",
+            "Does not invent a transmission history or route."
+          ],
+          "expected_intent": "comparison",
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-C02"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-C02",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Resemblance is not identity. Do not infer globally interchangeable names or a historical transmission route."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": true,
+        "kind": "colloquial_wording",
+        "turn_number": 1,
+        "surface_form": "basically",
+        "canonical_equivalent": "Is the Eddy Kite the same as Wau Kikik?"
+      }
+    },
+    {
+      "test_id": "TC13",
+      "category": "missing_evidence_or_out_of_scope",
+      "title": "Invention date and inventor are not established in the reviewed corpus",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "When was Wau Kikik invented?",
+          "expected_evidence_state": "not_established_in_reviewed_corpus",
+          "expected_behaviour": "State that the reviewed project corpus does not establish an invention date for Wau Kikik.",
+          "allowed_record_ids": [
+            "RQ1-N01"
+          ],
+          "pass_criteria": [
+            "Provides no invented year or inventor.",
+            "Limits uncertainty to the reviewed project evidence.",
+            "Does not present page 73’s classification as evidence proving that no invention date exists.",
+            "Offers a relevant documented alternative."
+          ],
+          "expected_intent": "not_documented",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Who invented it?",
+          "expected_evidence_state": "not_established_in_reviewed_corpus",
+          "expected_behaviour": "Resolve it to Wau Kikik and state that an inventor is not established in the reviewed project corpus.",
+          "allowed_record_ids": [
+            "RQ1-N01"
+          ],
+          "pass_criteria": [
+            "Resolves it to Wau Kikik without inventing a person or group.",
+            "Limits uncertainty to the reviewed corpus rather than claiming nobody knows the inventor.",
+            "Does not cite the classification page as evidence proving that an inventor never existed.",
+            "Offers a relevant documented alternative."
+          ],
+          "expected_intent": "not_documented",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N01"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N01",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "background_and_documented_limit_only",
+          "limit": "No inventor, invention date or exclusive origin follows from this classification."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "interpretation_note": "RQ1-N01 is optional classification context, not evidence that no invention date or inventor exists. Both missing claims concern the reviewed corpus only.",
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC14",
+      "category": "missing_evidence_or_out_of_scope",
+      "title": "Documented paper covering and undocumented weight",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "What paper is used for Wau Kikik?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "State that the source describes a basic covering of wau paper.",
+          "allowed_record_ids": [
+            "RQ1-C06"
+          ],
+          "pass_criteria": [
+            "Identifies the source wording wau paper.",
+            "Cites the covering description.",
+            "Does not invent a material grade, weight or mandatory modern standard."
+          ],
+          "expected_intent": "materials",
+          "related_intents": [
+            "materials"
+          ],
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "How heavy should that paper be?",
+          "expected_evidence_state": "not_established_in_reviewed_corpus",
+          "expected_behaviour": "Resolve that paper to wau paper and explain that a numerical weight is not supplied by the reviewed evidence.",
+          "allowed_record_ids": [
+            "RQ1-C06"
+          ],
+          "pass_criteria": [
+            "Maintains the material context from the preceding turn.",
+            "Does not invent a gsm value, thickness or mandatory specification.",
+            "Separates the documented paper covering from an unavailable weight specification."
+          ],
+          "expected_intent": "not_documented",
+          "related_intents": [
+            "materials"
+          ],
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-C06"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-C06",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "No exact layer count, paper weight, thickness, dimensions or universal modern material specification is supplied."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC15",
+      "category": "missing_evidence_or_out_of_scope",
+      "title": "Historical flying-height statement is not legal permission",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "can i legally fly wau laga 200 feet high in malacca today?",
+          "expected_evidence_state": "current_claim_outside_corpus",
+          "expected_behaviour": "Separate the historical book statement from current legal permission; explain that the project corpus does not establish current rules.",
+          "allowed_record_ids": [
+            "RQ1-P08"
+          ],
+          "pass_criteria": [
+            "Does not grant or deny present legal permission from the 2002 book.",
+            "If mentioning 200 feet/60 metres, identifies it as the book’s flight-height description.",
+            "Does not invent current regulations or cite the historical page as legal authority."
+          ],
+          "expected_intent": "not_documented",
+          "related_intents": [
+            "control"
+          ],
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-P08"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-P08",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 146
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "A 2002 book recommendation, not current legal authorization, a universal optimum or a guarantee of safe operation."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 146
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": true,
+        "kind": "common_name_spelling_variant",
+        "turn_number": 1,
+        "surface_form": "malacca",
+        "canonical_equivalent": "Can I legally fly Wau Laga 200 feet high in Melaka today?"
+      }
+    },
+    {
+      "test_id": "TC16",
+      "category": "missing_evidence_or_out_of_scope",
+      "title": "Unrelated factual request returns to supported scope",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Who won the World Cup this year?",
+          "expected_evidence_state": "out_of_scope",
+          "expected_behaviour": "Explain that the bot’s source scope concerns Wau Kikik and related documented Laga context; offer an in-scope topic.",
+          "allowed_record_ids": [],
+          "pass_criteria": [
+            "Does not answer the unrelated factual query from unsupported memory.",
+            "Does not fabricate a kite-book citation.",
+            "Offers a relevant route back to the Wau topic."
+          ],
+          "expected_intent": "not_documented",
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [],
+      "allowed_evidence": [],
+      "allowed_pages": [],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC17",
+      "category": "ambiguity_or_discrepancy",
+      "title": "Bare Laga clarification then practice choice",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "What is Laga?",
+          "expected_evidence_state": "ambiguous_query",
+          "expected_behaviour": "Ask the user to choose the name in the Kikik profile or the practice/competition context before giving a substantive scoped answer.",
+          "allowed_record_ids": [
+            "RQ1-N02",
+            "RQ1-S01"
+          ],
+          "pass_criteria": [
+            "Presents two distinct, understandable context choices.",
+            "Does not silently choose one context or assert global identity.",
+            "Stores the pending clarification so the next choice can resolve it."
+          ],
+          "expected_intent": null,
+          "expected_intent_candidates": [
+            "names",
+            "practice_context"
+          ],
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "How is it played?",
+          "expected_evidence_state": "supported_after_clarification",
+          "expected_behaviour": "Resolve the choice to the Laga practice and describe the documented competitive objective, with source scope.",
+          "allowed_record_ids": [
+            "RQ1-P02"
+          ],
+          "pass_criteria": [
+            "Answers the selected practice context.",
+            "Explains breaking the opponent’s line while avoiding one’s own line breaking.",
+            "Cites the practice page and does not repeat the same clarification indefinitely."
+          ],
+          "expected_intent": "practice_context",
+          "actual_output": null,
+          "turn_number": 2,
+          "related_intents": [
+            "attack",
+            "defence"
+          ],
+          "intent_note": "The pronoun resolves the pending Laga request to its practice context. The competition objective is supported by attack/defence edges within that context."
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N02",
+        "RQ1-S01",
+        "RQ1-P02"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N02",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            },
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Do not use unconditional sameAs or disjointWith. A heading alias and a later “another type” formulation leave the broader relationship underdetermined."
+        },
+        {
+          "record_id": "RQ1-S01",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Retain alongside the Kikik-or-Laga heading. “Another type” does not resolve whether Laga and Kikik are separate designs in every context; do not assert global identity or disjointness."
+        },
+        {
+          "record_id": "RQ1-P02",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            },
+            {
+              "source_id": "S01",
+              "page": 148
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "The competitive practice is not a necessary authenticity test for every Kikik or a requirement for an educational demonstration."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        },
+        {
+          "source_id": "S01",
+          "page": 144
+        },
+        {
+          "source_id": "S01",
+          "page": 148
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC18",
+      "category": "ambiguity_or_discrepancy",
+      "title": "Second-form wording and shared tail",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "What shape is the second type of Wau Kikik?",
+          "expected_evidence_state": "discrepancy",
+          "expected_behaviour": "Preserve the Malay and English descriptions of the second form with their different wording/specificity.",
+          "allowed_record_ids": [
+            "RQ1-F03"
+          ],
+          "pass_criteria": [
+            "Attributes the Malay empat segi tidak sama wording to p.72 and English rectangular to p.73.",
+            "Does not infer four unequal side lengths, force one precise shape, or claim a proven translation error."
+          ],
+          "expected_intent": "forms",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Do both pages say it has a tail?",
+          "expected_evidence_state": "supported_shared_subclaim",
+          "expected_behaviour": "Identify tail presence as the shared supported subclaim for the second form.",
+          "allowed_record_ids": [
+            "RQ1-F03"
+          ],
+          "pass_criteria": [
+            "Resolves it to the second form.",
+            "States that both language descriptions include a tail."
+          ],
+          "expected_intent": "forms",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-F03"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-F03",
+          "record_status": "discrepancy",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Do not force a single standardized shape, infer four unequal side lengths, or label a proven translation error. Tail presence is directly supported in both versions."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC19",
+      "category": "ambiguity_or_discrepancy",
+      "title": "Third-form wording is not proof of contradiction",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "is the 3rd type of kikik a square or a rectangle",
+          "expected_evidence_state": "discrepancy",
+          "expected_behaviour": "Retain “segi empat tepat” on Malay p.72 and “perfect square shape” on English p.73 as a difference in wording/specificity; avoid asserting a proven error or uniquely resolved geometry.",
+          "allowed_record_ids": [
+            "RQ1-F04"
+          ],
+          "pass_criteria": [
+            "Attributes each description to the correct language/page.",
+            "Does not treat rectangle and square as necessarily mutually exclusive.",
+            "Does not claim the project has independently verified a single exact geometry."
+          ],
+          "expected_intent": "forms",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Does that mean one page is wrong?",
+          "expected_evidence_state": "discrepancy",
+          "expected_behaviour": "Explain that the wording/specificity difference does not prove either page wrong or a uniquely verified geometry.",
+          "allowed_record_ids": [
+            "RQ1-F04"
+          ],
+          "pass_criteria": [
+            "Does not treat rectangle and square as necessarily mutually exclusive.",
+            "Does not claim a proven translation error or independently resolved geometry."
+          ],
+          "expected_intent": "forms",
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-F04"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-F04",
+          "record_status": "discrepancy",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Preserve the two source descriptions without inferring a uniquely verified geometric template. A culturally informed Malay-language review is still needed."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [
+        {
+          "source_id": "S03",
+          "url": "https://prpmv1.dbp.gov.my/Search.aspx?k=tepat",
+          "use": "Malay terminology only; not kite geometry. No DBP citation is required merely to reproduce the two book wordings."
+        }
+      ],
+      "interpretation_note": "The source record also cites DBP as a lexical aid for the Malay term. It may support terminology only, not geometry; it has no book page to invent.",
+      "linguistic_variation": {
+        "enabled": true,
+        "kind": "informal_written_form",
+        "turn_number": 1,
+        "surface_form": "3rd",
+        "canonical_equivalent": "Is the third type of Wau Kikik a square or a rectangle?"
+      }
+    },
+    {
+      "test_id": "TC20",
+      "category": "ambiguity_or_discrepancy",
+      "title": "Unresolved spatial referent in attack description",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "In Wau Laga fights, should my kite fly lower than my opponent's?",
+          "expected_evidence_state": "supported_literal_with_unresolved_interpretation",
+          "expected_behaviour": "Retain the literal source description and state that the precise spatial referent is not resolved by the reviewed record.",
+          "allowed_record_ids": [
+            "RQ1-S08"
+          ],
+          "pass_criteria": [
+            "Acknowledges the book’s lower-position wording.",
+            "Does not silently substitute kite altitude, ground location or an aerodynamic law.",
+            "Explains the interpretation limit without claiming the literal quotation is absent."
+          ],
+          "expected_intent": "attack",
+          "actual_output": null,
+          "turn_number": 1
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-S08"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-S08",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 148
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Do not silently replace “player’s position” with a precise kite-altitude, ground-location or aerodynamic claim. The literal text is supported; technical interpretation needs review."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 148
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC21",
+      "category": "follow_up_or_context_switch",
+      "title": "Resolve a name-related pronoun without making a universal practice claim",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Why is Wau Kikik also called Wau Kaca?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Explain the source’s powdered-glass-on-string naming account.",
+          "allowed_record_ids": [
+            "RQ1-N03"
+          ],
+          "pass_criteria": [
+            "Uses the source naming explanation.",
+            "Does not attribute glass to the kite body."
+          ],
+          "expected_intent": "name_reason",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "Do all of them still use that kind of string today?",
+          "expected_evidence_state": "current_claim_outside_corpus",
+          "expected_behaviour": "Resolve that kind of string to glass-coated string and explain that the historical normally wording does not establish present universal use.",
+          "allowed_record_ids": [
+            "RQ1-N03",
+            "RQ1-P03"
+          ],
+          "pass_criteria": [
+            "Maintains the correct entity and string referent.",
+            "Distinguishes normally from always and historical context from present universal practice.",
+            "Does not invent a rule for authenticity."
+          ],
+          "expected_intent": "not_documented",
+          "actual_output": null,
+          "turn_number": 2,
+          "related_intents": [
+            "materials",
+            "name_reason"
+          ]
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-N03",
+        "RQ1-P03"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-N03",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "The explanation concerns the string, not a glass body; it does not establish use of such string on every present-day Kikik."
+        },
+        {
+          "record_id": "RQ1-P03",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "“Normally” is not “always”. This is a historical practice description, not manufacturing guidance, a safety claim or current legal advice."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        },
+        {
+          "source_id": "S01",
+          "page": 144
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC22",
+      "category": "follow_up_or_context_switch",
+      "title": "Separate launch distance from later height request",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "How far apart do the Wau Laga launcher and puller stand?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Report 30–50 feet, approximately 9–15 metres, as role separation.",
+          "allowed_record_ids": [
+            "RQ1-P06"
+          ],
+          "pass_criteria": [
+            "Binds the number to the separation of launch roles.",
+            "Cites page 144."
+          ],
+          "expected_intent": "launch",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "so is that how high it flies too?",
+          "expected_evidence_state": "supported_with_relation_correction",
+          "expected_behaviour": "Reject the relation substitution; distinguish the source’s separate height description of about 200 feet/60 metres.",
+          "allowed_record_ids": [
+            "RQ1-P06",
+            "RQ1-P08"
+          ],
+          "pass_criteria": [
+            "Does not carry 30–50 feet forward as flight height.",
+            "Binds about 200 feet/60 metres to height and page 146.",
+            "Does not frame the historical height as a universal optimum or current permission."
+          ],
+          "expected_intent": "control",
+          "related_intents": [
+            "launch"
+          ],
+          "actual_output": null,
+          "turn_number": 2
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-P06",
+        "RQ1-P08"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-P06",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "The quantity is role separation at launch, not kite dimensions, flight height or a legal safety distance."
+        },
+        {
+          "record_id": "RQ1-P08",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 146
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "A 2002 book recommendation, not current legal authorization, a universal optimum or a guarantee of safe operation."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 144
+        },
+        {
+          "source_id": "S01",
+          "page": 146
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": true,
+        "kind": "colloquial_wording",
+        "turn_number": 2,
+        "surface_form": "so is that how high it flies too",
+        "canonical_equivalent": "Is that also its flying height?"
+      }
+    },
+    {
+      "test_id": "TC23",
+      "category": "follow_up_or_context_switch",
+      "title": "Topic switch from Kikik component to Laga skills",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "Does Wau Kikik have a hummer?",
+          "expected_evidence_state": "explicit_negative",
+          "expected_behaviour": "State that the profile explicitly denies a hummer/busur.",
+          "allowed_record_ids": [
+            "RQ1-C03"
+          ],
+          "pass_criteria": [
+            "Gives the specific negative rather than an affirmative mention of a component present."
+          ],
+          "expected_intent": "features",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "message",
+          "input": "What skills do you need to play Wau Laga?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Switch to the practice section and report high skill, speed and concentration.",
+          "allowed_record_ids": [
+            "RQ1-P01"
+          ],
+          "pass_criteria": [
+            "Uses the new practice topic rather than repeating hummer information.",
+            "Reports the required abilities as the book’s description."
+          ],
+          "expected_intent": "practice_context",
+          "actual_output": null,
+          "turn_number": 2
+        },
+        {
+          "input_type": "message",
+          "input": "Does that mean Wau Laga uses more than one string?",
+          "expected_evidence_state": "unsupported_inference_from_supported_comparison",
+          "expected_behaviour": "Explain that the comparison does not establish the number of control lines.",
+          "allowed_record_ids": [
+            "RQ1-P01"
+          ],
+          "pass_criteria": [
+            "Rejects the unsupported multi-line inference.",
+            "Does not invent an exact line count.",
+            "Retains the practice comparison’s limits."
+          ],
+          "expected_intent": "not_documented",
+          "related_intents": [
+            "practice_context"
+          ],
+          "actual_output": null,
+          "turn_number": 3
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-C03",
+        "RQ1-P01"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-C03",
+          "record_status": "explicit_negative",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Absence of this named component does not imply that the kite or line can never produce any incidental sound."
+        },
+        {
+          "record_id": "RQ1-P01",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "This is the author’s description, not an empirical skill/usability result. The contrast does not prove that Wau Laga uses more than one control line."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        },
+        {
+          "source_id": "S01",
+          "page": 144
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    },
+    {
+      "test_id": "TC24",
+      "category": "follow_up_or_context_switch",
+      "title": "Reset clears practice context before bare Laga",
+      "initial_context": {
+        "session": "new_empty_session",
+        "active_entity": null,
+        "active_topic": null,
+        "pending_clarification": null,
+        "history": [],
+        "setup": "Start with a new session; execute this case in order without adding explanatory hints."
+      },
+      "inputs": [
+        {
+          "input_type": "message",
+          "input": "What should a player do when their Wau Laga is under attack?",
+          "expected_evidence_state": "supported",
+          "expected_behaviour": "Describe quickly releasing the line so it slackens, under the attack condition, as the source procedure.",
+          "allowed_record_ids": [
+            "RQ1-S09",
+            "RQ1-S10"
+          ],
+          "pass_criteria": [
+            "Preserves the attack condition and release/slackening action.",
+            "Does not reverse the action to tightening or promise guaranteed effectiveness."
+          ],
+          "expected_intent": "defence",
+          "actual_output": null,
+          "turn_number": 1
+        },
+        {
+          "input_type": "ui_action",
+          "input": "Start over",
+          "expected_evidence_state": "context_reset",
+          "expected_behaviour": "Clear active topic/entity, history-based referents and pending clarification; return to the initial interaction state.",
+          "allowed_record_ids": [],
+          "pass_criteria": [
+            "Does not retain the defence topic as an implicit referent for the following bare query."
+          ],
+          "expected_intent": null,
+          "actual_output": null,
+          "turn_number": 2
+        },
+        {
+          "input_type": "message",
+          "input": "What is Laga?",
+          "expected_evidence_state": "ambiguous_query",
+          "expected_behaviour": "Treat the bare query after reset as ambiguous and offer the profile-name versus practice/competition choice.",
+          "allowed_record_ids": [
+            "RQ1-N02",
+            "RQ1-S01"
+          ],
+          "pass_criteria": [
+            "Shows the clarification instead of automatically resuming defence.",
+            "Offers both contexts."
+          ],
+          "expected_intent": null,
+          "expected_intent_candidates": [
+            "names",
+            "practice_context"
+          ],
+          "actual_output": null,
+          "turn_number": 3
+        },
+        {
+          "input_type": "message",
+          "input": "Is it a name for Kikik?",
+          "expected_evidence_state": "supported_after_clarification",
+          "expected_behaviour": "Answer from the profile’s Laga label, with its source scope, rather than carrying over the former defence context.",
+          "allowed_record_ids": [
+            "RQ1-N02"
+          ],
+          "pass_criteria": [
+            "Identifies Laga as a label in the Kikik profile heading.",
+            "Uses the profile page for that naming statement.",
+            "Does not assert universal identity or answer with defence instructions."
+          ],
+          "expected_intent": "names",
+          "actual_output": null,
+          "turn_number": 4
+        }
+      ],
+      "expected_behaviour": "Complete every turn under its source scope and preserve the stated uncertainty boundaries.",
+      "allowed_record_ids": [
+        "RQ1-S09",
+        "RQ1-S10",
+        "RQ1-N02",
+        "RQ1-S01"
+      ],
+      "allowed_evidence": [
+        {
+          "record_id": "RQ1-S09",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 148
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Retain the attack condition and quick-release action. Do not reverse the instruction to tightening or claim this is a universal recovery procedure."
+        },
+        {
+          "record_id": "RQ1-S10",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 148
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "A source-stated causal explanation, not an independently tested physical law, an absolute guarantee or a quantified effect."
+        },
+        {
+          "record_id": "RQ1-N02",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 72
+            },
+            {
+              "source_id": "S01",
+              "page": 73
+            },
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Do not use unconditional sameAs or disjointWith. A heading alias and a later “another type” formulation leave the broader relationship underdetermined."
+        },
+        {
+          "record_id": "RQ1-S01",
+          "record_status": "supported",
+          "source_pages": [
+            {
+              "source_id": "S01",
+              "page": 144
+            }
+          ],
+          "use": "claim_support_with_record_limits",
+          "limit": "Retain alongside the Kikik-or-Laga heading. “Another type” does not resolve whether Laga and Kikik are separate designs in every context; do not assert global identity or disjointness."
+        }
+      ],
+      "allowed_pages": [
+        {
+          "source_id": "S01",
+          "page": 72
+        },
+        {
+          "source_id": "S01",
+          "page": 73
+        },
+        {
+          "source_id": "S01",
+          "page": 144
+        },
+        {
+          "source_id": "S01",
+          "page": 148
+        }
+      ],
+      "pass_criteria": [
+        "All turn-level criteria are met; a multi-turn case counts once.",
+        "Every substantive factual assertion is supported by the allowed records under their limits; no invented claim or page.",
+        "When a supported source claim is stated, its source card/citation resolves to an allowed supporting page or explicitly allowed non-paginated source, for the claim it supports.",
+        "Uncertainty about a missing claim is not presented as an explicit negative or as proof that the claim is universally false."
+      ],
+      "run_status": "not_run",
+      "actual_output": null,
+      "pass_or_fail": null,
+      "failure_reason": null,
+      "evaluated_at": null,
+      "evaluator": null,
+      "allowed_non_paginated_sources": [],
+      "linguistic_variation": {
+        "enabled": false,
+        "kind": null,
+        "turn_number": null,
+        "surface_form": null,
+        "canonical_equivalent": null
+      }
+    }
+  ]
+}

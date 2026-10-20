@@ -1,0 +1,2571 @@
+{
+  "purpose": "Deterministic linguistic normalization and scored intent/facet routing. This file contains no cultural answers; source assertions and response boundaries live in the semantic network.",
+  "normalization": {
+    "contractions": {
+      "what's": "what is",
+      "what’re": "what are",
+      "whats": "what is",
+      "who's": "who is",
+      "where's": "where is",
+      "how's": "how is",
+      "it's": "it is",
+      "that's": "that is",
+      "there's": "there is",
+      "isn't": "is not",
+      "aren't": "are not",
+      "doesn't": "does not",
+      "don't": "do not",
+      "can't": "cannot",
+      "couldn't": "could not",
+      "i'm": "i am",
+      "i’ve": "i have",
+      "i'd": "i would",
+      "they're": "they are",
+      "we're": "we are",
+      "won't": "will not",
+      "wasn't": "was not",
+      "isnt": "is not",
+      "doesnt": "does not"
+    },
+    "irregular": {
+      "people": "people",
+      "persons": "person",
+      "children": "child",
+      "feet": "foot",
+      "metres": "metre",
+      "meters": "metre",
+      "leaves": "leaf",
+      "flies": "fly",
+      "flew": "fly",
+      "flown": "fly",
+      "flying": "fly",
+      "made": "made",
+      "caught": "catch",
+      "took": "take",
+      "taken": "take",
+      "began": "begin",
+      "begun": "begin",
+      "held": "hold",
+      "meant": "mean",
+      "wings": "wing",
+      "legally": "legal",
+      "underneath": "underneath",
+      "attacker": "attacker",
+      "players": "player",
+      "rarest": "rare",
+      "commonest": "common",
+      "officially": "official"
+    },
+    "orthography": {
+      "malacca": "melaka",
+      "defense": "defence",
+      "defensive": "defence",
+      "metres": "metre",
+      "meters": "metre",
+      "color": "colour",
+      "wou": "wau",
+      "kikick": "kikik"
+    },
+    "ordinals": {
+      "first": 1,
+      "second": 2,
+      "third": 3
+    },
+    "domain_typo_vocabulary": [
+      "kikik",
+      "kaca",
+      "laga",
+      "kemetek",
+      "hummer",
+      "busur",
+      "sobek",
+      "melaka"
+    ],
+    "max_typo_distance": 1,
+    "protected_names": [
+      "kemetek",
+      "kikik",
+      "kaca",
+      "laga",
+      "eddy"
+    ],
+    "spelled_numbers": {
+      "one": 1,
+      "two": 2,
+      "three": 3
+    },
+    "contextual_typo_prefixes": {
+      "wau": [
+        "kikik",
+        "kaca",
+        "laga",
+        "kemetek"
+      ]
+    },
+    "discourse_phrases": [
+      "in the first place",
+      "at the first place",
+      "in first place",
+      "at first place"
+    ],
+    "form_labels": {
+      "1": "first",
+      "2": "second",
+      "3": "third"
+    },
+    "feature_shape_phrases": [
+      "leaf shaped",
+      "leaf shape",
+      "shape of a leaf",
+      "shape of leaf"
+    ],
+    "form_reference_words": [
+      "form",
+      "type",
+      "shape",
+      "design",
+      "variant",
+      "variety",
+      "version",
+      "kind",
+      "sort"
+    ],
+    "non_name_followers": [
+      "have",
+      "has",
+      "had",
+      "having",
+      "not",
+      "without",
+      "from",
+      "first",
+      "second",
+      "third",
+      "last",
+      "need",
+      "needs",
+      "require",
+      "requires",
+      "used",
+      "use",
+      "uses",
+      "exist",
+      "exists",
+      "look",
+      "looks",
+      "become",
+      "becomes",
+      "remain",
+      "remains",
+      "seem",
+      "seems"
+    ]
+  },
+  "entities": {
+    "wau_kikik": [
+      "kikik"
+    ],
+    "kaca": [
+      "kaca"
+    ],
+    "wau_laga": [
+      "laga"
+    ],
+    "kemetek": [
+      "kemetek"
+    ],
+    "eddy": [
+      "eddy"
+    ],
+    "traditional_malay_wau": [
+      "traditional malay wau",
+      "traditional malay kite",
+      "Malay wau",
+      "Malay kite"
+    ]
+  },
+  "concepts": {
+    "classify": [
+      "traditional",
+      "classification",
+      "classify",
+      "category",
+      "belong",
+      "what sort of kite",
+      "kind of kite",
+      "what category"
+    ],
+    "overview": [
+      "what is",
+      "tell me about",
+      "describe",
+      "explain"
+    ],
+    "naming": [
+      "name",
+      "alias",
+      "call",
+      "label",
+      "term"
+    ],
+    "identity": [
+      "same",
+      "different",
+      "equivalent",
+      "identity",
+      "another name"
+    ],
+    "reason": [
+      "why",
+      "reason",
+      "meaning",
+      "mean",
+      "purpose",
+      "for"
+    ],
+    "forms": [
+      "form",
+      "type",
+      "shape",
+      "design",
+      "variant",
+      "variety",
+      "version",
+      "kind",
+      "sort"
+    ],
+    "count": [
+      "how many",
+      "number",
+      "count"
+    ],
+    "head": [
+      "head"
+    ],
+    "tail": [
+      "tail"
+    ],
+    "geometry": [
+      "square",
+      "rectangle",
+      "rectangular",
+      "geometric",
+      "triangle",
+      "triangular"
+    ],
+    "interpretation": [
+      "wrong",
+      "error",
+      "mistake",
+      "translation",
+      "correct",
+      "mistranslation"
+    ],
+    "hummer": [
+      "hummer",
+      "busur",
+      "hum",
+      "humming"
+    ],
+    "sobek": [
+      "sobek",
+      "carve",
+      "carving",
+      "carvings",
+      "decoration"
+    ],
+    "plain": [
+      "plain",
+      "undecorated",
+      "unadorned",
+      "no decoration",
+      "patternless"
+    ],
+    "wings": [
+      "wing",
+      "leaf",
+      "leaf shaped",
+      "leaf shape",
+      "leaves",
+      "wingless"
+    ],
+    "covering": [
+      "paper",
+      "cover",
+      "covering",
+      "material",
+      "made of",
+      "made from",
+      "construct",
+      "construction",
+      "build",
+      "body",
+      "frame",
+      "bamboo",
+      "fabric",
+      "sheet",
+      "skin"
+    ],
+    "weight": [
+      "weight",
+      "weigh",
+      "heavy",
+      "gsm",
+      "thick",
+      "thickness",
+      "gram",
+      "dimension",
+      "size"
+    ],
+    "glass": [
+      "glass",
+      "glaze",
+      "coated",
+      "coating",
+      "powder",
+      "glass coated",
+      "glassy",
+      "glass powder"
+    ],
+    "string": [
+      "string",
+      "line",
+      "cord",
+      "thread",
+      "tether"
+    ],
+    "universal": [
+      "all",
+      "every",
+      "always",
+      "each",
+      "everyone"
+    ],
+    "current": [
+      "today",
+      "now",
+      "still",
+      "currently",
+      "current",
+      "present day",
+      "modern",
+      "nowadays"
+    ],
+    "official": [
+      "official",
+      "state",
+      "melaka",
+      "malacca",
+      "where",
+      "region",
+      "place",
+      "location"
+    ],
+    "popularity": [
+      "popular",
+      "popularity",
+      "west coast",
+      "peninsula"
+    ],
+    "legal": [
+      "legal",
+      "law",
+      "allow",
+      "permission",
+      "permit",
+      "regulation",
+      "restriction",
+      "rule",
+      "allowed"
+    ],
+    "origin": [
+      "invent",
+      "inventor",
+      "invention",
+      "originate",
+      "origin",
+      "first made",
+      "who made",
+      "create",
+      "created",
+      "history",
+      "born",
+      "founder",
+      "year invented",
+      "first used",
+      "first flown",
+      "first played",
+      "introduced",
+      "first appeared"
+    ],
+    "limits": [
+      "not documented",
+      "missing information",
+      "not know",
+      "not in the book",
+      "knowledge limit"
+    ],
+    "practice": [
+      "play",
+      "sport",
+      "playing practice",
+      "practice",
+      "work"
+    ],
+    "competition": [
+      "competition",
+      "competitive",
+      "contest",
+      "battle",
+      "fight",
+      "opponent",
+      "rival",
+      "enemy"
+    ],
+    "skill": [
+      "skill",
+      "concentration",
+      "challenge",
+      "challenging",
+      "expertise",
+      "ability",
+      "talent",
+      "reaction",
+      "react",
+      "reflex",
+      "reflexes",
+      "hard",
+      "difficult",
+      "difficulty"
+    ],
+    "people": [
+      "people",
+      "person",
+      "player",
+      "participant",
+      "team",
+      "pair",
+      "helper",
+      "partner",
+      "helper",
+      "assist",
+      "help"
+    ],
+    "need": [
+      "need",
+      "require",
+      "necessary"
+    ],
+    "fly": [
+      "fly",
+      "flying",
+      "flight",
+      "flown"
+    ],
+    "launch": [
+      "launch",
+      "launcher",
+      "puller",
+      "juru",
+      "raise",
+      "take off",
+      "takeoff",
+      "airborne",
+      "takeoff",
+      "lift off"
+    ],
+    "distance": [
+      "apart",
+      "separation",
+      "distance",
+      "far apart",
+      "stand",
+      "space between",
+      "distance between",
+      "spread out"
+    ],
+    "prepare": [
+      "prepare",
+      "preparation",
+      "before launch",
+      "before takeoff",
+      "roll",
+      "tangle",
+      "tangled",
+      "untangle",
+      "ground"
+    ],
+    "height": [
+      "height",
+      "high",
+      "altitude",
+      "200"
+    ],
+    "direction": [
+      "steer",
+      "direction",
+      "turn",
+      "left",
+      "right",
+      "lock",
+      "point",
+      "aim the head",
+      "change direction",
+      "choose direction"
+    ],
+    "control": [
+      "control",
+      "handle",
+      "handling",
+      "manage"
+    ],
+    "stability": [
+      "stable",
+      "stability",
+      "unstable",
+      "wobble",
+      "balance",
+      "unsteady",
+      "shake",
+      "shake around",
+      "veer",
+      "veering",
+      "steady"
+    ],
+    "dive": [
+      "dive",
+      "plummet",
+      "drop",
+      "fall",
+      "low flight",
+      "low flying",
+      "nose down",
+      "drop down",
+      "descend",
+      "plunge"
+    ],
+    "wind": [
+      "wind",
+      "windy",
+      "gust",
+      "rotate",
+      "rotation",
+      "spin",
+      "swirl"
+    ],
+    "near": [
+      "near",
+      "close",
+      "nearby",
+      "too close"
+    ],
+    "defence": [
+      "defend",
+      "defence",
+      "defense",
+      "defensive",
+      "under attack",
+      "protect",
+      "save my",
+      "defence response",
+      "protect my string"
+    ],
+    "attack": [
+      "attack",
+      "attacking",
+      "offensive",
+      "offence",
+      "offense",
+      "fight",
+      "beat",
+      "defeat",
+      "win",
+      "attacker",
+      "offensive player"
+    ],
+    "objective": [
+      "objective",
+      "goal",
+      "aim",
+      "break",
+      "cut",
+      "sever"
+    ],
+    "speed": [
+      "speed",
+      "quick",
+      "fast"
+    ],
+    "position": [
+      "below",
+      "lower",
+      "above",
+      "under",
+      "position",
+      "underneath",
+      "advantage",
+      "lower down"
+    ],
+    "recipe": [
+      "recipe",
+      "ingredient",
+      "mixture",
+      "mix",
+      "prepare glass",
+      "make glass"
+    ],
+    "page": [
+      "page",
+      "source",
+      "citation",
+      "evidence",
+      "quote",
+      "where does it say",
+      "support"
+    ],
+    "followup": [
+      "it",
+      "its",
+      "that",
+      "this",
+      "they",
+      "them",
+      "those",
+      "also",
+      "and",
+      "both",
+      "one"
+    ],
+    "outside": [
+      "football",
+      "soccer",
+      "world cup",
+      "bitcoin",
+      "weather",
+      "president",
+      "stock",
+      "programming",
+      "python",
+      "airplane",
+      "aircraft",
+      "drone",
+      "parachute",
+      "car",
+      "telephone",
+      "computer",
+      "recipe for dinner",
+      "bake",
+      "medical",
+      "medicine",
+      "tax",
+      "wedding",
+      "rocket",
+      "blood pressure",
+      "saturn",
+      "mars",
+      "planet",
+      "rings",
+      "salary",
+      "paycheck",
+      "rice",
+      "cake",
+      "dog",
+      "cat",
+      "buy",
+      "purchase",
+      "cost",
+      "price",
+      "shop",
+      "store",
+      "sell",
+      "sale",
+      "seller",
+      "order online"
+    ],
+    "who": [
+      "who"
+    ],
+    "leaf": [
+      "leaf",
+      "leaf shaped",
+      "leaves"
+    ],
+    "wingless": [
+      "wingless",
+      "no wings at all",
+      "no wing at all",
+      "no wings",
+      "no wing"
+    ],
+    "silence": [
+      "silent",
+      "silence",
+      "absolutely no sound",
+      "no sound at all",
+      "completely silent",
+      "no sound"
+    ],
+    "sound": [
+      "sound",
+      "noise",
+      "sing",
+      "musical"
+    ],
+    "structural_material": [
+      "bamboo",
+      "frame",
+      "spar",
+      "stick",
+      "skeleton",
+      "wood"
+    ],
+    "role": [
+      "juru",
+      "launcher",
+      "puller"
+    ],
+    "action": [
+      "signal",
+      "give a signal",
+      "task",
+      "responsibility",
+      "responsibilities",
+      "duty",
+      "job",
+      "role of",
+      "roles of"
+    ],
+    "book": [
+      "book",
+      "passage",
+      "source",
+      "text",
+      "author"
+    ],
+    "procedure": [
+      "procedure",
+      "process",
+      "step",
+      "instruction",
+      "method",
+      "how to"
+    ],
+    "official_status": [
+      "official",
+      "state symbol",
+      "state kite",
+      "state wau"
+    ],
+    "exclusive": [
+      "only",
+      "exclusively",
+      "nowhere else",
+      "solely"
+    ],
+    "colour": [
+      "colour",
+      "color",
+      "red",
+      "blue",
+      "green",
+      "yellow",
+      "white",
+      "black",
+      "orange",
+      "purple",
+      "pink",
+      "brown",
+      "grey",
+      "gray",
+      "gold",
+      "silver",
+      "transparent",
+      "translucent",
+      "paint"
+    ],
+    "importance": [
+      "important",
+      "importance",
+      "crucial",
+      "matters most",
+      "matter most",
+      "priority",
+      "key factor",
+      "significant",
+      "significance"
+    ],
+    "cultural": [
+      "culture",
+      "cultural",
+      "heritage",
+      "culturally",
+      "historical significance"
+    ],
+    "distinctive": [
+      "special",
+      "distinctive",
+      "unique",
+      "unusual",
+      "distinct features",
+      "stands out",
+      "different from other kites",
+      "simple",
+      "simplest",
+      "characterise",
+      "characterize"
+    ],
+    "causal": [
+      "why",
+      "reason for",
+      "reason behind",
+      "cause"
+    ],
+    "age_suitability": [
+      "suitable",
+      "suitability",
+      "age limit",
+      "age restriction",
+      "minimum age",
+      "maximum age",
+      "recommended age",
+      "age group"
+    ],
+    "ranking": [
+      "more popular",
+      "most popular",
+      "more important",
+      "most important",
+      "better",
+      "best",
+      "preferred",
+      "prefer",
+      "favourite",
+      "favorite",
+      "common",
+      "frequent",
+      "frequency",
+      "rare",
+      "rarity",
+      "more",
+      "most"
+    ],
+    "technique": [
+      "technique",
+      "techniques",
+      "playing technique"
+    ],
+    "appearance": [
+      "appearance",
+      "look like",
+      "looks like",
+      "shape of",
+      "what shape"
+    ],
+    "signal": [
+      "signal",
+      "release the wau",
+      "release the kite"
+    ],
+    "lock": [
+      "lock",
+      "locked",
+      "locking"
+    ],
+    "eddy_comparison": [
+      "western",
+      "resembles",
+      "resemblance",
+      "similar to"
+    ],
+    "event_use": [
+      "festival",
+      "ceremony",
+      "ritual",
+      "parade",
+      "celebration",
+      "cultural event"
+    ],
+    "normative": [
+      "must",
+      "required"
+    ],
+    "sequence_followup": [
+      "next",
+      "then",
+      "after that"
+    ],
+    "negative_reason": [
+      "why not"
+    ]
+  },
+  "routes": [
+    {
+      "profile": "classification",
+      "any": [],
+      "all": [
+        "classify"
+      ],
+      "weights": {},
+      "forbid": [
+        "wings"
+      ],
+      "entity": "wau_kikik",
+      "bias": 5,
+      "context": null
+    },
+    {
+      "profile": "laga_classification",
+      "any": [],
+      "all": [
+        "classify"
+      ],
+      "weights": {},
+      "forbid": [
+        "wings"
+      ],
+      "entity": "wau_laga",
+      "bias": 5,
+      "context": null
+    },
+    {
+      "profile": "overview",
+      "any": [],
+      "all": [
+        "overview"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "wau_kikik",
+      "bias": 3,
+      "context": null
+    },
+    {
+      "profile": "laga_names",
+      "any": [],
+      "all": [
+        "naming"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "laga_pair",
+      "bias": 8,
+      "context": null
+    },
+    {
+      "profile": "laga_names",
+      "any": [],
+      "all": [
+        "identity"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "laga_pair",
+      "bias": 8,
+      "context": null
+    },
+    {
+      "profile": "aliases",
+      "any": [],
+      "all": [
+        "naming"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "wau_kikik",
+      "bias": 3,
+      "context": null
+    },
+    {
+      "profile": "kaca_names",
+      "any": [
+        "naming",
+        "identity",
+        "overview"
+      ],
+      "all": [],
+      "weights": {},
+      "forbid": [],
+      "entity": "kaca",
+      "bias": 6,
+      "context": null
+    },
+    {
+      "profile": "kaca_reason",
+      "any": [
+        "reason",
+        "naming"
+      ],
+      "all": [],
+      "weights": {
+        "reason": 5,
+        "naming": 2
+      },
+      "forbid": [],
+      "entity": "kaca",
+      "bias": 5,
+      "context": null
+    },
+    {
+      "profile": "kaca_reason",
+      "any": [],
+      "all": [
+        "glass",
+        "reason"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "kaca_body",
+      "any": [],
+      "all": [
+        "glass",
+        "covering"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "glass_universal",
+      "any": [],
+      "all": [
+        "universal"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 9,
+      "context": "glass_string"
+    },
+    {
+      "profile": "glass_universal",
+      "any": [],
+      "all": [
+        "glass",
+        "universal"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 9,
+      "context": null
+    },
+    {
+      "profile": "glass_current",
+      "any": [],
+      "all": [
+        "current"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 11,
+      "context": "glass_string"
+    },
+    {
+      "profile": "glass_current",
+      "any": [],
+      "all": [
+        "glass",
+        "current"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 11,
+      "context": null
+    },
+    {
+      "profile": "laga_glass",
+      "any": [
+        "glass",
+        "string"
+      ],
+      "all": [],
+      "weights": {},
+      "forbid": [
+        "count",
+        "direction",
+        "defence",
+        "distance",
+        "prepare"
+      ],
+      "entity": "wau_laga",
+      "bias": 3,
+      "context": null
+    },
+    {
+      "profile": "laga_glass_universal",
+      "any": [],
+      "all": [
+        "universal"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "wau_laga",
+      "bias": 12,
+      "context": "glass_string"
+    },
+    {
+      "profile": "laga_glass_universal",
+      "any": [],
+      "all": [
+        "glass",
+        "universal"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "wau_laga",
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "laga_glass_current",
+      "any": [],
+      "all": [
+        "current"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "wau_laga",
+      "bias": 13,
+      "context": "glass_string"
+    },
+    {
+      "profile": "glass_recipe",
+      "any": [],
+      "all": [
+        "recipe",
+        "glass"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 20,
+      "context": null
+    },
+    {
+      "profile": "eddy",
+      "any": [],
+      "all": [],
+      "weights": {},
+      "forbid": [],
+      "entity": "eddy",
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "official",
+      "any": [],
+      "all": [
+        "official"
+      ],
+      "weights": {},
+      "forbid": [
+        "covering",
+        "height",
+        "distance",
+        "legal",
+        "page"
+      ],
+      "entity": "wau_kikik",
+      "bias": 5,
+      "context": null
+    },
+    {
+      "profile": "official_current",
+      "any": [],
+      "all": [
+        "official",
+        "current"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "wau_kikik",
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "popularity",
+      "any": [],
+      "all": [
+        "popularity"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "hummer",
+      "any": [],
+      "all": [
+        "hummer"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "sobek",
+      "any": [],
+      "all": [
+        "sobek"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "plain",
+      "any": [],
+      "all": [
+        "plain"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "wings",
+      "any": [],
+      "all": [
+        "wings"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "class_wings",
+      "any": [],
+      "all": [
+        "wings",
+        "classify"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": "traditional_malay_wau",
+      "bias": 15,
+      "context": null
+    },
+    {
+      "profile": "form_count",
+      "any": [],
+      "all": [
+        "forms"
+      ],
+      "weights": {
+        "count": 5
+      },
+      "forbid": [
+        "classify",
+        "covering",
+        "sobek"
+      ],
+      "entity": null,
+      "bias": 6,
+      "context": null
+    },
+    {
+      "profile": "form_count",
+      "any": [],
+      "all": [
+        "count"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 4,
+      "context": "forms"
+    },
+    {
+      "profile": "covering",
+      "any": [],
+      "all": [
+        "covering"
+      ],
+      "weights": {},
+      "forbid": [
+        "glass",
+        "recipe"
+      ],
+      "entity": null,
+      "bias": 9,
+      "context": null
+    },
+    {
+      "profile": "paper_weight",
+      "any": [],
+      "all": [
+        "weight"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 11,
+      "context": null
+    },
+    {
+      "profile": "origin",
+      "any": [],
+      "all": [
+        "origin"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "legal",
+      "any": [],
+      "all": [
+        "legal"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 15,
+      "context": null
+    },
+    {
+      "profile": "legal_height",
+      "any": [],
+      "all": [
+        "legal",
+        "height"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 20,
+      "context": null
+    },
+    {
+      "profile": "limits",
+      "any": [],
+      "all": [
+        "limits"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 20,
+      "context": null
+    },
+    {
+      "profile": "practice",
+      "any": [
+        "practice",
+        "competition"
+      ],
+      "all": [],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 3,
+      "context": null
+    },
+    {
+      "profile": "skill",
+      "any": [],
+      "all": [
+        "skill"
+      ],
+      "weights": {},
+      "forbid": [
+        "control",
+        "near",
+        "wind"
+      ],
+      "entity": null,
+      "bias": 14,
+      "context": null
+    },
+    {
+      "profile": "string_count",
+      "any": [],
+      "all": [
+        "string",
+        "count"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 20,
+      "context": null
+    },
+    {
+      "profile": "string_count",
+      "any": [],
+      "all": [
+        "string",
+        "universal"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": "skill_comparison"
+    },
+    {
+      "profile": "launch_people",
+      "any": [],
+      "all": [
+        "people",
+        "count"
+      ],
+      "weights": {},
+      "forbid": [
+        "skill"
+      ],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "launch_people",
+      "any": [],
+      "all": [
+        "people",
+        "need"
+      ],
+      "weights": {},
+      "forbid": [
+        "skill"
+      ],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "launch_people",
+      "any": [],
+      "all": [
+        "launch"
+      ],
+      "weights": {
+        "people": 3,
+        "need": 3
+      },
+      "forbid": [
+        "skill"
+      ],
+      "entity": null,
+      "bias": 3,
+      "context": null
+    },
+    {
+      "profile": "launch_distance",
+      "any": [],
+      "all": [
+        "distance"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 15,
+      "context": null
+    },
+    {
+      "profile": "launch_process",
+      "any": [],
+      "all": [
+        "launch"
+      ],
+      "weights": {
+        "prepare": 6,
+        "overview": 2
+      },
+      "forbid": [
+        "distance",
+        "people"
+      ],
+      "entity": null,
+      "bias": 2,
+      "context": null
+    },
+    {
+      "profile": "launch_ground",
+      "any": [],
+      "all": [
+        "prepare"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 7,
+      "context": null
+    },
+    {
+      "profile": "height",
+      "any": [],
+      "all": [
+        "height"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "wind",
+      "any": [],
+      "all": [
+        "wind"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "wind",
+      "any": [],
+      "all": [
+        "near",
+        "control"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "stability",
+      "any": [],
+      "all": [
+        "stability"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "dive",
+      "any": [],
+      "all": [
+        "dive"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "steer",
+      "any": [
+        "direction",
+        "control"
+      ],
+      "all": [],
+      "weights": {},
+      "forbid": [
+        "near",
+        "wind",
+        "stability",
+        "height",
+        "dive"
+      ],
+      "entity": null,
+      "bias": 9,
+      "context": null
+    },
+    {
+      "profile": "defence",
+      "any": [],
+      "all": [
+        "defence"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 20,
+      "context": null
+    },
+    {
+      "profile": "attack",
+      "any": [],
+      "all": [
+        "attack"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 9,
+      "context": null
+    },
+    {
+      "profile": "attack",
+      "any": [],
+      "all": [
+        "objective"
+      ],
+      "weights": {},
+      "forbid": [
+        "glass"
+      ],
+      "entity": null,
+      "bias": 9,
+      "context": null
+    },
+    {
+      "profile": "attack_speed",
+      "any": [],
+      "all": [
+        "speed"
+      ],
+      "weights": {},
+      "forbid": [
+        "practice",
+        "skill"
+      ],
+      "entity": null,
+      "bias": 7,
+      "context": "attack"
+    },
+    {
+      "profile": "attack_position",
+      "any": [],
+      "all": [
+        "position",
+        "competition"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 15,
+      "context": null
+    },
+    {
+      "profile": "attack_position",
+      "any": [],
+      "all": [
+        "position"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": "attack"
+    },
+    {
+      "profile": "overview",
+      "any": [],
+      "all": [],
+      "weights": {},
+      "forbid": [],
+      "entity": "wau_kikik",
+      "bias": 5,
+      "context": null,
+      "bare_only": true
+    },
+    {
+      "profile": "kaca_names",
+      "any": [],
+      "all": [],
+      "weights": {},
+      "forbid": [],
+      "entity": "kaca",
+      "bias": 6,
+      "context": null,
+      "bare_only": true
+    },
+    {
+      "profile": "launch_people",
+      "any": [],
+      "all": [
+        "who",
+        "people"
+      ],
+      "weights": {
+        "launch": 3
+      },
+      "forbid": [
+        "skill"
+      ],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "launch_people",
+      "any": [],
+      "all": [
+        "who",
+        "launch"
+      ],
+      "weights": {},
+      "forbid": [
+        "skill"
+      ],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "kaca_reason",
+      "any": [],
+      "all": [
+        "glass",
+        "naming"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "launch_people",
+      "any": [],
+      "all": [
+        "role"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "launch_signal",
+      "any": [],
+      "all": [
+        "role",
+        "action"
+      ],
+      "weights": {},
+      "forbid": [
+        "reason"
+      ],
+      "entity": null,
+      "bias": 15,
+      "context": null
+    },
+    {
+      "profile": "launch_ground",
+      "any": [],
+      "all": [
+        "prepare",
+        "string"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "wind",
+      "any": [],
+      "all": [
+        "near",
+        "people"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 12,
+      "context": null
+    },
+    {
+      "profile": "attack_position",
+      "any": [],
+      "all": [
+        "position",
+        "fly"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 14,
+      "context": null
+    },
+    {
+      "profile": "attack_speed",
+      "any": [],
+      "all": [
+        "attack",
+        "speed"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 16,
+      "context": null
+    },
+    {
+      "profile": "skill",
+      "any": [],
+      "all": [
+        "practice",
+        "speed"
+      ],
+      "weights": {},
+      "forbid": [
+        "control",
+        "near",
+        "wind"
+      ],
+      "entity": null,
+      "bias": 18,
+      "context": null
+    },
+    {
+      "profile": "construction_specs",
+      "any": [],
+      "all": [
+        "structural_material"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 14,
+      "context": null
+    },
+    {
+      "profile": "silence",
+      "any": [],
+      "all": [
+        "silence"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 17,
+      "context": null
+    },
+    {
+      "profile": "silence",
+      "any": [],
+      "all": [
+        "sound"
+      ],
+      "weights": {},
+      "forbid": [
+        "hummer"
+      ],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "global_wings",
+      "any": [],
+      "all": [
+        "wingless"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 17,
+      "context": null
+    },
+    {
+      "profile": "attack_position",
+      "any": [],
+      "all": [
+        "position",
+        "universal"
+      ],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 14,
+      "context": null
+    },
+    {
+      "profile": "launch_process",
+      "all": [
+        "launch",
+        "procedure"
+      ],
+      "any": [],
+      "weights": {},
+      "forbid": [
+        "people",
+        "count",
+        "distance",
+        "skill"
+      ],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    },
+    {
+      "profile": "launch_roles",
+      "all": [
+        "people",
+        "action"
+      ],
+      "any": [],
+      "weights": {},
+      "forbid": [
+        "forms"
+      ],
+      "entity": null,
+      "bias": 17,
+      "context": "launch"
+    },
+    {
+      "profile": "attack_speed",
+      "all": [
+        "attack",
+        "importance"
+      ],
+      "any": [],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 16,
+      "context": null
+    },
+    {
+      "profile": "launch_signal",
+      "all": [
+        "signal"
+      ],
+      "any": [],
+      "weights": {
+        "who": 3
+      },
+      "forbid": [],
+      "entity": null,
+      "bias": 18,
+      "context": null
+    },
+    {
+      "profile": "steer",
+      "all": [
+        "lock",
+        "string"
+      ],
+      "any": [],
+      "weights": {},
+      "forbid": [],
+      "entity": null,
+      "bias": 20,
+      "context": null
+    },
+    {
+      "profile": "attack_speed",
+      "all": [
+        "competition",
+        "importance"
+      ],
+      "any": [],
+      "weights": {},
+      "forbid": [
+        "forms"
+      ],
+      "entity": null,
+      "bias": 16,
+      "context": null
+    },
+    {
+      "profile": "kaca_reason",
+      "any": [],
+      "all": [
+        "glass",
+        "string"
+      ],
+      "weights": {},
+      "forbid": [
+        "recipe",
+        "current",
+        "universal",
+        "covering",
+        "direction",
+        "control",
+        "defence",
+        "distance",
+        "prepare"
+      ],
+      "entity": null,
+      "bias": 10,
+      "context": null
+    }
+  ],
+  "routing": {
+    "minimum_score": 5,
+    "ambiguity_margin": 1.5,
+    "maximum_suggestions": 3,
+    "maximum_clauses": 3
+  },
+  "social": {
+    "greeting": [
+      "hi",
+      "hello",
+      "hey",
+      "good morning",
+      "good afternoon",
+      "good evening",
+      "greetings",
+      "hi there",
+      "hey there",
+      "hello there"
+    ],
+    "thanks": [
+      "thanks",
+      "thank you",
+      "thank you very much",
+      "many thanks",
+      "cheers",
+      "thank you so much"
+    ],
+    "bye": [
+      "bye",
+      "goodbye",
+      "bye bye",
+      "see you",
+      "see you later",
+      "good night"
+    ],
+    "reset": [
+      "reset",
+      "restart",
+      "start over",
+      "new chat",
+      "clear chat"
+    ],
+    "help": [
+      "help",
+      "help me",
+      "what can you do",
+      "what do you do",
+      "how can you help me",
+      "what can i ask",
+      "what can i ask you",
+      "can you help me",
+      "show topics",
+      "topic menu"
+    ]
+  },
+  "practice_topics": [
+    "practice_context",
+    "launch",
+    "control",
+    "attack",
+    "defence"
+  ],
+  "domain_tokens": [
+    "wau",
+    "kite",
+    "kikik",
+    "kaca",
+    "laga",
+    "kemetek",
+    "eddy",
+    "juru",
+    "busur",
+    "sobek"
+  ],
+  "generic_stop_tokens": [
+    "what",
+    "which",
+    "who",
+    "how",
+    "when",
+    "where",
+    "why",
+    "can",
+    "could",
+    "would",
+    "should",
+    "do",
+    "does",
+    "did",
+    "is",
+    "are",
+    "was",
+    "were",
+    "the",
+    "a",
+    "an",
+    "of",
+    "to",
+    "for",
+    "about",
+    "please",
+    "tell",
+    "me",
+    "explain",
+    "in",
+    "it",
+    "that",
+    "this",
+    "my",
+    "your",
+    "you",
+    "i",
+    "am",
+    "and",
+    "or",
+    "on",
+    "with",
+    "as",
+    "be",
+    "by",
+    "at",
+    "there",
+    "so",
+    "basically",
+    "really",
+    "more",
+    "than",
+    "one"
+  ],
+  "structural_concepts": {
+    "defence": [
+      "\\battacked\\b",
+      "\\b(?:opponent|rival|enemy)(?:s)?\\s+(?:is\\s+)?attack(?:s|ing)?\\b",
+      "\\battack(?:s|ing)?\\s+(?:me|my|us|our)\\b",
+      "\\b(?:other\\s+kite|opponent|rival|enemy)\\b.*\\b(?:dive|dives|diving|fly|flies|flying)\\b.*\\b(?:at|toward|towards)\\b.*\\b(?:me|mine|my|our|us)\\b",
+      "\\b(?:other\\s+kite|opponent|rival|enemy)\\b.*\\battack(?:s|ing)?\\b.*\\b(?:mine|me|my|ours|our|us)\\b"
+    ],
+    "count": [
+      "\\b(?:more than one|two|several|multiple)\\s+(?:kite\\s+)?(?:strings?|lines?)\\b"
+    ],
+    "launch": [
+      "\\b(?:get|put|lift|raise|send)\\b.*\\b(?:air|airborne|sky)\\b"
+    ],
+    "comparison_followup": [
+      "^(?:what about|how about|and)\\b"
+    ],
+    "origin": [
+      "\\b(?:when|who)\\b.*\\b(?:made|built|created|constructed|invented)\\b",
+      "\\bfirst\\b.*\\b(?:built|made|created|invented)\\b",
+      "\\b(?:come|comes|came)\\s+from\\b",
+      "\\b(?:when|what year|which year|how long ago)\\b.*\\b(?:used|use|flown|fly|played|play|introduced|appear|appeared|start|started|begin)\\b",
+      "\\bfirst\\s+(?:used|use|flown|played|introduced|appeared)\\b",
+      "\\bhow old\\b.*\\b(?:wau|kite|kikik|laga)\\b",
+      "\\bsince\\s+when\\b",
+      "^how\\s+old\\s+(?:is|was|are|were)\\b",
+      "^how\\s+long\\b.*\\b(?:existed|exist|around|used|use|flown|played)\\b",
+      "\\b(?:what|which)\\s+year\\b"
+    ],
+    "action": [
+      "\\bwhat\\s+(?:does|do)\\s+(?:the\\s+)?(?:puller|launcher|juru\\s+[a-z]+(?:\\s+[a-z]+)?)\\s+do\\b",
+      "\\bwhat\\s+(?:does|do)\\s+(?:the\\s+)?(?:(?:first|second|third|other|1st|2nd|3rd)\\s+)?(?:person|player|participant|partner|helper)\\s+do\\b",
+      "\\bwhat\\s+(?:does|do)\\s+(?:the\\s+)?(?:first|second|third|other|1st|2nd|3rd)\\s+(?:one\\s+)?do\\b",
+      "\\bwhat\\s+(?:does|do)\\s+(?:(?:the|a|an)\\s+)?(?:puller|launcher|juru\\s+[a-z]+(?:\\s+[a-z]+)?)\\s+do\\b",
+      "\\b(?:job|role|duty|task|responsibility|responsibilities)\\s+(?:of|for)\\s+(?:(?:the|a|an)\\s+)?(?:puller|launcher|juru)\\b"
+    ],
+    "procedure": [
+      "^how\\s+(?:do|does|can|should|would)\\b.*\\b(?:launch|take\\s*off|lift\\s*off)\\b"
+    ],
+    "age_suitability": [
+      "\\b(?:people|person|adults?|children|child|kids?|players?)\\b.*\\b(?:(?:above|over|under)\\s+(?:\\d+|ten|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)|aged?\\s+\\d+|years?\\s+old)\\b",
+      "\\b(?:good|safe|appropriate|recommended)\\b.*\\b(?:for|age|adults?|children|child|kids?|people)\\b",
+      "\\b(?:above|over|under)\\s+\\d+\\b.*\\b(?:play|fly|use)\\b"
+    ],
+    "wau_definition": [
+      "^(?:please\\s+)?(?:what is|what are|define|explain|tell me about)\\s+(?:exactly\\s+|actually\\s+)?(?:a\\s+|the\\s+)?wau(?:\\s+(?:exactly|actually|anyway))?$",
+      "^(?:please\\s+)?what does\\s+(?:the word\\s+)?wau\\s+mean$",
+      "^(?:what is\\s+)?the meaning of\\s+(?:the word\\s+)?wau$"
+    ],
+    "form_collection": [
+      "\\b(?:forms|types|shapes|designs|variants|versions)\\b",
+      "\\b(?:kinds|sorts|varieties)\\b"
+    ],
+    "eddy_comparison": [
+      "^what\\s+is\\s+(?:the\\s+|a\\s+)?malay\\s+kite$"
+    ],
+    "origin_place": [
+      "\\b(?:come|comes|came)\\s+from\\b",
+      "\\b(?:place\\s+of\\s+origin|where\\b.*\\boriginat(?:e|ed))\\b"
+    ],
+    "height": [
+      "\\b\\d+\\s*(?:feet|foot|metres?|meters?)\\s*(?:high|up|altitude)?\\b"
+    ],
+    "permission_request": [
+      "^can\\s+i\\b"
+    ],
+    "signal": [
+      "\\b(?:tell|tells|telling)\\b.*\\b(?:release|let\\s+go)\\b"
+    ],
+    "negative_reason": [
+      "^(?:and\\s+)?(?:why|why\\s+not|what\\s+is\\s+the\\s+reason(?:\\s+for\\s+that)?)$"
+    ],
+    "material_kind": [
+      "\\b(?:kinds?|sorts?|types?|varieties|versions)\\s+of\\s+(?:(?:kite|wau)\\s+)?(?:strings?|lines?|cords?|threads?|paper|wood|bamboo|materials?)\\b"
+    ],
+    "recipe": [
+      "^how\\b.*\\b(?:make|made|prepare|prepared|manufacture|manufactured|produce|produced|coat|coated|glaze|glazed)\\b"
+    ],
+    "feature_pronoun": [
+      "\\b(?:have|has|share)\\s+(?:them|those|these)(?:\\s+(?:too|as\\s+well))?\\s*$"
+    ]
+  },
+  "non_name_words": [
+    "confused",
+    "ready",
+    "interested",
+    "unsure",
+    "happy",
+    "sad",
+    "tired",
+    "curious",
+    "fine",
+    "okay",
+    "ok",
+    "looking",
+    "asking",
+    "flying",
+    "playing",
+    "going",
+    "not",
+    "a",
+    "an",
+    "the"
+  ],
+  "standalone_domain_concepts": [
+    "hummer",
+    "sobek",
+    "defence",
+    "dive",
+    "wind",
+    "stability",
+    "wings",
+    "role",
+    "sound",
+    "silence"
+  ],
+  "standalone_relations": [
+    [
+      "people",
+      "count",
+      "fly"
+    ],
+    [
+      "people",
+      "need",
+      "launch"
+    ],
+    [
+      "launch",
+      "distance"
+    ],
+    [
+      "direction",
+      "control"
+    ],
+    [
+      "attack",
+      "competition"
+    ],
+    [
+      "position",
+      "competition"
+    ],
+    [
+      "height",
+      "fly"
+    ],
+    [
+      "skill",
+      "fly"
+    ],
+    [
+      "who",
+      "people"
+    ],
+    [
+      "people",
+      "need"
+    ],
+    [
+      "who",
+      "launch"
+    ],
+    [
+      "defence",
+      "string"
+    ],
+    [
+      "control",
+      "string"
+    ],
+    [
+      "glass",
+      "naming"
+    ],
+    [
+      "glass",
+      "covering"
+    ],
+    [
+      "glass",
+      "string"
+    ],
+    [
+      "glass",
+      "recipe"
+    ],
+    [
+      "distance",
+      "people"
+    ],
+    [
+      "prepare",
+      "string"
+    ],
+    [
+      "height",
+      "page"
+    ],
+    [
+      "weight",
+      "covering"
+    ],
+    [
+      "weight",
+      "structural_material"
+    ],
+    [
+      "legal",
+      "fly"
+    ],
+    [
+      "head",
+      "direction"
+    ],
+    [
+      "near",
+      "people"
+    ],
+    [
+      "position",
+      "fly"
+    ],
+    [
+      "glass",
+      "reason"
+    ],
+    [
+      "attack",
+      "speed"
+    ],
+    [
+      "height",
+      "book"
+    ],
+    [
+      "attack",
+      "importance"
+    ],
+    [
+      "signal"
+    ],
+    [
+      "lock",
+      "string"
+    ],
+    [
+      "structural_material"
+    ]
+  ],
+  "social_patterns": {
+    "thanks": [
+      "^(?:thanks|thank you|many thanks)\\b(?:\\s+[^?]+)?$"
+    ],
+    "bye": [
+      "^(?:bye|goodbye|see you)\\b(?:\\s+[^?]+)?$"
+    ],
+    "help": [
+      "^(?:what|which)\\s+(?:topics|questions)\\s+can\\s+i\\s+(?:ask|explore)(?:\\s+(?:you|about))?$",
+      "^what\\s+can\\s+you\\s+(?:tell|teach)\\s+me(?:\\s+about)?$"
+    ]
+  },
+  "location_query": {
+    "prepositions": [
+      "in",
+      "at",
+      "from",
+      "across",
+      "throughout",
+      "outside",
+      "on"
+    ],
+    "excluded_phrases": [
+      "the book",
+      "this book",
+      "the source",
+      "this source",
+      "the passage",
+      "this passage",
+      "the text",
+      "this text",
+      "the account",
+      "english",
+      "malay",
+      "both languages",
+      "malay and english",
+      "english and malay",
+      "a competition",
+      "the competition",
+      "competition",
+      "competitions",
+      "a contest",
+      "the contest",
+      "contests",
+      "a battle",
+      "battle",
+      "a fight",
+      "the fight",
+      "flight",
+      "the air",
+      "air",
+      "the sky",
+      "sky",
+      "the ground",
+      "ground",
+      "the launch",
+      "launch",
+      "a launch",
+      "the start",
+      "the beginning",
+      "2002",
+      "the past",
+      "the past tense",
+      "the diagram",
+      "the picture",
+      "the network",
+      "the profile",
+      "the table",
+      "the first form",
+      "the second form",
+      "the third form",
+      "shape",
+      "different shapes",
+      "different forms",
+      "front",
+      "behind",
+      "above",
+      "below",
+      "underneath",
+      "the string",
+      "a string",
+      "one string",
+      "two strings",
+      "both strings",
+      "paper",
+      "the body",
+      "the frame",
+      "the kite",
+      "a kite",
+      "the wau",
+      "a wau",
+      "the tail",
+      "the head",
+      "its head",
+      "its tail",
+      "the wind",
+      "strong wind",
+      "other kites",
+      "other wau",
+      "the other kites",
+      "festivals",
+      "a festival",
+      "the festival",
+      "ceremonies",
+      "a ceremony",
+      "the ceremony",
+      "rituals",
+      "a ritual",
+      "parades",
+      "a parade",
+      "celebrations",
+      "a celebration",
+      "cultural events"
+    ],
+    "geography_words": [
+      "state",
+      "province",
+      "country",
+      "city",
+      "town",
+      "village",
+      "district",
+      "region",
+      "island",
+      "continent"
+    ],
+    "trailing_modifiers": [
+      "today",
+      "now",
+      "currently",
+      "these days",
+      "as well",
+      "too",
+      "also",
+      "during competitions",
+      "in the book"
+    ],
+    "patterns": [
+      "\\b(?:where|which (?:state|province|country|city|region))\\b"
+    ],
+    "non_geographic_where_concepts": [
+      "prepare",
+      "direction",
+      "control",
+      "height",
+      "distance",
+      "head",
+      "tail",
+      "glass",
+      "page",
+      "covering"
+    ],
+    "relation_prepositions": [
+      "of",
+      "for"
+    ],
+    "possessive_place_pattern": "\\b([a-z][a-z -]*?)['’]s\\s+(?:official|state)\\b",
+    "non_spatial_phrases": [
+      "at all",
+      "in all",
+      "in general",
+      "on its own",
+      "on their own",
+      "at once",
+      "at first",
+      "at last",
+      "at times",
+      "at least",
+      "at most",
+      "in the first place",
+      "on the other hand",
+      "in fact",
+      "in particular",
+      "in short",
+      "in total",
+      "at the first place",
+      "at first place"
+    ]
+  }
+}

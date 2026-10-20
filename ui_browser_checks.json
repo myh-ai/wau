@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-20T20:55:24.744180+00:00",
+  "streamlit_version": "1.50.0",
+  "runtime_hashes": {
+    "app.py": "eb1d87e9f8c179ba2a126a83e13d5a59ed4e650a5678f5009c9b9b4229aa1773",
+    "wautrace_engine.py": "adbdac6b50e9e2875b92f39d01f7bb2c05931424327eb8cf1da162f49d6c40f0",
+    "graph_inference.py": "e8e320a1c61b835ddbd2518f73c30166fa757bc967141a6c6b47c665de3c0044",
+    "WauTrace_Network_Template.json": "2bffe76c468153809c08e69adc0c0d028ce88a77d0e9133efcd466a2b42f9d17",
+    "language_rules.json": "9b5438d9c46c6014853882db0f8a2b6554d1e72bb684596142038b956367a930",
+    "reviews/operational_claim_review.json": "b49546c7c58ecf31494b65cb6a62281ca2b1bc5df1ea39d46ab9566feeaa980b",
+    "study/config.json": "727c2bea169bdb407c9d736126e8c60e683d7243cbccc196fa13ee18056ca61e"
+  },
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "sidebar_initial_aria_expanded": "false",
+    "horizontal_overflow_pixels": 0,
+    "browser_timezone_detected": "Asia/Kuala_Lumpur",
+    "greeting_matches_browser_hour": true,
+    "guided_visit_intro_visible": true,
+    "six_tasks_to_external_form_link": "passed",
+    "questionnaire_url": "https://forms.gle/vHHtfYTKqShZF1zc8",
+    "duplicate_questionnaire_absent": true,
+    "external_form_not_submitted": true,
+    "completion_screen_visible": true
+  },
+  "desktop": {
+    "viewport": {
+      "width": 1280,
+      "height": 1000
+    },
+    "conversation_checks": [
+      "nickname from chat",
+      "help",
+      "launch-role follow-up",
+      "unsupported place",
+      "hummer exclusion",
+      "commercial out-of-scope",
+      "thanks",
+      "tail clarification button preserves requested attribute",
+      "three form choices",
+      "generic wau definition and nonspatial idiom",
+      "bounded subtype spelling correction",
+      "form design reason is undocumented",
+      "optional source-scoped details",
+      "new chat clears messages"
+    ],
+    "status": "passed"
+  }
+}

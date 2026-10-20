@@ -1,0 +1,8 @@
+{
+  "suite": "Operational export round-trip checks",
+  "not_a_bot_evaluation": true,
+  "passed": true,
+  "tests_run": 8,
+  "failures": [],
+  "errors": []
+}

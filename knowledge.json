@@ -1,0 +1,2364 @@
+{
+  "schema_version": "2.0",
+  "canonical_rq1": "What documented names, forms, characteristics, and cultural practices describe Wau Kikik in the project sources?",
+  "language_of_operating_kb": "en",
+  "explanation_language": "en",
+  "review_date": "2026-10-18",
+  "project_topic": "Wau Kikik / Wau Laga / Wau Kemetek (Wau Kaca), Melaka",
+  "sources": {
+    "S01": {
+      "source_id": "S01",
+      "type": "user_supplied_bilingual_book_scans",
+      "title": "Wau Tradisional Malaysia: Traditional Kites of Malaysia",
+      "editor_in_chief": "Wan Basiron Wan Ahmad",
+      "publication_year": 2002,
+      "publisher": "Muzium Layang-layang Pasir Gudang",
+      "isbn": "983-40933-0-6",
+      "title_scan_path": "/workspace/scratch/aa051fca68f9/extracted/kite_archive/Traditional Kites of Malaysia/intro-1.jpg",
+      "metadata_scan_path": "/workspace/scratch/aa051fca68f9/extracted/kite_archive/Traditional Kites of Malaysia/intro-3.jpg",
+      "scan_directory": "/workspace/scratch/aa051fca68f9/extracted/kite_archive/Traditional Kites of Malaysia",
+      "verified_pages_this_review": [
+        72,
+        73,
+        144,
+        146,
+        148
+      ],
+      "page_number_note": "Printed folios72/73 are visible; later page mapping follows archive filenames and the book contents, with some folios cropped in images.",
+      "quote_transcription_note": "Short source excerpts transcribed from original images. Page line breaks and surrounding whitespace are normalized; no grammar correction or translation is inserted into quoted evidence. Typographic apostrophes follow the visible source as closely as possible.",
+      "redistribution_note": "Private project working evidence only; no full book or page images republished by this JSON.",
+      "scan_sha256": {
+        "72": "4e554b702e918afd8d3a1c6c82feb91423d10a7534f2d4cf5e0dd86ba4b21876",
+        "73": "05502ef70111231686137c3a7454b6a23cc44fe097ff018d79d5320cfc254635",
+        "144": "f6d79520ebe8f2b125bc71408c7d75feefdfe6e736e325ec903ba8d4117367fc",
+        "146": "662eb2f3a0637238acbdddb4e13521a4a1efa0741f4855e3db09f665f22938bc",
+        "148": "b9062effb4194e99c23d417652b00da4dd9dfdb43ec8a963ca4ed86a61cdab2d"
+      }
+    },
+    "S02": {
+      "source_id": "S02",
+      "type": "user_supplied_assignment_topic",
+      "title": "Moustafa Hassan — assigned kite topic",
+      "content_summary": "Wau Kikik / Wau Laga / Wau Kemetek (also known as Wau Kaca), Melaka",
+      "role": "Course scope for candidate names; not book evidence for alias equivalence"
+    },
+    "S03": {
+      "source_id": "S03",
+      "type": "primary_dictionary_lexical_aid",
+      "title": "Dewan Bahasa dan Pustaka terminology lookup: tepat",
+      "url": "https://prpmv1.dbp.gov.my/Search.aspx?k=tepat",
+      "accessed_on": "2026-10-18",
+      "verified_mapping": {
+        "segi empat tepat": "rectangle",
+        "segi empat sama": "square"
+      },
+      "role": "Clarifies ordinary terminology only; does not establish a kite’s precise geometry",
+      "verification_note": "Retrieved in earlier review from primary DBP result; not re-browsed during this source-page review."
+    }
+  },
+  "review_scope": {
+    "records": 36,
+    "preliminary_source_check": "completed",
+    "source_images_checked": [
+      72,
+      73,
+      144,
+      146,
+      148
+    ],
+    "human_author_review": "documented_source_claims_only",
+    "operational_edge_review": "pending",
+    "cultural_expert_review": "not_performed",
+    "limits": "Source-claim review, operational approval and independent evaluation are separate. No approval of every current edge or response is asserted."
+  },
+  "status_definitions": {
+    "supported": "Explicitly supported as a statement of the cited source, under its scope and limitations; not independent cultural or empirical verification.",
+    "explicit_negative": "The cited source explicitly denies a specified feature; not absence inferred from missing data.",
+    "unverified": "Relevant candidate claim not established in the reviewed project evidence; not declared false.",
+    "discrepancy": "Source-language wording or specificity differs and remains unresolved; not necessarily a logical contradiction or proven translation error."
+  },
+  "triple_contract": {
+    "fields": [
+      "subject",
+      "relation",
+      "object",
+      "object_type",
+      "polarity",
+      "scope",
+      "intent"
+    ],
+    "subject_and_entity_objects": "Stable English snake_case identifiers; graph nodes may be derived later.",
+    "object_type_values": [
+      "entity",
+      "literal",
+      "number",
+      "boolean"
+    ],
+    "polarity_values": [
+      "positive",
+      "negative"
+    ],
+    "negative_semantics": "A negative triple denies that specific relation only, within scope. Do not double-negate it or apply a closed-world assumption.",
+    "name_relation_policy": "Use source-scoped labels and candidate aliases; no unconditional sameAs/disjointWith.",
+    "unverified_records_policy": "Kemetek has no asserted factual triples and no evidence quote. Its course candidate metadata is separate.",
+    "discrepancy_policy": "Keep both language-specific wording triples. Tail presence for form2 is the shared supported subclaim.",
+    "inference_policy": "Direct subtype evidence has priority. Class-most statements remain context only; missing subtype evidence is not_documented, not automatically positive or negative.",
+    "optional_fields": [
+      "quantifier",
+      "inheritance",
+      "condition",
+      "modality",
+      "sequence_after"
+    ],
+    "classification_policy": "Source-scoped is_a links express class membership, not alias identity or disjointness.",
+    "class_majority_policy": "most_have is qualified class context. It is never a hard inherited positive feature on a subtype."
+  },
+  "counts": {
+    "by_status": {
+      "supported": 30,
+      "unverified": 1,
+      "discrepancy": 2,
+      "explicit_negative": 3
+    },
+    "triples": 74,
+    "evidence_entries": 59,
+    "core_records": 24,
+    "supplemental_records": 12,
+    "total_records": 36,
+    "interpretation": "Record and triple counts describe the representation, not correctness scores, independent observations or cultural completeness."
+  },
+  "records": [
+    {
+      "record_id": "RQ1-N01",
+      "record_group": "original_24",
+      "claim_en": "The book presents Wau Kikik as a traditional Malay wau.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "is_a",
+          "object": "traditional_malay_wau",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "names"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "No inventor, invention date or exclusive origin follows from this classification.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-N01",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "names"
+      ],
+      "topic_en": "Primary name"
+    },
+    {
+      "record_id": "RQ1-N02",
+      "record_group": "original_24",
+      "claim_en": "The profile heading links Wau Kikik with the Laga Kite; the later section discusses playing Wau Laga and also calls it another type of traditional Malay wau. These are source-scoped naming/classification statements, not proof of universal identity or distinct species.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "has_source_heading_label",
+          "object": "Laga Kite",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "names"
+        },
+        {
+          "subject": "wau_kikik",
+          "relation": "has_source_heading_label",
+          "object": "Layang-layang Laga",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Malay heading, p.72",
+          "intent": "names"
+        },
+        {
+          "subject": "wau_laga_named_type",
+          "relation": "has_practice_section",
+          "object": "wau_laga_practice",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Laga practice section, pp.143–148",
+          "intent": "practice_context"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Wau Kikik or the Laga Kite",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Wau Kikik Atau Layang-layang Laga",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "Another type of traditional Malay wau is the Wau Laga.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Do not use unconditional sameAs or disjointWith. A heading alias and a later “another type” formulation leave the broader relationship underdetermined.",
+      "original_source_page_label": "72–73; 143–148",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-N02",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "names",
+        "practice_context"
+      ],
+      "topic_en": "Laga name and context"
+    },
+    {
+      "record_id": "RQ1-N03",
+      "record_group": "original_24",
+      "claim_en": "The book gives Wau Kaca as another name for Wau Kikik and explains the name by powdered glass glazed on its string.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "has_source_alias",
+          "object": "Wau Kaca",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "names"
+        },
+        {
+          "subject": "wau_kaca_name",
+          "relation": "has_source_name_explanation",
+          "object": "powdered_glass_on_string",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "name_reason"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Another name for it is Wau Kaca, due to the powdered glass glazed on its string.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "source_image_checked"
+        }
+      ],
+      "limits_en": "The explanation concerns the string, not a glass body. It does not establish that every present-day Wau Kikik uses glass-coated string.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-N03",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "name_reason",
+        "names"
+      ],
+      "topic_en": "Wau Kaca name"
+    },
+    {
+      "record_id": "RQ1-N04",
+      "record_group": "original_24",
+      "claim_en": "Wau Kemetek is a name in the user-supplied assignment topic, but a supporting occurrence or equivalence statement has not been verified in the project book passages reviewed.",
+      "status": "unverified",
+      "triples": [],
+      "evidence": [],
+      "limits_en": "Accept as a course-scope candidate label; do not cite p.73 as evidence for it and do not declare the name false.",
+      "original_source_page_label": "No verified book occurrence; current provenance: the student’s assignment topic",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "documentation_gap_recorded",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-N04",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "evidence_note": "Empty evidence list is deliberate: no verified book quotation for Kemetek. The label comes from the user-provided assignment topic.",
+      "candidate_alias": {
+        "label": "Wau Kemetek",
+        "candidate_entity": "wau_kikik",
+        "provenance_source_id": "S02",
+        "book_equivalence": "unverified"
+      },
+      "retrieval_scope": [
+        "user assignment topic",
+        "targeted original-page visual review",
+        "prior 200-image OCR search"
+      ],
+      "intents": [
+        "not_documented"
+      ],
+      "topic_en": "Wau Kemetek candidate name"
+    },
+    {
+      "record_id": "RQ1-N05",
+      "record_group": "original_24",
+      "claim_en": "The 2002 book identifies Wau Kikik as the official wau for the state of Melaka.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "described_as_official_wau_of",
+          "object": "melaka",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:p.73; historical publication claim, not a 2026 verification",
+          "intent": "place_status"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Today, Wau Kikik is the official Wau for the state of Melaka.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "“Today” belongs to the 2002 publication context. Do not infer date of invention, exclusive origin, or a newly verified current designation.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-N05",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "place_status"
+      ],
+      "topic_en": "Association with Melaka"
+    },
+    {
+      "record_id": "RQ1-F01",
+      "record_group": "original_24",
+      "claim_en": "The profile enumerates three forms/types of Wau Kikik.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "source_enumerates_form_count",
+          "object": 3,
+          "object_type": "number",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "forms"
+        },
+        {
+          "subject": "wau_kikik",
+          "relation": "has_source_described_form",
+          "object": "kikik_form_1",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "forms"
+        },
+        {
+          "subject": "wau_kikik",
+          "relation": "has_source_described_form",
+          "object": "kikik_form_2",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "forms"
+        },
+        {
+          "subject": "wau_kikik",
+          "relation": "has_source_described_form",
+          "object": "kikik_form_3",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "forms"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "It consists of three different types.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Three is the count in this source classification, not proof that all local or modern variants are exhausted.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-F01",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "forms"
+      ],
+      "topic_en": "Number of forms"
+    },
+    {
+      "record_id": "RQ1-F02",
+      "record_group": "original_24",
+      "claim_en": "The first form is described as having a head and an indentation/concavity.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "kikik_form_1",
+          "relation": "has_source_described_component",
+          "object": "head",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "forms"
+        },
+        {
+          "subject": "kikik_form_1",
+          "relation": "has_source_shape_wording",
+          "object": "dented/concaved",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:p.73:English wording",
+          "intent": "forms"
+        },
+        {
+          "subject": "kikik_form_1",
+          "relation": "has_source_shape_wording",
+          "object": "berlekuk",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:p.72:Malay wording",
+          "intent": "forms"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The first being, Wau Kikik with a head and dented/concaved.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "mempunyai kepala dan berlekuk.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Retain the source wording; it does not supply a technical profile, exact dimensions or a validated geometric drawing.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-F02",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "forms"
+      ],
+      "topic_en": "First form"
+    },
+    {
+      "record_id": "RQ1-F03",
+      "record_group": "original_24",
+      "claim_en": "Both language versions give the second form a tail. Its Malay description says “empat segi tidak sama”, while the English description says “rectangular”. Retain both levels of description.",
+      "status": "discrepancy",
+      "triples": [
+        {
+          "subject": "kikik_form_2",
+          "relation": "has_component",
+          "object": "tail",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "forms"
+        },
+        {
+          "subject": "kikik_form_2",
+          "relation": "has_source_shape_wording",
+          "object": "empat segi tidak sama",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:p.72:Malay wording, interpretation unresolved",
+          "intent": "forms"
+        },
+        {
+          "subject": "kikik_form_2",
+          "relation": "has_source_shape_wording",
+          "object": "rectangular",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:p.73:English wording, interpretation unresolved",
+          "intent": "forms"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Wau Kikik berbentuk empat segi tidak sama dan mempunyai ekor.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The second, Wau Kikik which is rectangular in shape with a tail",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Do not force a single standardized shape, infer four unequal side lengths, or label a proven translation error. Tail presence is directly supported in both versions.",
+      "original_source_page_label": "72: Malay; 73: English",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_variance_preserved",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-F03",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "discrepancy_kind": "wording_or_specificity_difference",
+      "logical_contradiction_established": false,
+      "intents": [
+        "forms"
+      ],
+      "topic_en": "Second form"
+    },
+    {
+      "record_id": "RQ1-F04",
+      "record_group": "original_24",
+      "claim_en": "The third form is described as “segi empat tepat” on Malay p.72 and “perfect square shape” on English p.73. In DBP terminology, the Malay expression corresponds to rectangle; the English statement is more specific.",
+      "status": "discrepancy",
+      "triples": [
+        {
+          "subject": "kikik_form_3",
+          "relation": "has_source_shape_wording",
+          "object": "segi empat tepat",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:p.72:Malay wording, interpretation unresolved",
+          "intent": "forms"
+        },
+        {
+          "subject": "kikik_form_3",
+          "relation": "has_source_shape_wording",
+          "object": "perfect square shape",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:p.73:English wording, interpretation unresolved",
+          "intent": "forms"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Ketiga, Wau Kikik yang berbentuk segi empat tepat.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "and the third, Wau Kikik with a perfect square shape.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Preserve the two source descriptions without inferring a uniquely verified geometric template. A culturally informed Malay-language review is still needed.",
+      "original_source_page_label": "72: Malay; 73: English; DBP for terminology only",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_variance_preserved",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-F04",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "discrepancy_kind": "wording_or_specificity_difference",
+      "logical_contradiction_established": false,
+      "auxiliary_source_ids": [
+        "S03"
+      ],
+      "intents": [
+        "forms"
+      ],
+      "topic_en": "Third form"
+    },
+    {
+      "record_id": "RQ1-C01",
+      "record_group": "original_24",
+      "claim_en": "The book characterizes Wau Kikik as the simplest design of all traditional Malay wau.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "has_source_design_characterization",
+          "object": "simplest among traditional Malay wau",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "features"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The Wau Kikik represents the simplest design of all traditional Malay wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "A qualitative source characterization; it does not imply easiest competitive flight, lowest skill or low cultural value.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-C01",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "features"
+      ],
+      "topic_en": "Design simplicity"
+    },
+    {
+      "record_id": "RQ1-C02",
+      "record_group": "original_24",
+      "claim_en": "The profile says Wau Kikik resembles the Eddy Kite and reports “Malay Kite” as a Western name for the Eddy Kite.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "resembles",
+          "object": "eddy_kite",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "comparison"
+        },
+        {
+          "subject": "eddy_kite",
+          "relation": "has_source_reported_western_label",
+          "object": "Malay Kite",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "comparison"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "The Wau Kikik shares a resemblance with the ‘Eddy Kite’ which is also known as the ‘Malay Kite’ by the westerners.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Resemblance is not identity. Do not infer globally interchangeable names or a historical transmission route.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-C02",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "comparison"
+      ],
+      "topic_en": "Relation to Eddy Kite"
+    },
+    {
+      "record_id": "RQ1-C03",
+      "record_group": "original_24",
+      "claim_en": "The profile explicitly states that Wau Kikik lacks a hummer/busur.",
+      "status": "explicit_negative",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "has_component",
+          "object": "hummer",
+          "object_type": "entity",
+          "polarity": "negative",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "features"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Wau Kikik tidak mempunyai busur dan juga ukiran sobek.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Absence of this named component does not imply that the kite or line can never produce any incidental sound.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-C03",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "features"
+      ],
+      "topic_en": "Absence of the hummer"
+    },
+    {
+      "record_id": "RQ1-C04",
+      "record_group": "original_24",
+      "claim_en": "The profile explicitly states that Wau Kikik lacks sobek carvings/cutwork.",
+      "status": "explicit_negative",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "uses_decoration_technique",
+          "object": "sobek",
+          "object_type": "entity",
+          "polarity": "negative",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "features"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "Wau Kikik neither has a hummer nor any ‘sobek’ carvings.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "This does not mean no decoration. The two profile photographs show colored patterns, but the pictures alone do not establish their manufacturing technique.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-C04",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "visual_observations": [
+        {
+          "source_id": "S01",
+          "page": 72,
+          "observation_en": "The pictured example has colored surface patterns.",
+          "scope": "pictured example only",
+          "scan_path": "/workspace/scratch/aa051fca68f9/extracted/kite_archive/Traditional Kites of Malaysia/page-0072.jpg"
+        },
+        {
+          "source_id": "S01",
+          "page": 73,
+          "observation_en": "The pictured example has colored surface patterns.",
+          "scope": "pictured example only",
+          "scan_path": "/workspace/scratch/aa051fca68f9/extracted/kite_archive/Traditional Kites of Malaysia/page-0073.jpg"
+        }
+      ],
+      "intents": [
+        "features"
+      ],
+      "topic_en": "Absence of sobek carving"
+    },
+    {
+      "record_id": "RQ1-C05",
+      "record_group": "original_24",
+      "claim_en": "The profile explicitly states that Wau Kikik lacks the leaf-shaped wings described as occurring in most traditional Malay wau.",
+      "status": "explicit_negative",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "has_feature",
+          "object": "leaf_shaped_wings",
+          "object_type": "entity",
+          "polarity": "negative",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "features"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "the design of Wau Kikik is without wings like the shape of a leaf which is found in most traditional Malay wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "rekabentuknya juga tidak mempunyai sayap seperti bentuk daun yang dimiliki oleh kebanyakan wau tradisional Melayu.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "note": "Shows that the leaf-shape description qualifies the absent wings.",
+          "verification": "source_image_checked"
+        }
+      ],
+      "limits_en": "This is a shape-specific negative, not an assertion that the kite has no lifting surface, lateral extent or transverse support.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-C05",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "features"
+      ],
+      "topic_en": "Absence of leaf-shaped wings"
+    },
+    {
+      "record_id": "RQ1-C06",
+      "record_group": "original_24",
+      "claim_en": "The profile describes a basic paper covering/layers of wau paper.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_kikik",
+          "relation": "has_covering_material",
+          "object": "wau_paper",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, pp.72–73",
+          "intent": "materials"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "With a few basic layers of wau papers",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Dengan mempunyai lapisan asas kertas wau",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "No exact layer count, paper weight, thickness, dimensions or universal modern material specification is supplied.",
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-C06",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "materials"
+      ],
+      "topic_en": "Paper covering"
+    },
+    {
+      "record_id": "RQ1-P01",
+      "record_group": "original_24",
+      "claim_en": "The Laga section describes the practice as requiring high skill, speed and concentration, and as more challenging than the single-string wau discussed in the comparison.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_practice",
+          "relation": "has_source_skill_requirement",
+          "object": "high skill, speed and concentration",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Playing the Wau Laga, p.144",
+          "intent": "practice_context"
+        },
+        {
+          "subject": "wau_laga_practice",
+          "relation": "has_source_difficulty_comparison",
+          "object": "more challenging than the single-string wau in the book comparison",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Playing the Wau Laga, p.144",
+          "intent": "practice_context"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "Compared with the single string wau, to fly Wau Laga is much more challenging and requires high skills, speed and concentration.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "This is the author’s description, not an empirical skill/usability result. The contrast does not prove that Wau Laga uses more than one control line.",
+      "original_source_page_label": "143–144",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P01",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "practice_context"
+      ],
+      "topic_en": "Skill requirements"
+    },
+    {
+      "record_id": "RQ1-P02",
+      "record_group": "original_24",
+      "claim_en": "In the described Laga competition, players try to break the opponent’s string while avoiding their own string being broken. The attack section states the objective as breaking the opponent’s string before it breaks yours.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_practice",
+          "relation": "has_competitive_objective",
+          "object": "break opponent string",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Laga practice section, pp.143–148",
+          "intent": "attack"
+        },
+        {
+          "subject": "wau_laga_practice",
+          "relation": "has_defensive_objective",
+          "object": "avoid own string being broken",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Laga practice section, pp.143–148",
+          "intent": "defence"
+        },
+        {
+          "subject": "wau_laga_attack",
+          "relation": "has_source_objective",
+          "object": "break the opponent’s string before it breaks yours",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "attack"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "Apart from trying to break their opponents’ string, players will also strive to avoid their wau string from being broken.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 148,
+          "language": "en",
+          "quote": "The objective of attacking while flying Wau Laga is to break the opponent’s string before it breaks yours.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0148.jpg",
+          "verification": "source_image_checked"
+        }
+      ],
+      "limits_en": "The competitive practice is not a necessary authenticity test for every Kikik or a requirement for an educational demonstration.",
+      "original_source_page_label": "143–144; 147–148",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P02",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "attack",
+        "defence"
+      ],
+      "topic_en": "Competitive objective"
+    },
+    {
+      "record_id": "RQ1-P03",
+      "record_group": "original_24",
+      "claim_en": "The Laga section says that its strings are normally glazed with fine powdered glass to cut the opponent’s string in competition.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_practice",
+          "relation": "normally_uses_in_source",
+          "object": "glass_glazed_string",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Playing the Wau Laga, p.144",
+          "intent": "materials"
+        },
+        {
+          "subject": "glass_glazed_string",
+          "relation": "has_source_competitive_purpose",
+          "object": "cut the opponent’s kite string",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Playing the Wau Laga, p.144; normally used string in the documented competition",
+          "intent": "attack"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "Normally, the strings of the wau are glazed with fine powdered glass that will be used to severe the opponent’s string.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check",
+          "transcription_note": "The printed source says “severe”; the paraphrase uses “sever” or “cut”."
+        }
+      ],
+      "limits_en": "“Normally” is not “always”. This is a historical practice description, not manufacturing guidance, a safety claim or current legal advice.",
+      "original_source_page_label": "143–144",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P03",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "attack",
+        "materials"
+      ],
+      "topic_en": "String in the documented practice"
+    },
+    {
+      "record_id": "RQ1-P04",
+      "record_group": "original_24",
+      "claim_en": "The book describes Wau Laga as more popular on the west coast of Peninsular Malaysia.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_practice",
+          "relation": "has_source_reported_popularity_region",
+          "object": "west_coast_peninsular_malaysia",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Playing the Wau Laga, p.144",
+          "intent": "place_status"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "The sport of Wau Laga is much more popular in the West coast of Peninsular Malaysia.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Qualitative source statement, not a current statistical prevalence estimate or a claim that the practice is exclusive to that region.",
+      "original_source_page_label": "143–144",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P04",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "place_status"
+      ],
+      "topic_en": "Regional popularity of the practice"
+    },
+    {
+      "record_id": "RQ1-P05",
+      "record_group": "original_24",
+      "claim_en": "The book describes a long-distance Laga launch with two people, a launcher and a puller; it uses the labels juru anjong/juru main tali and juru lancar/juru tarik in the description.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_launch",
+          "relation": "has_source_method",
+          "object": "long_distance_launch",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "has_described_participant_count",
+          "object": 2,
+          "object_type": "number",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "has_role",
+          "object": "launcher",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "has_role",
+          "object": "puller",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "launcher",
+          "relation": "has_source_role_label",
+          "object": "juru lancar",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "puller",
+          "relation": "has_source_role_label",
+          "object": "juru tarik",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "has_source_role_label",
+          "object": "juru anjong",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144; names of the two players in the described launch",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "has_source_role_label",
+          "object": "juru main tali",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144; names of the two players in the described launch",
+          "intent": "launch"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "the long distance launching technique is used. Two players are required.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "One is the ‘juru anjong’ and the other, the ‘juru main tali’.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller)",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Applies to the described launch procedure, not a universal requirement for every kite instance or setting. The text names two players, not four. It lists juru anjong/juru main tali, then explicitly glosses juru lancar as launcher and juru tarik as puller; it does not explicitly state an individual synonym mapping between the two pairs.",
+      "original_source_page_label": "143–144",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P05",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "launch"
+      ],
+      "topic_en": "Launch roles"
+    },
+    {
+      "record_id": "RQ1-P06",
+      "record_group": "original_24",
+      "claim_en": "The described distance between the launcher and puller is 30–50 feet, approximately 9–15 metres.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_launch",
+          "relation": "has_described_role_separation",
+          "object": "30–50 feet (9–15 metres)",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "the distance between both ‘juru lancar’ (the launcher) and ‘juru tarik’ (the puller) is between 30-50 feet (9-15 metres).",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "The quantity is role separation at launch, not kite dimensions, flight height or a legal safety distance.",
+      "original_source_page_label": "143–144",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P06",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "measurements": [
+        {
+          "quantity": "launcher_puller_separation",
+          "min": 30,
+          "max": 50,
+          "unit": "feet",
+          "source_equivalent": {
+            "min": 9,
+            "max": 15,
+            "unit": "metres"
+          },
+          "source_id": "S01",
+          "page": 144
+        }
+      ],
+      "intents": [
+        "launch"
+      ],
+      "topic_en": "Meaning of the 9–15 metre measurement"
+    },
+    {
+      "record_id": "RQ1-P07",
+      "record_group": "original_24",
+      "claim_en": "Before the described launch, remaining string is rolled to prevent tangling and then laid on the ground. The puller signals the launcher, and line is released in stages as the kite rises.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_launch",
+          "relation": "includes_preparation",
+          "object": "organize_remaining_string_to_avoid_tangling",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "includes_coordination",
+          "object": "puller_signals_launcher",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "includes_ascent_action",
+          "object": "release_string_in_stages",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144",
+          "intent": "launch"
+        },
+        {
+          "subject": "wau_laga_launch",
+          "relation": "includes_preparation",
+          "object": "lay the rolled remaining string on the ground",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of raising the Wau Laga, p.144; after rolling remaining string and before launch",
+          "intent": "launch",
+          "sequence_after": "rolling remaining string to prevent tangling"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "the remaining string must first be rolled up to prevent it from being ruffled and then, laid on the ground.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "the ‘juru tarik’ will signal the ‘juru lancar’ to release the wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "the string will be released in stages to allow it to fly higher gradually.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "A description of the source procedure, not a field-tested project result or a complete current flying guide.",
+      "original_source_page_label": "143–145; complete English passage on p.144",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P07",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "launch"
+      ],
+      "topic_en": "Launch coordination"
+    },
+    {
+      "record_id": "RQ1-P08",
+      "record_group": "original_24",
+      "claim_en": "The control section says that a kite too close to the player is difficult to control: its reaction to strong wind forces vigorous left/right movement and may cause rotation. It describes a flight height of about 200 feet (60 metres).",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_control",
+          "relation": "has_source_difficulty_condition",
+          "object": "kite too close to player",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of controlling Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "wau_laga_control",
+          "relation": "has_source_described_height",
+          "object": "about 200 feet (60 metres)",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of controlling Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "wau_laga_control",
+          "relation": "has_source_difficulty_reason",
+          "object": "reaction against strong wind causes vigorous left or right movement and may cause rotation",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of controlling Wau Laga, p.146; when the wau is too close to the player",
+          "intent": "control"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "When the wau is too close to the player, it will complicate the process of controlling as the reaction of the wau against the strong wind will force it to move vigorously to the left or right and it might also start rotating.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "source_image_checked"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "about 200 feet (60 metres) from the ground.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "as the reaction of the wau against the strong wind will force it to move vigorously to the left or right and it might also start rotating.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "source_image_checked"
+        }
+      ],
+      "limits_en": "A 2002 book recommendation, not current legal authorization, a universal optimum or a guarantee of safe operation.",
+      "original_source_page_label": "145–146",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P08",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "measurements": [
+        {
+          "quantity": "source_described_flight_height",
+          "value": 200,
+          "unit": "feet",
+          "qualifier": "about",
+          "source_equivalent": {
+            "value": 60,
+            "unit": "metres"
+          },
+          "source_id": "S01",
+          "page": 146,
+          "not_current_regulatory_advice": true
+        }
+      ],
+      "intents": [
+        "control"
+      ],
+      "topic_en": "Control and the stated height"
+    },
+    {
+      "record_id": "RQ1-P09",
+      "record_group": "original_24",
+      "claim_en": "Overview: the book links line handling to stability and direction, and describes slackening the line during defence. Atomic source details are retained in supplemental records rather than lost in this overview.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_control",
+          "relation": "has_source_control_factor",
+          "object": "line_handling",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "wau_laga_control",
+          "relation": "has_source_control_goal",
+          "object": "stability",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "wau_laga_control",
+          "relation": "has_source_control_goal",
+          "object": "direction",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "wau_laga_defence",
+          "relation": "has_source_action",
+          "object": "slacken_string",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "defence"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "Pull the string until the wau becomes stable again.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "The wau will then move in the direction required.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 148,
+          "language": "en",
+          "quote": "he must release his wau string quickly so that it slackens",
+          "source_id": "S01",
+          "scan_path": "sources/page-0148.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "These are book-reported procedures, not measured physical laws or effectiveness claims established by this project.",
+      "original_source_page_label": "145–148",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-P09",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "record_role": "overview",
+      "atomic_detail_record_ids": [
+        "RQ1-S02",
+        "RQ1-S03",
+        "RQ1-S04",
+        "RQ1-S05",
+        "RQ1-S06",
+        "RQ1-S07",
+        "RQ1-S08",
+        "RQ1-S09",
+        "RQ1-S10"
+      ],
+      "intents": [
+        "control",
+        "defence"
+      ],
+      "topic_en": "Direction and string tension"
+    },
+    {
+      "record_id": "RQ1-S01",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The practice section explicitly introduces Wau Laga as “another type of traditional Malay wau”.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_named_type",
+          "relation": "is_a",
+          "object": "traditional_malay_wau",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:Playing the Wau Laga, p.144",
+          "intent": "names"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 144,
+          "language": "en",
+          "quote": "Another type of traditional Malay wau is the Wau Laga.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0144.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Retain alongside the Kikik-or-Laga heading. “Another type” does not resolve whether Laga and Kikik are separate designs in every context; do not assert global identity or disjointness.",
+      "parent_record_ids": [
+        "RQ1-N02"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S01",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "names"
+      ],
+      "topic_en": "Laga described as another type"
+    },
+    {
+      "record_id": "RQ1-S02",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The control guide says that a kite flying too far in one direction may lose stability, and describes pulling the string until it becomes stable again.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "laga_stability_response",
+          "relation": "has_source_condition",
+          "object": "kite flies too far toward a direction and may lose stability",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "laga_stability_response",
+          "relation": "has_source_action",
+          "object": "pull string until stable again",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "If the wau flies too far towards a particular direction, it may lose its stability.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "Pull the string until the wau becomes stable again.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "A conditional response in this guide; do not turn it into “always pull harder” or claim measured effectiveness.",
+      "parent_record_ids": [
+        "RQ1-P09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S02",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "control"
+      ],
+      "topic_en": "Restoring stability"
+    },
+    {
+      "record_id": "RQ1-S03",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The guide describes keeping enough string in stacks on the ground so it can be released readily if the kite dives at low flight level.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "laga_low_dive_response",
+          "relation": "has_source_preparation",
+          "object": "enough string in stacks on ground",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "laga_low_dive_response",
+          "relation": "has_source_condition",
+          "object": "kite starts diving at low flight level",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "laga_low_dive_response",
+          "relation": "has_source_action",
+          "object": "release prepared string readily",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "Prepare enough strings in stacks on the ground",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "it can be easily released once the wau starts diving to the ground while still at a low flight level.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Do not substitute reel winding or line tightening for the specific action described. This is source procedure, not a modern safety clearance.",
+      "parent_record_ids": [
+        "RQ1-P09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S03",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "control"
+      ],
+      "topic_en": "Reserve string for descent"
+    },
+    {
+      "record_id": "RQ1-S04",
+      "record_group": "supplemental_atomic",
+      "claim_en": "In the direction-control description, the kiter releases the string slowly while the kite is taking flight.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "laga_direction_control",
+          "relation": "has_source_phase",
+          "object": "taking flight",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "laga_direction_control",
+          "relation": "has_source_initial_action",
+          "object": "release string slowly",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "The wau’s flight direction can be determined while the wau is taking flight.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "The kiter will release the string slowly",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "The next action depends on the head facing the intended direction; keep this source sequence, not an unconditional command to release string.",
+      "parent_record_ids": [
+        "RQ1-P09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S04",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "control"
+      ],
+      "topic_en": "Slow release during ascent"
+    },
+    {
+      "record_id": "RQ1-S05",
+      "record_group": "supplemental_atomic",
+      "claim_en": "When the kite’s head faces the intended direction, the guide describes locking the string with one or both hands; the kite then moves in that direction.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "laga_direction_control",
+          "relation": "has_source_lock_condition",
+          "object": "head faces intended direction",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "laga_direction_control",
+          "relation": "has_source_following_action",
+          "object": "lock string using one or both hands",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        },
+        {
+          "subject": "laga_direction_control",
+          "relation": "has_source_stated_result",
+          "object": "kite moves in intended direction",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Guidelines to control the Wau Laga, p.146; descriptive source guidance",
+          "intent": "control"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "when the head of the wau faces into the direction as required by the player",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "the string will be locked using one or both hands.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        },
+        {
+          "page": 146,
+          "language": "en",
+          "quote": "The wau will then move in the direction required.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0146.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Do not erase the head-direction condition, change one/both hands to two mandatory hands, or treat the stated result as independently measured.",
+      "parent_record_ids": [
+        "RQ1-P09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S05",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "control"
+      ],
+      "topic_en": "Locking the string when the head is directed"
+    },
+    {
+      "record_id": "RQ1-S06",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The attack section identifies speed as particularly important in the described string-cutting competition.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_attack",
+          "relation": "has_source_emphasis",
+          "object": "speed is most crucial",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "attack"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 148,
+          "language": "en",
+          "quote": "In this situation, speed is most crucial",
+          "source_id": "S01",
+          "scan_path": "sources/page-0148.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Context is this described competitive encounter, not a measured speed threshold or a general rule that maximum speed is always best.",
+      "parent_record_ids": [
+        "RQ1-P01",
+        "RQ1-P02"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S06",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "attack"
+      ],
+      "topic_en": "Importance of speed in competition"
+    },
+    {
+      "record_id": "RQ1-S07",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The attack description involves crossing the player’s kite string against the opponent’s string.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_attack",
+          "relation": "has_source_action",
+          "object": "cross own kite string against opponent string",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "attack"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 148,
+          "language": "en",
+          "quote": "a player must compete to cross the string of his wau against the opponent’s string.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0148.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Description of the traditional competitive maneuver only; no unsupported coating recipe, injury optimization or modern legal claim follows.",
+      "parent_record_ids": [
+        "RQ1-P02",
+        "RQ1-P09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S07",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "attack"
+      ],
+      "topic_en": "Crossing strings during attack"
+    },
+    {
+      "record_id": "RQ1-S08",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The attack passage describes an advantage when “the player’s position is below the opponents’”. The exact spatial referent of that wording is not resolved by this record.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_attack",
+          "relation": "has_source_advantage_condition_wording",
+          "object": "player’s position is below the opponents’",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "attack"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 148,
+          "language": "en",
+          "quote": "This is an advantage to defeat the opponents’ string if the player’s position is below the opponents’.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0148.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Do not silently replace “player’s position” with a precise kite-altitude, ground-location or aerodynamic claim. The literal text is supported; technical interpretation needs review.",
+      "parent_record_ids": [
+        "RQ1-P02",
+        "RQ1-P09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S08",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "attack"
+      ],
+      "topic_en": "Lower position and the stated advantage"
+    },
+    {
+      "record_id": "RQ1-S09",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The defence passage says that a player under attack releases the kite string quickly so that it slackens.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "wau_laga_defence",
+          "relation": "has_source_condition",
+          "object": "player is being attacked",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "defence"
+        },
+        {
+          "subject": "wau_laga_defence",
+          "relation": "has_source_action",
+          "object": "release kite string quickly so it slackens",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "defence"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 148,
+          "language": "en",
+          "quote": "If a player is being attacked, he must release his wau string quickly so that it slackens",
+          "source_id": "S01",
+          "scan_path": "sources/page-0148.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Retain the attack condition and quick-release action. Do not reverse the instruction to tightening or claim this is a universal recovery procedure.",
+      "parent_record_ids": [
+        "RQ1-P09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S09",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "defence"
+      ],
+      "topic_en": "Rapid release under attack"
+    },
+    {
+      "record_id": "RQ1-S10",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The defence passage states that slackening makes the string harder to break in the described encounter.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "slack_string_in_laga_defence",
+          "relation": "has_source_stated_effect",
+          "object": "harder for string to be broken",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:The technic of attacking Wau Laga, p.148; descriptive source guidance",
+          "intent": "defence"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 148,
+          "language": "en",
+          "quote": "so that it slackens and will make it harder for the string to be broken.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0148.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "A source-stated causal explanation, not an independently tested physical law, an absolute guarantee or a quantified effect.",
+      "parent_record_ids": [
+        "RQ1-P09",
+        "RQ1-S09"
+      ],
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S10",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "defence"
+      ],
+      "topic_en": "Stated benefit of slackening"
+    },
+    {
+      "record_id": "RQ1-S12",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The profile states that leaf-shaped wings occur in most traditional Malay wau; this is a non-universal class-level description.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "traditional_malay_wau",
+          "relation": "most_have",
+          "object": "leaf_shaped_wings",
+          "object_type": "entity",
+          "polarity": "positive",
+          "scope": "S01:2002:p.73; class-level majority description only, not a universal property or inherited subtype assertion",
+          "quantifier": "most",
+          "inheritance": "context_only",
+          "intent": "features"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "the design of Wau Kikik is without wings like the shape of a leaf which is found in most traditional Malay wau.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "preliminary_visual_source_check"
+        }
+      ],
+      "limits_en": "Most does not mean all. This class statement does not establish leaf-shaped wings for an undocumented subtype. Direct subtype evidence takes priority; the same passage explicitly excludes Wau Kikik. It gives no numeric prevalence or sample.",
+      "parent_record_ids": [
+        "RQ1-C05"
+      ],
+      "original_source_page_label": "73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S12",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "features"
+      ],
+      "topic_en": "Class-level majority feature"
+    },
+    {
+      "record_id": "RQ1-S11",
+      "record_group": "supplemental_atomic",
+      "claim_en": "The Wau Kikik profile describes the intended competitive purpose of powdered glass on the string: defeating the opponent’s wau on contact in the English text and cutting the opponent’s string in the Malay text.",
+      "status": "supported",
+      "triples": [
+        {
+          "subject": "powdered_glass_on_string",
+          "relation": "has_source_competitive_purpose",
+          "object": "defeat the opponent’s wau on contact during competition",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, p.73; English purpose wording",
+          "intent": "attack"
+        },
+        {
+          "subject": "powdered_glass_on_string",
+          "relation": "has_source_competitive_purpose",
+          "object": "cut the opponent’s kite string",
+          "object_type": "literal",
+          "polarity": "positive",
+          "scope": "S01:2002:Wau Kikik profile, p.72; Malay purpose wording",
+          "intent": "attack"
+        }
+      ],
+      "evidence": [
+        {
+          "page": 73,
+          "language": "en",
+          "quote": "This is meant to defeat the opponent’s wau once it comes in contact with Wau Kaca during a competition.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0073.jpg",
+          "verification": "source_image_checked"
+        },
+        {
+          "page": 72,
+          "language": "ms",
+          "quote": "Wau Kikik juga dikenali sebagai Wau Kaca disebabkan penggunaan serbuk kaca pada talinya yang bertujuan untuk memutuskan tali wau pihak lawan.",
+          "source_id": "S01",
+          "scan_path": "sources/page-0072.jpg",
+          "verification": "source_image_checked"
+        }
+      ],
+      "limits_en": "These are language-specific statements of intended competitive purpose in the 2002 book, not a guaranteed outcome or a claim about every present-day kite. The glass is on the string, not the body. The English word “defeat” is not silently treated as the word “cut”.",
+      "parent_record_ids": [
+        "RQ1-N03"
+      ],
+      "original_source_page_label": "72–73",
+      "review": {
+        "source_review": "completed",
+        "source_review_method": "documented source-image check",
+        "verdict": "source_supported_with_limits",
+        "human_author_review": "source_claim_documented",
+        "source_claim_review_reference": "author_review.json:RQ1-S11",
+        "operational_representation_author_review": "pending",
+        "cultural_expert_review": "not_performed"
+      },
+      "intents": [
+        "attack"
+      ],
+      "topic_en": "Purpose of glass on the string"
+    }
+  ],
+  "intent_taxonomy": {
+    "factual_intent_count": 12,
+    "fallback_intents": [
+      "not_documented"
+    ],
+    "categories": [
+      {
+        "id": "names",
+        "kind": "factual",
+        "description": "Documented names, source-scoped labels and class membership."
+      },
+      {
+        "id": "name_reason",
+        "kind": "factual",
+        "description": "The source explanation of a documented name."
+      },
+      {
+        "id": "forms",
+        "kind": "factual",
+        "description": "Source-enumerated forms and their language-specific shapes."
+      },
+      {
+        "id": "features",
+        "kind": "factual",
+        "description": "Specific characteristics, explicit exclusions and qualified class context."
+      },
+      {
+        "id": "place_status",
+        "kind": "factual",
+        "description": "Source-dated state association and regional practice descriptions."
+      },
+      {
+        "id": "comparison",
+        "kind": "factual",
+        "description": "Resemblance or comparisons without identity inference."
+      },
+      {
+        "id": "materials",
+        "kind": "factual",
+        "description": "Documented covering or string materials, without invented recipes."
+      },
+      {
+        "id": "launch",
+        "kind": "factual",
+        "description": "Source-described launching roles, separation and sequence."
+      },
+      {
+        "id": "control",
+        "kind": "factual",
+        "description": "Source-described control conditions, phases and actions."
+      },
+      {
+        "id": "attack",
+        "kind": "factual",
+        "description": "The described contest objective and attack context."
+      },
+      {
+        "id": "defence",
+        "kind": "factual",
+        "description": "The described defensive objective, condition, action and stated effect."
+      },
+      {
+        "id": "practice_context",
+        "kind": "factual",
+        "description": "General practice description and section context."
+      },
+      {
+        "id": "not_documented",
+        "kind": "fallback",
+        "description": "Fallback for missing or unverified evidence; not a factual edge or explicit denial."
+      }
+    ],
+    "rule": "Intent is retrieval metadata, not a new assertion. Missing evidence routes to not_documented and never creates a fact."
+  },
+  "evidence_language_policy": {
+    "primary_language": "en",
+    "supplementary_language": "ms",
+    "rule": "English is the primary answer and evidence language. Malay verbatim evidence is included where it clarifies wording, negation or purpose. A record scoped to pp.72–73 need not contain duplicate quotations from both languages; each quotation retains its actual page and language. Metadata and paraphrases are in English."
+  }
+}
